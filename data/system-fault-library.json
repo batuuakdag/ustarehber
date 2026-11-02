@@ -1,0 +1,618 @@
+{
+  "title": "UstaRehber genel sistem arıza teşhis kütüphanesi",
+  "version": "1.0",
+  "created": "2026-11-02",
+  "scope": "Markadan bağımsız temel teşhis rehberleri. Bunlar model-spesifik kronik arıza iddiası değildir.",
+  "categories": [
+    {
+      "id": "engine",
+      "name": "Motor mekanik"
+    },
+    {
+      "id": "fuel-air",
+      "name": "Yakıt ve hava"
+    },
+    {
+      "id": "cooling",
+      "name": "Soğutma sistemi"
+    },
+    {
+      "id": "transmission",
+      "name": "Şanzıman"
+    },
+    {
+      "id": "electrical",
+      "name": "Elektrik"
+    },
+    {
+      "id": "electronics",
+      "name": "Elektronik"
+    },
+    {
+      "id": "suspension",
+      "name": "Yürüyen aksam"
+    },
+    {
+      "id": "brakes",
+      "name": "Fren sistemi"
+    }
+  ],
+  "records": [
+    {
+      "id": "GEN-001",
+      "category": "engine",
+      "system": "Motor mekanik",
+      "title": "Soğuk çalıştırmada zincir/triger kaynaklı ses",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "İlk çalıştırmada kısa süreli şakırtı, rölantide metalik ses, zamanlama hatası kodları"
+      ],
+      "possible_causes": [
+        "Zincir uzaması, gergi veya kızak aşınması",
+        "yağ basıncı/geç yağlama",
+        "yanlış yağ veya bakım geçmişi"
+      ],
+      "diagnostic_steps": [
+        "Motor tamamen soğukken ses kaydı al",
+        "yağ seviyesi ve doğru yağ spesifikasyonunu kontrol et",
+        "kam-krank korelasyon verilerini ve mekanik zamanlamayı üretici prosedürüyle ölç"
+      ],
+      "repair_approach": "Kaynağı doğrula; zincir seti/gergi/kızak ve tek kullanımlık bağlantıları motor koduna uygun değiştir; yağlama sistemini kontrol et; zamanlama adaptasyonunu ve soğuk çalıştırmayı doğrula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Sadece ses veya tek bir korelasyon koduyla zincir değişimine karar verme. Bazı motorlarda normal enjektör sesi benzer belirti verebilir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-002",
+      "category": "engine",
+      "system": "Motor mekanik",
+      "title": "Aşırı yağ tüketimi",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Yağ seviyesinin düşmesi, mavi duman, buji/enjektör çevresinde yağlanma, katalizör verim hataları"
+      ],
+      "possible_causes": [
+        "Piston-segman/silindir aşınması",
+        "supap keçeleri",
+        "turbo yağ kaçırması",
+        "PCV/karter havalandırması",
+        "dış kaçak"
+      ],
+      "diagnostic_steps": [
+        "Yağ seviyesini aynı zemin ve prosedürle kaydet",
+        "dış kaçakları kontrol et",
+        "emme hattı/turbo",
+        "PCV",
+        "buji ve egzoz",
+        "gerekirse kompresyon ve kaçak testi"
+      ],
+      "repair_approach": "Önce dış kaçak ve PCV gibi çevresel nedenleri gider; turbo ve silindir-supap mekanik durumunu test sonucuna göre onar; doğru yağ standardı ve tüketim takibi uygula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Üretici toleransı motor koduna göre değişir. Tek seferlik seviye düşüşü segman arızası kanıtı değildir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-003",
+      "category": "fuel-air",
+      "system": "Yakıt ve hava",
+      "title": "Dizel DPF doluluğu / rejenerasyon sorunu",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "DPF uyarısı, fanın sık çalışması, yakıt tüketiminde artış, çekiş düşmesi, sık rejenerasyon"
+      ],
+      "possible_causes": [
+        "Kısa mesafe kullanımı",
+        "diferansiyel basınç sensörü/boruları",
+        "EGR/enjektör kaynaklı kurum",
+        "termostat",
+        "egzoz sıcaklık sensörü"
+      ],
+      "diagnostic_steps": [
+        "Arıza kodları ve donmuş kareyi kaydet",
+        "DPF diferansiyel basınç ve egzoz sıcaklık sensörlerini canlı veride karşılaştır",
+        "kurum/kül yükünü üretici cihazıyla oku",
+        "rejenerasyon geçmişini incele"
+      ],
+      "repair_approach": "Önce sensör, hortum, termostat ve motorun kurum üretme nedenini düzelt; kül yükü uygunsa onaylı temizleme, sınır aşılmışsa DPF değişimi değerlendir; zorunlu rejenerasyonu yalnız şartlar uygunsa uygula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "DPF'yi delmek/iptal etmek emisyon mevzuatına ve araç güvenliğine aykırı olabilir. Yüksek yağ seviyesi veya aşırı kurumda zorunlu rejenerasyon yapma.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-004",
+      "category": "fuel-air",
+      "system": "Yakıt ve hava",
+      "title": "EGR akış / valf arızası",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Düzensiz rölanti, düşük devirde tekleme, çekiş düşmesi, motor lambası"
+      ],
+      "possible_causes": [
+        "Kurum birikmesi",
+        "valf motoru/konum sensörü",
+        "kablo-soket",
+        "vakum hattı",
+        "soğutma suyu/emme kaçakları"
+      ],
+      "diagnostic_steps": [
+        "Kod ve freeze-frame",
+        "komutlanan-gerçek EGR konumu",
+        "soket ve besleme",
+        "ilgili kanallarda kurum",
+        "MAF/MAP değerleri ve emme kaçağı"
+      ],
+      "repair_approach": "Elektriksel arızayı onar; kanalları üretici yöntemine göre temizle; mekanik veya elektriksel arızalı parçayı doğru referansla değiştir; gerekiyorsa adaptasyon yap",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "P0401/P0402 gibi kodlar doğrudan EGR valfinin bozuk olduğunu kanıtlamaz; akış ve sensör devresi birlikte değerlendirilir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-005",
+      "category": "cooling",
+      "system": "Soğutma",
+      "title": "Motor hararet yapıyor",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Sıcaklık uyarısı, kaloriferin soğuk üflemesi, fanın sürekli çalışması, genleşme kabında taşma"
+      ],
+      "possible_causes": [
+        "Soğutma suyu kaçağı",
+        "termostat",
+        "fan/röle",
+        "devirdaim",
+        "radyatör tıkanması",
+        "kapak",
+        "silindir kapak contası"
+      ],
+      "diagnostic_steps": [
+        "Motor soğukken seviye ve kaçak kontrolü",
+        "sistem basınç testi",
+        "fan kademeleri",
+        "termostat açma",
+        "pompa dolaşımı",
+        "gerekirse yanma gazı testi"
+      ],
+      "repair_approach": "Kaçağı ve kök nedeni gider; doğru tipte soğutucu ile vakumlu doldurma/hava alma; fan ve sıcaklık kontrolünü doğrula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Sıcak genleşme kabı kapağını açma. Hararet uyarısında aracı kullanmaya devam etmek motoru ağır hasara uğratabilir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-006",
+      "category": "cooling",
+      "system": "Soğutma",
+      "title": "Soğutma suyu eksiltme",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Düzenli seviye düşmesi, tatlımsı koku, kurumuş antifriz izi, kabinde buğu veya egzozda beyaz buhar"
+      ],
+      "possible_causes": [
+        "Hortum/radyatör/devirdaim/termostat gövdesi kaçağı",
+        "kalorifer peteği",
+        "yağ soğutucu",
+        "kapak contası"
+      ],
+      "diagnostic_steps": [
+        "Soğuk sistem basınç testi",
+        "UV boya gerekiyorsa",
+        "alt muhafaza ve kabin kontrolü",
+        "yağ-su karışımı",
+        "yanma gazı testi"
+      ],
+      "repair_approach": "Kaçak noktasını doğrulayıp uygun conta/parçayı değiştir; sistemi doğru karışımla doldur ve hava al; birkaç ısı döngüsünde seviye kontrolü yap",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Beyaz egzoz buharı tek başına conta arızası değildir; soğuk havada yoğuşma normal olabilir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-007",
+      "category": "transmission",
+      "system": "Şanzıman",
+      "title": "Otomatik şanzımanda vuruntu / geçiş gecikmesi",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "D-R geçişinde gecikme, vites değişiminde darbe, devir yükselip hızlanmama, ısınınca artan şikâyet"
+      ],
+      "possible_causes": [
+        "Yağ seviyesi/kalitesi",
+        "adaptasyon",
+        "kavrama veya tork konvertörü",
+        "mekatronik/valf gövdesi",
+        "motor-şanzıman takozu"
+      ],
+      "diagnostic_steps": [
+        "Şanzıman kodlarını ayrı modülden oku",
+        "yağ sıcaklığı ve seviye prosedürünü uygula",
+        "adaptasyon ve kayma verilerini izle",
+        "motor takozlarını kontrol et"
+      ],
+      "repair_approach": "Önce yağ seviyesi/kaçak ve yazılım/adaptasyon şartlarını doğrula; hidrolik, kavrama veya tork konvertörü onarımını test sonucuna göre planla",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Şanzıman tipi ve yağ spesifikasyonu bilinmeden yağ ekleme/değiştirme yapma; her vuruntu şanzıman iç arızası değildir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-008",
+      "category": "transmission",
+      "system": "Şanzıman",
+      "title": "Manuel şanzımanda vites geçmeme / ses",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Vites kolunda sertlik, dişli sesi, debriyaj basılıyken araç yürüme eğilimi"
+      ],
+      "possible_causes": [
+        "Debriyaj hidrolik sistemi",
+        "baskı-balata",
+        "senkromeç",
+        "vites halatı",
+        "yanlış/eksik yağ"
+      ],
+      "diagnostic_steps": [
+        "Hidrolik kaçak ve pedal hareketi",
+        "debriyaj ayırma testi",
+        "halat ayarı",
+        "yağ seviyesi ve metal parçacık kontrolü",
+        "yol testi"
+      ],
+      "repair_approach": "Hidrolik veya kumanda mekanizması arızasını gider; debriyaj seti ya da iç şanzıman parçalarını yalnız doğrulanmış bulguya göre onar",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Şanzıman yağı seviyesi ve doğru spesifikasyon araç koduna göre kontrol edilmelidir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-009",
+      "category": "electrical",
+      "system": "Elektrik",
+      "title": "Akü boşalması / marş basmama",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Marşın yavaş dönmesi, tık sesi, start-stop devre dışı, sabah akünün bitmesi"
+      ],
+      "possible_causes": [
+        "Akü yaşlanması",
+        "şarj sistemi",
+        "kaçak akım",
+        "gevşek kutup başı/şase",
+        "kısa mesafe kullanımı"
+      ],
+      "diagnostic_steps": [
+        "Akü CCA/sağlık testi",
+        "marş anı voltaj düşümü",
+        "alternatör şarj ve ripple testi",
+        "araç uykuya geçtikten sonra kaçak akım ölçümü"
+      ],
+      "repair_approach": "Akü testte zayıfsa uygun tip/kapasiteyle değiştir ve gerekiyorsa BMS kaydı yap; şarj veya kaçak akım nedenini ayrıca onar",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Sadece voltaj ölçümü akünün kapasitesini göstermez. Start-stop araçlarda AGM/EFB tipi ve kayıt işlemi önemli olabilir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-010",
+      "category": "electrical",
+      "system": "Elektrik",
+      "title": "Şarj sistemi / alternatör arızası",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Akü lambası, farlarda dalgalanma, düşük voltaj kodları, kayış sesi"
+      ],
+      "possible_causes": [
+        "Alternatör regülatörü/diyot",
+        "kayış-gergi",
+        "akü",
+        "ana kablo/şase",
+        "akıllı şarj yönetimi"
+      ],
+      "diagnostic_steps": [
+        "Akü ve alternatörü yük altında test et",
+        "şarj komutu ve gerçek voltajı izle",
+        "AC ripple",
+        "kayış ve bağlantıları kontrol et"
+      ],
+      "repair_approach": "Kablo/şase ve kayış arızalarını gider; alternatör/regülatörü test sonucuna göre onar/değiştir; akü sağlığını yeniden doğrula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Akıllı şarj sistemlerinde voltaj sabit olmayabilir; üretici test prosedürü olmadan alternatör kararı verme.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-011",
+      "category": "electronics",
+      "system": "Elektronik",
+      "title": "ABS/ESP uyarı lambası",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "ABS/ESP lambası, hız göstergesi sorunu, çekiş kontrolünün devre dışı kalması"
+      ],
+      "possible_causes": [
+        "Teker hız sensörü veya kablosu",
+        "manyetik enkoder/rulman",
+        "düşük voltaj",
+        "direksiyon açı sensörü",
+        "hidrolik ünite"
+      ],
+      "diagnostic_steps": [
+        "ABS modülünden kod oku",
+        "dört teker hızını canlı veride karşılaştır",
+        "kablo/soket ve enkoderi incele",
+        "akü voltajı ve sensör beslemesini ölç"
+      ],
+      "repair_approach": "Hasarlı kablo/sensör/enkoderi doğrulayarak değiştir; gerekiyorsa direksiyon açı sensörü kalibrasyonu yap; yol testiyle uyarıyı doğrula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "ABS/ESP güvenlik sistemidir. Uyarı varken frenleme/denge desteği sınırlı olabilir; profesyonel kontrol gerekir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-012",
+      "category": "electronics",
+      "system": "Elektronik",
+      "title": "Motor arıza lambası ve tekleme",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Rölantide sarsıntı, güç kaybı, yakıt artışı, yanıp sönen motor lambası"
+      ],
+      "possible_causes": [
+        "Ateşleme bobini/buji",
+        "enjektör",
+        "hava kaçağı",
+        "yakıt basıncı",
+        "kompresyon",
+        "sensör/tesisat"
+      ],
+      "diagnostic_steps": [
+        "Kod ve freeze-frame",
+        "silindir tekleme sayaçları",
+        "buji/bobin yer değişim testi",
+        "yakıt düzeltmeleri",
+        "emme kaçak testi",
+        "gerekirse kompresyon"
+      ],
+      "repair_approach": "Arızayı silindir ve sistem bazında izole et; yalnız arızalı bileşeni onar; adaptasyon ve yük altında yol testi yap",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Yanıp sönen motor lambası katalizöre zarar verebilecek aktif teklemeyi gösterebilir; aracı zorlamadan servise götür.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-013",
+      "category": "suspension",
+      "system": "Yürüyen aksam",
+      "title": "Ön takımdan tıkırtı / vuruntu",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Kasiste ses, frenlemede öne yığılma, direksiyonda boşluk veya lastik düzensiz aşınması"
+      ],
+      "possible_causes": [
+        "Z rotu",
+        "salıncak burcu/rotil",
+        "amortisör takozu",
+        "rot başı",
+        "gevşek bağlantı",
+        "lastik/jant"
+      ],
+      "diagnostic_steps": [
+        "Aracı güvenli liftte kaldır",
+        "boşluk testi",
+        "burç ve körük kontrolü",
+        "amortisör kaçak testi",
+        "lastik aşınma deseni",
+        "tork kontrolü"
+      ],
+      "repair_approach": "Boşluk yapan parçayı aks geometrisi ve üretici torklarına göre değiştir; gerekiyorsa rot ayarı yap; yol testi uygula",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Güvenlik bağlantılarında geçici sıkıştırma veya kaynakla çözüm uygulanmamalı; tork değerleri modele özgüdür.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    },
+    {
+      "id": "GEN-014",
+      "category": "brakes",
+      "system": "Fren",
+      "title": "Fren pedalında titreme / frenleme titreşimi",
+      "vehicle_scope": "Genel teşhis rehberi; marka/model/motor özelinde kesin arıza eşleştirmesi değildir.",
+      "symptoms": [
+        "Belirli hızlarda frenlemede direksiyon veya pedal titreşimi, fren sesi"
+      ],
+      "possible_causes": [
+        "Disk kalınlık/yanal salgı",
+        "porya yüzeyi",
+        "kaliper kızakları",
+        "balata",
+        "süspansiyon boşluğu"
+      ],
+      "diagnostic_steps": [
+        "Disk kalınlığı ve salgısını komparatörle ölç",
+        "porya yüzeyini kontrol et",
+        "kaliper piston/kızak hareketini incele",
+        "teker sıkma torkunu doğrula"
+      ],
+      "repair_approach": "Ölçüm tolerans dışıysa disk ve balataları aks seti olarak uygun şekilde değiştir; kaliper/porya nedenini gider",
+      "cost_estimate": {
+        "status": "Fiyat doğrulaması bekliyor",
+        "parts_try_min": null,
+        "parts_try_max": null,
+        "labor_try_min": null,
+        "labor_try_max": null,
+        "note": "Parça referansı, araç kodu, şehir ve servis işçilik teklifi doğrulanmadan tutar yayımlanmadı."
+      },
+      "caution": "Disk tornalama/değişim kararı minimum kalınlık ve üretici toleransına göre verilmelidir.",
+      "verification": "Genel teknik kontrol listesi; OEM prosedürü ve araç özelinde doğrulama gerekli.",
+      "sources": [
+        {
+          "label": "Honda MaRIS teknik bilgi sistemi – VIN, servis prosedürü, teknik bülten ve işçilik süreleri yaklaşımı",
+          "url": "https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Belirti tek başına parça arızasını kanıtlamaz; teşhis ölçümle yapılır.",
+    "Motor/şanzıman kodu ve VIN olmadan model-özel uyumluluk iddiası kurulmaz.",
+    "Onarım maliyetleri henüz yayımlanmamıştır; doğrulanmamış TL fiyatı uydurulmamıştır."
+  ]
+}

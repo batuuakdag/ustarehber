@@ -1,0 +1,114 @@
+﻿Model,Kasa/Nesil,Başlangıç yılı,Bitiş yılı,Gövde,Motor ailesi adayları,Motor kodu,Şanzıman,Doğrulama
+B-Max,B-Max,2012,2017,MPV,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+B-Max,B-Max,2012,2017,MPV,1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+B-Max,B-Max,2012,2017,MPV,1.5/1.6 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+C-Max,Focus C-Max / C-Max I,2003,2010,MPV,1.6/1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+C-Max,Focus C-Max / C-Max I,2003,2010,MPV,1.6/2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+C-Max,C-Max II / Grand C-Max,2010,2019,MPV; 7 koltuklu Grand,1.0/1.6 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+C-Max,C-Max II / Grand C-Max,2010,2019,MPV; 7 koltuklu Grand,1.6/2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+C-Max,C-Max II / Grand C-Max,2010,2019,MPV; 7 koltuklu Grand,1.5 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta III (GFJ),1989,1996,Hatchback,1.0/1.1/1.3/1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta III (GFJ),1989,1996,Hatchback,1.8 D/TD dizel,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta IV (JAS/JBS),1995,2002,Hatchback,1.25/1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta IV (JAS/JBS),1995,2002,Hatchback,1.8 D/TD dizel,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta V (JH/JD),2002,2008,Hatchback; Sedan (pazara göre),1.25/1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta V (JH/JD),2002,2008,Hatchback; Sedan (pazara göre),1.4/1.6 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VI (JA8),2008,2017,Hatchback,1.25/1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VI (JA8),2008,2017,Hatchback,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VI (JA8),2008,2017,Hatchback,1.4/1.5/1.6 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VII (B479),2017,2023,Hatchback,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VII (B479),2017,2023,Hatchback,1.1 benzin,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VII (B479),2017,2023,Hatchback,1.5 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Fiesta,Fiesta VII (B479),2017,2023,Hatchback,1.0 EcoBoost mild-hybrid,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus I (C170),1998,2005,Hatchback; Sedan; Wagon,1.4/1.6/1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus I (C170),1998,2005,Hatchback; Sedan; Wagon,1.8 TDDi/TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus II (C307),2004,2011,Hatchback; Sedan; Wagon,1.4/1.6/1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus II (C307),2004,2011,Hatchback; Sedan; Wagon,1.6/2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus III (C346),2011,2018,Hatchback; Sedan; Wagon,1.0/1.5/1.6/2.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus III (C346),2011,2018,Hatchback; Sedan; Wagon,1.6/2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus IV (C519),2018,2025,Hatchback; Sedan; Wagon,1.0/1.5 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus IV (C519),2018,2025,Hatchback; Sedan; Wagon,1.5/2.0 EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+Focus,Focus IV (C519),2018,2025,Hatchback; Sedan; Wagon,1.0 EcoBoost mild-hybrid,,,candidate_needs_market_and_engine_code_verification
+Fusion,Fusion Avrupa (JU),2002,2012,Mini MPV,1.25/1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+Fusion,Fusion Avrupa (JU),2002,2012,Mini MPV,1.4/1.6 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Galaxy,Galaxy I (V191),1995,2006,MPV,2.0/2.3 benzin,,,candidate_needs_market_and_engine_code_verification
+Galaxy,Galaxy I (V191),1995,2006,MPV,1.9 TDI dizel,,,candidate_needs_market_and_engine_code_verification
+Galaxy,Galaxy II (WA6),2006,2015,MPV,2.0/2.3 benzin,,,candidate_needs_market_and_engine_code_verification
+Galaxy,Galaxy II (WA6),2006,2015,MPV,1.8/2.0/2.2 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Galaxy,Galaxy III (CD390),2015,2023,MPV,1.5/2.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Galaxy,Galaxy III (CD390),2015,2023,MPV,2.0 TDCi/EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga I (C394),2008,2012,SUV,2.5 Turbo benzin,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga I (C394),2008,2012,SUV,2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga II (C520),2012,2019,SUV,1.5/1.6 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga II (C520),2012,2019,SUV,2.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga II (C520),2012,2019,SUV,1.5/2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga III (CX…) ,2019,2026,SUV,1.5 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga III (CX…) ,2019,2026,SUV,1.5/2.0 EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+Kuga,Kuga III (CX…) ,2019,2026,SUV,2.5 Hybrid / Plug-in Hybrid,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo I (CDW27),1993,1996,Sedan; Hatchback; Wagon,1.6/1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo I (CDW27),1993,1996,Sedan; Hatchback; Wagon,1.8 TD dizel,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo II (CDW27 facelift),1996,2000,Sedan; Hatchback; Wagon,1.6/1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo II (CDW27 facelift),1996,2000,Sedan; Hatchback; Wagon,1.8 TD dizel,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo III (CD132),2000,2007,Sedan; Hatchback; Wagon,1.8/2.0/2.5/3.0 benzin,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo III (CD132),2000,2007,Sedan; Hatchback; Wagon,2.0/2.2 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo IV (CD345),2007,2014,Sedan; Hatchback; Wagon,1.6/2.0/2.3 benzin,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo IV (CD345),2007,2014,Sedan; Hatchback; Wagon,1.6/2.0/2.2 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo V (CD391),2014,2022,Sedan; Wagon,1.0/1.5/2.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo V (CD391),2014,2022,Sedan; Wagon,1.5/2.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Mondeo,Mondeo V (CD391),2014,2022,Sedan; Wagon,2.0 Hybrid benzin-elektrik,,,candidate_needs_market_and_engine_code_verification
+Puma,Puma I (sport coupe),1997,2002,Coupe,1.4/1.6 benzin,,,candidate_needs_market_and_engine_code_verification
+Puma,Puma II (crossover),2019,2026,SUV; Crossover,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Puma,Puma II (crossover),2019,2026,SUV; Crossover,1.0 EcoBoost mild-hybrid,,,candidate_needs_market_and_engine_code_verification
+Puma,Puma II (crossover),2019,2026,SUV; Crossover,1.5 EcoBoost ST benzin,,,candidate_needs_market_and_engine_code_verification
+S-Max,S-Max I (CD340),2006,2015,MPV,2.0/2.3 benzin,,,candidate_needs_market_and_engine_code_verification
+S-Max,S-Max I (CD340),2006,2015,MPV,1.8/2.0/2.2 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+S-Max,S-Max II (CD539),2015,2023,MPV,1.5/2.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+S-Max,S-Max II (CD539),2015,2023,MPV,2.0 TDCi/EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+S-Max,S-Max II (CD539),2015,2023,MPV,2.5 Hybrid,,,candidate_needs_market_and_engine_code_verification
+Tourneo Connect,Tourneo Connect I,2002,2013,MPV; Ticari türev,1.8 benzin,,,candidate_needs_market_and_engine_code_verification
+Tourneo Connect,Tourneo Connect I,2002,2013,MPV; Ticari türev,1.8 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Tourneo Connect,Tourneo Connect II,2013,2021,MPV; Ticari türev,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Tourneo Connect,Tourneo Connect II,2013,2021,MPV; Ticari türev,1.5/1.6 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Tourneo Connect,Tourneo Connect III,2022,2026,MPV,1.5 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Tourneo Connect,Tourneo Connect III,2022,2026,MPV,2.0 EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+Transit Connect,Transit Connect I,2002,2013,Hafif ticari,1.8 benzin,,,candidate_needs_market_and_engine_code_verification
+Transit Connect,Transit Connect I,2002,2013,Hafif ticari,1.8 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Transit Connect,Transit Connect II,2013,2021,Hafif ticari,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Transit Connect,Transit Connect II,2013,2021,Hafif ticari,1.5/1.6 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Transit Connect,Transit Connect III,2022,2026,Hafif ticari,1.5 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Transit Connect,Transit Connect III,2022,2026,Hafif ticari,2.0 EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+EcoSport,EcoSport I (B515),2013,2023,SUV,1.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+EcoSport,EcoSport I (B515),2013,2023,SUV,1.5 benzin,,,candidate_needs_market_and_engine_code_verification
+EcoSport,EcoSport I (B515),2013,2023,SUV,1.5 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+EcoSport,EcoSport I (B515),2013,2023,SUV,1.5 EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+Edge,Edge (CD539),2015,2020,SUV,2.0 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Edge,Edge (CD539),2015,2020,SUV,2.0/2.7 EcoBlue/TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Ka,Ka I (RB),1996,2008,Hatchback,1.3 benzin,,,candidate_needs_market_and_engine_code_verification
+Ka,Ka II (RU8),2008,2016,Hatchback,1.2 benzin,,,candidate_needs_market_and_engine_code_verification
+Ka,Ka II (RU8),2008,2016,Hatchback,1.3 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Ka+,Ka+ (Figo platform),2016,2020,Hatchback; Sedan (pazara göre),1.2/1.5 benzin,,,candidate_needs_market_and_engine_code_verification
+Ka+,Ka+ (Figo platform),2016,2020,Hatchback; Sedan (pazara göre),1.5 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Escort,Escort IV,1986,1990,Hatchback; Sedan; Wagon,1.3/1.4/1.6/1.8 benzin,,,candidate_needs_market_and_engine_code_verification
+Escort,Escort IV,1986,1990,Hatchback; Sedan; Wagon,1.6/1.8 D/TD dizel,,,candidate_needs_market_and_engine_code_verification
+Escort,Escort V/VI,1990,1998,Hatchback; Sedan; Wagon,1.3/1.4/1.6/1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+Escort,Escort V/VI,1990,1998,Hatchback; Sedan; Wagon,1.8 D/TD/TDi dizel,,,candidate_needs_market_and_engine_code_verification
+Escort,Escort VII,1995,2000,Hatchback; Sedan; Wagon,1.4/1.6/1.8 benzin,,,candidate_needs_market_and_engine_code_verification
+Escort,Escort VII,1995,2000,Hatchback; Sedan; Wagon,1.8 D/TDDi dizel,,,candidate_needs_market_and_engine_code_verification
+Ranger,Ranger (PJ/PK),2006,2011,Pickup,2.5/3.0 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Ranger,Ranger (T6),2011,2022,Pickup,2.2/3.2 TDCi dizel,,,candidate_needs_market_and_engine_code_verification
+Ranger,Ranger (T6),2011,2022,Pickup,2.5 benzin (pazara göre),,,candidate_needs_market_and_engine_code_verification
+Ranger,Ranger (P703),2022,2026,Pickup,2.0 EcoBlue dizel,,,candidate_needs_market_and_engine_code_verification
+Ranger,Ranger (P703),2022,2026,Pickup,3.0 V6 dizel/benzin (pazara göre),,,candidate_needs_market_and_engine_code_verification
+Mustang,Mustang I-VI (selected global generations),1964,2014,Coupe; Convertible,2.3/3.3/4.0/4.6/5.0/5.4/5.8 benzin; pazara göre,,,candidate_needs_market_and_engine_code_verification
+Mustang,Mustang S550,2015,2023,Coupe; Convertible,2.3 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Mustang,Mustang S550,2015,2023,Coupe; Convertible,5.0 V8 benzin,,,candidate_needs_market_and_engine_code_verification
+Mustang,Mustang S650,2024,2026,Coupe; Convertible,2.3 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Mustang,Mustang S650,2024,2026,Coupe; Convertible,5.0 V8 benzin,,,candidate_needs_market_and_engine_code_verification
+Bronco,Bronco (global; market availability varies),2021,2026,SUV,2.3 EcoBoost benzin,,,candidate_needs_market_and_engine_code_verification
+Bronco,Bronco (global; market availability varies),2021,2026,SUV,2.7/3.0 EcoBoost V6 benzin,,,candidate_needs_market_and_engine_code_verification
+Explorer,Explorer (global; generation/market variants),1991,2026,SUV,2.0/2.3/3.0/3.5/4.0/4.6 benzin; Hybrid/Plug-in pazara göre,,,candidate_needs_market_and_engine_code_verification
+Capri,Capri (classic),1968,1986,Coupe,1.3/1.6/2.0/2.3/2.8 benzin; pazara göre,,,candidate_needs_market_and_engine_code_verification
+Capri,Capri EV,2024,2026,Electric SUV Coupe,Elektrikli; batarya/motor varyantı pazara göre,,,candidate_needs_market_and_engine_code_verification
+P100,P100,1987,1993,Pickup,1.8/2.0 benzin,,,candidate_needs_market_and_engine_code_verification
+P100,P100,1987,1993,Pickup,1.8 dizel,,,candidate_needs_market_and_engine_code_verification
+Puma Gen-E,Puma Gen-E,2025,2026,Elektrikli Crossover,Tam elektrikli,,,candidate_needs_market_and_engine_code_verification

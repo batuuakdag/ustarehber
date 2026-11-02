@@ -1,0 +1,38 @@
+USTAREHBER V12 – ARAŞTIRMA PARTİSİ 2
+Tarih: 02.11.2026
+
+EKLENEN ARAÇ ZİNCİRLERİ
+1. Fiat Linea Type 323 – 1.3 Multijet 90 PS – 199A3000.
+2. Opel Astra J – 1.3 CDTI – A13DTE 95 PS ve Z13DTH 90 PS uygulamaları.
+3. Renault Megane III – 1.5 dCi 110 hp + 6 ileri EDC DC4 kuru kavrama (tek konfigürasyon).
+4. Mercedes-Benz C Serisi W204 – C 220 CDI OM651 2.1 dizel.
+5. Nissan Qashqai J10 – 1.5 dCi K9K 106/110 hp ailesi.
+
+YENİ MODELE ÖZEL ARIZA REHBERLERİ
+- Fiat Linea: 1.3 Multijet zincir/gergi, EGR, DPF ve yağ seyreltmesi kontrolleri.
+- Opel Astra J: 1.3 CDTI zincir, EGR, DPF ve yağ seyreltmesi kontrolleri.
+- Renault Megane III: EDC DC4 kuru kavrama/aktüatör ve K9K yakıt/enjektör/turbo yağlama kontrolleri.
+- Mercedes W204: OM651 erken üretim enjektör nesli ve zincir/gergi kontrolü.
+- Nissan Qashqai J10: erken K9K alt yatak/yağlama uyarısı ve DPF teşhisi.
+
+KAYNAK LİNKLERİ
+Fiat resmi eLum:
+https://aftersales.fiat.com/eLumData/EN/00/110_LINEA/00_110_LINEA_603.81.185_EN_02_04.07_L_LG/00_110_LINEA_603.81.185_EN_02_04.07_L_LG.pdf
+Opel Astra J motor kodları:
+https://golkentotomotiv.com.tr/modeller/opel-astra-j
+1.3 CDTI motor kodları:
+https://otorisk.com.tr/motor/1-3-cdti
+Megane III 1.5 dCi 110 EDC:
+https://otorisk.com.tr/renault/megane/3/1-5-dci-110-edc
+Mercedes W204 OM651:
+https://australiancar.reviews/recalls-faults-mercedes-benz-w204-c-class-sedan-2007-14/
+Nissan Qashqai J10 1.5 dCi K9K:
+https://vin-service-planner.com/en/nissan-qashqai-j10/1-5-dci-k9k/
+
+VERİ GÜVENİLİRLİĞİ VE SINIRLAR
+- Fiat Linea motor kodu Fiat resmi eLum dokümanından alınmıştır.
+- Opel kodları bağımsız uygulama/katalog kaynaklarıyla çapraz kontrol edilmiştir.
+- Megane EDC kaydı yalnızca belirtilen 110 hp EDC konfigürasyonuna aittir.
+- OM651 enjektör tipi üretim tarihine göre değişir; VIN ve servis kampanya geçmişi kontrol edilmelidir.
+- Qashqai erken K9K yatak riski bütün K9K motorlarına genellenmez.
+- Hiçbir arıza kaydı yalnız şikâyet veya OBD koduyla parça değişimi önermemektedir.

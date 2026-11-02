@@ -1,0 +1,447 @@
+{
+  "title": "UstaRehber Genel OBD-II DTC Başlangıç Kütüphanesi",
+  "version": "0.1",
+  "scope": "Genel güç aktarma OBD-II kodları; marka/model özel DTC kapsamı değildir.",
+  "source_note": "Kod tanım standardı SAE J2012 / ISO 15031-6 çerçevesindedir. Bu başlangıç kayıtlarının araç özelinde onarım prosedürü yerine geçmediği açıkça belirtilmelidir.",
+  "records": [
+    {
+      "code": "P0011",
+      "title": "A eksantrik mili konumu – zamanlama aşırı avans / sistem performansı (Bank 1)",
+      "system": "Motor / emisyon",
+      "meaning": "ECU, eksantrik mili zamanlamasının beklenen aralıkta olmadığını algılamış olabilir.",
+      "causes": [
+        "Yağ seviyesi/kalitesi veya yağ basıncı sorunu",
+        "Değişken supap zamanlama solenoidi/aktüatörü",
+        "Zamanlama zinciri/kayışı veya mekanik ayar",
+        "Eksantrik/krank sensörü ya da tesisatı"
+      ],
+      "checks": [
+        "Motor yağı seviyesi ve doğru spesifikasyonu kontrol et",
+        "Canlı eksantrik hedef/gerçek açı verisini incele",
+        "Solenoid, yağ kanalları ve sensör tesisatını test et",
+        "Mekanik zamanlamayı üretici kilitleme prosedürüyle doğrula"
+      ],
+      "warning": "P0011 doğrudan zincir değişimi demek değildir; önce yağ basıncı ve VVT kontrolü yapılmalıdır.",
+      "status": "Genel OBD-II açıklaması; araç özelinde servis prosedürü ve ECU kodu gerekir."
+    },
+    {
+      "code": "P0012",
+      "title": "A eksantrik mili konumu – zamanlama aşırı rötar (Bank 1)",
+      "system": "Motor / emisyon",
+      "meaning": "ECU, eksantrik mili zamanlamasının beklenenden fazla geciktiğini algılamış olabilir.",
+      "causes": [
+        "Yağ basıncı/yağ kanalı sorunu",
+        "VVT solenoidi veya aktüatörü",
+        "Zamanlama zinciri/kayışı ve gergi",
+        "Sensör/tesisat arızası"
+      ],
+      "checks": [
+        "Yağ seviyesi, viskozite ve basıncı kontrol et",
+        "Eksantrik hedef/gerçek açılarını karşılaştır",
+        "VVT valfi ve yağ kanallarını test et",
+        "Mekanik zamanlamayı doğrula"
+      ],
+      "warning": "Kod tek başına zincir veya solenoid arızasını kanıtlamaz.",
+      "status": "Genel OBD-II açıklaması; araç özelinde servis prosedürü ve ECU kodu gerekir."
+    },
+    {
+      "code": "P0087",
+      "title": "Yakıt rayı / sistem basıncı çok düşük",
+      "system": "Yakıt beslemesi",
+      "meaning": "ECU, yakıt rayı veya sistem basıncının istenen değerin altında kaldığını algılar.",
+      "causes": [
+        "Yakıt filtresi tıkanıklığı veya besleme kısıtlaması",
+        "Düşük basınç pompası veya yüksek basınç pompası sorunu",
+        "Basınç regülatörü / kontrol valfi",
+        "Basınç sensörü veya kablo sorunu",
+        "Enjektör geri dönüş / kaçak problemi"
+      ],
+      "checks": [
+        "İstenen ve gerçek yakıt basıncını marş/rölanti/yük koşullarında karşılaştır",
+        "Filtre ve düşük basınç beslemesini kontrol et",
+        "Basınç kontrol valfi ve sensör sinyalini incele",
+        "Dizel common-rail yüksek basınç sistemine müdahaleyi eğitimli personele bırak"
+      ],
+      "warning": "Common-rail yüksek basınç hattını motor çalışırken gevşetme veya elle kaçak arama.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0101",
+      "title": "Kütle veya hacimsel hava akışı (MAF) aralık / performans",
+      "system": "Hava ölçümü",
+      "meaning": "ECU, ölçülen hava akışının beklenen değer aralığı veya çalışma davranışıyla uyuşmadığını algılar.",
+      "causes": [
+        "MAF sensörü kirlenmesi veya arızası",
+        "Hava filtresi kutusu ve emiş hattında kaçak / tıkanıklık",
+        "MAF sonrası emme hattında kaçak",
+        "Kablo, soket, besleme veya şase sorunu"
+      ],
+      "checks": [
+        "Kodun oluştuğu koşulları ve donmuş kare verisini kaydet",
+        "MAF canlı verisini motor yükü ve devirle birlikte üretici referansına göre incele",
+        "Emiş hattı, filtre ve sensör bağlantılarını kontrol et",
+        "Elektrik ölçümlerini araç şemasına göre yap"
+      ],
+      "warning": "MAF sensörünü doğrudan değiştirmek doğru teşhis değildir.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0113",
+      "title": "Emme havası sıcaklık sensörü devresi yüksek giriş",
+      "system": "Hava ölçümü",
+      "meaning": "ECU, emme havası sıcaklık sensörü devresinde yüksek sinyal algılar; birçok sistemde açık devre veya bağlantı problemiyle ilişkili olabilir.",
+      "causes": [
+        "Soket çıkması veya temassızlık",
+        "Kablo kopukluğu / açık devre",
+        "Sensör arızası",
+        "Referans veya şase devresi sorunu"
+      ],
+      "checks": [
+        "Canlı veride emme havası sıcaklığını ortam ve motor koşullarıyla karşılaştır",
+        "Soket ve kabloyu gözle kontrol et",
+        "Üretici elektrik şemasına göre besleme/sinyal/şase ölçümü yap"
+      ],
+      "warning": "Sensör tipi ve devre mantığı modele göre değişir.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0128",
+      "title": "Soğutma suyu termostatı - regülasyon sıcaklığının altında",
+      "system": "Soğutma",
+      "meaning": "Motor soğutma sıvısı beklenen sürede veya koşulda hedef çalışma sıcaklığına ulaşmamış olabilir.",
+      "causes": [
+        "Termostat açık kalması veya yanlış termostat",
+        "Soğutma suyu sıcaklık sensörü / kablo sorunu",
+        "Soğutma sistemi dolum veya hava alma problemi",
+        "Araç kullanım koşulları ve ortam sıcaklığı"
+      ],
+      "checks": [
+        "Motor tamamen soğukken ECT ve ortam sıcaklığı verilerini karşılaştır",
+        "Isınma sırasında sıcaklık değişimini canlı veriden izle",
+        "Termostat açılma davranışını üretici prosedürüyle kontrol et",
+        "Soğutma sıvısı seviyesi ve kaçakları soğuk motorda incele"
+      ],
+      "warning": "Sıcak genleşme kabı kapağını açma; hararet varsa aracı kullanma.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0135",
+      "title": "Oksijen sensörü ısıtıcı devresi arızası (Bank 1 Sensor 1)",
+      "system": "Egzoz / emisyon",
+      "meaning": "Ön oksijen sensörünün ısıtıcı devresinde elektriksel performans sorunu algılanmış olabilir.",
+      "causes": [
+        "Sensör ısıtıcı elemanı arızası",
+        "Sigorta / besleme veya şase sorunu",
+        "Soket ve kablo tesisatı hasarı",
+        "ECU kontrol devresi sorunu"
+      ],
+      "checks": [
+        "Bank ve sensör konumunu motor şemasından doğrula",
+        "Sigorta ve besleme devresini kontrol et",
+        "Sensör ısıtıcı direnci ve akımını üretici değerleriyle karşılaştır",
+        "Kablo/soket ve ECU kontrolünü değerlendir"
+      ],
+      "warning": "Sensör konumu ve devre yapısı modele göre farklı olabilir.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0171",
+      "title": "Sistem çok fakir (Bank 1)",
+      "system": "Yakıt / hava karışımı",
+      "meaning": "ECU, Bank 1 için karışım düzeltmesinin fakir karışım yönünde sınırı aştığını algılar.",
+      "causes": [
+        "Emme manifoldu veya vakum hattında kaçak",
+        "MAF ölçüm hatası",
+        "Yakıt basıncı / debisi yetersizliği",
+        "Enjektör akış problemi veya egzoz öncesi kaçak",
+        "PCV sistemi kaçağı"
+      ],
+      "checks": [
+        "STFT/LTFT değerlerini rölanti ve yükseltilmiş devirde karşılaştır",
+        "Duman testiyle emme kaçağını araştır",
+        "Yakıt basıncını motorun üretici değerleriyle karşılaştır",
+        "MAF verisi ve egzoz öncesi kaçak ihtimalini incele"
+      ],
+      "warning": "Fakir karışımın nedeni sensör olmak zorunda değildir.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0172",
+      "title": "Sistem çok zengin (Bank 1)",
+      "system": "Yakıt / hava karışımı",
+      "meaning": "ECU, Bank 1 karışımını düzeltmek için yakıtı azaltma yönünde sınır düzeltmesi yapıyor olabilir.",
+      "causes": [
+        "Enjektör sızıntısı veya fazla yakıt",
+        "Yakıt basıncı regülasyon sorunu",
+        "MAF / MAP ölçüm hatası",
+        "EVAP purge valfinin açık kalması",
+        "Motor sıcaklık verisinin hatalı olması"
+      ],
+      "checks": [
+        "Yakıt düzeltmelerini ve donmuş kareyi oku",
+        "Yakıt basıncını ve basınç tutma davranışını ölç",
+        "Enjektör kaçak / denge testini uygun cihazla yap",
+        "ECT, MAF ve purge komutunu canlı veride incele"
+      ],
+      "warning": "Katalizör ve motor hasarı riski açısından uzun süre ihmal edilmemeli.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0201",
+      "title": "Enjektör 1 kontrol devresi arızası",
+      "system": "Yakıt enjeksiyonu",
+      "meaning": "ECU, 1 numaralı silindirin enjektör kontrol devresinde elektriksel anormallik algılar.",
+      "causes": [
+        "Enjektör soketi veya kablo tesisatı sorunu",
+        "Enjektör bobini / aktüatör arızası",
+        "ECU sürücü devresi sorunu",
+        "Ortak besleme veya şase problemi"
+      ],
+      "checks": [
+        "Silindir numaralandırmasını üretici dokümanından doğrula",
+        "Soket, pin ve kablo sürekliliğini kontrol et",
+        "Enjektör elektriksel testini üretici prosedürüne göre uygula",
+        "ECU sürücü kontrolünü uzman ekipmanla yap"
+      ],
+      "warning": "Silindir numarası ve test yöntemi motor tasarımına göre doğrulanmalıdır.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0299",
+      "title": "Turbo / süperşarj basıncı düşük",
+      "system": "Turbo / hava besleme",
+      "meaning": "ECU, istenen basınç ile ölçülen şarj havası basıncı arasında beklenenden büyük fark algılar.",
+      "causes": [
+        "Basınç hortumu veya intercooler kaçağı",
+        "Vakum hattı / turbo aktüatör problemi",
+        "Wastegate veya değişken geometrili turbo kontrolü",
+        "MAP sensörü veya tesisat sorunu",
+        "Egzoz kısıtlaması veya turbo mekanik sorunu"
+      ],
+      "checks": [
+        "Hedef ve gerçek turbo basıncını yük altında kaydet",
+        "Basınç hattı ve intercooler için kaçak testi yap",
+        "Vakum/aktüatör hareketini üretici prosedürüyle kontrol et",
+        "MAP sensörü ve egzoz kısıtlaması ihtimalini değerlendir"
+      ],
+      "warning": "Kod doğrudan turbo değişimi anlamına gelmez.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0300",
+      "title": "Rastgele / birden fazla silindirde tekleme algılandı",
+      "system": "Yanma / ateşleme",
+      "meaning": "ECU, tekleme izleme sistemiyle birden fazla silindirde veya belirli olmayan silindirlerde yanma düzensizliği algılar.",
+      "causes": [
+        "Ateşleme sistemi (buji, bobin, kablo)",
+        "Yakıt basıncı veya enjektör sorunu",
+        "Emme kaçağı",
+        "Kompresyon / mekanik zamanlama sorunu",
+        "Sensör veya yakıt kalitesi kaynaklı koşullar"
+      ],
+      "checks": [
+        "P0301-P030x eşlik eden kodlarını ve donmuş kareyi incele",
+        "Tekleme sayaçlarını silindir bazında izle",
+        "Ateşleme, yakıt ve emme kontrollerini motor tipine göre yap",
+        "Gerekirse kompresyon ve kaçak testine geç"
+      ],
+      "warning": "Şiddetli tekleme ve yanıp sönen motor lambasında katalizör hasarı riski nedeniyle sürüşü durdur.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0301",
+      "title": "1. silindirde tekleme algılandı",
+      "system": "Yanma / ateşleme",
+      "meaning": "ECU, 1 numaralı silindirde yanma düzensizliği algılar.",
+      "causes": [
+        "Buji / bobin veya ateşleme devresi (benzinli motorlarda)",
+        "Enjektör veya yakıt beslemesi",
+        "Emme kaçağı",
+        "Kompresyon veya supap problemi"
+      ],
+      "checks": [
+        "Silindir numarasını üretici şemasından doğrula",
+        "Tekleme sayacı ve eşlik eden kodları kontrol et",
+        "Ateşleme ve enjektör testlerini uygun prosedürle yap",
+        "Gerekirse kompresyon / silindir kaçak testi uygula"
+      ],
+      "warning": "Dizel ve benzinli motorlarda teşhis yaklaşımı farklıdır.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0400",
+      "title": "Egzoz gazı devridaim (EGR) akış sistemi arızası",
+      "system": "Motor / emisyon",
+      "meaning": "ECU, EGR akış kontrol sisteminde beklenen davranıştan sapma algılamış olabilir.",
+      "causes": [
+        "EGR valfi veya kanallarında kurum",
+        "Vakum/elektrik kontrol devresi sorunu",
+        "MAF/MAP ölçüm hatası",
+        "EGR soğutucu veya bağlantı kaçağı"
+      ],
+      "checks": [
+        "EGR komut ve geri bildirimini canlı veride karşılaştır",
+        "Valf, kanal ve soğutucuyu incele",
+        "Vakum/elektrik devresini üretici şemasına göre test et"
+      ],
+      "warning": "Kodun alt tipi ve arıza tanımı üreticiye göre değişebilir.",
+      "status": "Genel OBD-II açıklaması; araç özelinde servis prosedürü ve ECU kodu gerekir."
+    },
+    {
+      "code": "P0401",
+      "title": "EGR akışı yetersiz algılandı",
+      "system": "EGR / emisyon",
+      "meaning": "ECU, EGR komutu verildiğinde beklenen egzoz gazı devridaim akışını doğrulayamamış olabilir.",
+      "causes": [
+        "EGR valfinde kurum birikimi veya mekanik sıkışma",
+        "EGR kanallarında tıkanma",
+        "EGR konum / basınç geri bildirim sorunu",
+        "Vakum veya elektrik kontrol devresi sorunu"
+      ],
+      "checks": [
+        "EGR komutu ve geri bildirimini canlı veride karşılaştır",
+        "Valf ve kanalları üretici sökme/temizlik prosedürüyle incele",
+        "İlgili basınç/akış sensörlerini ve tesisatı kontrol et"
+      ],
+      "warning": "EGR iptali veya yazılımla devre dışı bırakma onarım olarak önerilmez.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0420",
+      "title": "Katalizör sistem verimi eşik altında (Bank 1)",
+      "system": "Egzoz / emisyon",
+      "meaning": "ECU, katalizör izleme koşullarında sistem veriminin kalibrasyon eşiğinin altında olduğunu değerlendirmiş olabilir.",
+      "causes": [
+        "Katalizör yaşlanması veya hasarı",
+        "Egzoz hattında kaçak",
+        "Ön/arka oksijen sensörü veya tesisat sorunu",
+        "Motor teklemesi veya karışım problemi nedeniyle katalizör etkilenmesi"
+      ],
+      "checks": [
+        "Önce tekleme ve karışım kodlarını çöz",
+        "Egzoz hattında sensör öncesi kaçak kontrolü yap",
+        "Oksijen sensörü dalga biçimi ve monitör verisini uygun cihazla incele",
+        "Katalizör verimini üretici test koşulunda doğrula"
+      ],
+      "warning": "Katalizörü veya lambda sensörünü yalnızca bu koda bakarak değiştirme.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0442",
+      "title": "EVAP sisteminde küçük kaçak algılandı",
+      "system": "Yakıt buharı / EVAP",
+      "meaning": "Yakıt buharı kontrol sisteminde küçük kaçak veya sızdırmazlık kaybı algılanmış olabilir.",
+      "causes": [
+        "Yakıt depo kapağı veya contası (kapaklı sistemlerde)",
+        "EVAP hortum / bağlantı kaçağı",
+        "Purge veya vent valfi sızdırması",
+        "Depo veya bağlantı elemanlarında kaçak"
+      ],
+      "checks": [
+        "Depo kapağı ve conta durumunu kontrol et",
+        "EVAP hortum ve bağlantılarını incele",
+        "Üretici prosedürüne uygun düşük basınçlı duman testi uygula",
+        "Purge/vent valflerinin sızdırmazlığını test et"
+      ],
+      "warning": "Yakıt buharı ve yangın güvenliği kurallarına uy; açık alev kullanma.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0455",
+      "title": "EVAP sisteminde büyük kaçak algılandı",
+      "system": "Yakıt buharı / EVAP",
+      "meaning": "Yakıt buharı kontrol sisteminde büyük kaçak veya sistemin basınç/vakum tutamaması algılanmış olabilir.",
+      "causes": [
+        "Depo kapağının açık/gevşek olması (kapaklı sistemlerde)",
+        "EVAP hortumunun çıkması veya kopması",
+        "Purge/vent valfi arızası",
+        "Depo veya dolum boynu bağlantı kaçağı"
+      ],
+      "checks": [
+        "Depo kapağı ve dolum ağzı çevresini kontrol et",
+        "Hortum ve valf bağlantılarını incele",
+        "EVAP sistemini üretici test prosedürüyle sızdırmazlık testine al"
+      ],
+      "warning": "Koku veya yakıt sızıntısı varsa aracı güvenli yerde durdur ve servis desteği al.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0500",
+      "title": "Araç hız sensörü devresi",
+      "system": "Hız / aktarma",
+      "meaning": "ECU, araç hız sinyalinin beklenen şekilde gelmediğini veya geçersiz olduğunu algılamış olabilir.",
+      "causes": [
+        "Araç hız sensörü veya tekerlek hız sensörü (sistem tasarımına göre)",
+        "Kablo / soket / besleme sorunu",
+        "ABS modülü veya CAN haberleşmesi",
+        "Dişli / manyetik enkoder hasarı"
+      ],
+      "checks": [
+        "Hangi modülün P0500 kaydettiğini ve eşlik eden ABS kodlarını oku",
+        "Canlı araç hızı ve tekerlek hızlarını karşılaştır",
+        "Sensör tipi ve kablo şemasını araç dokümanından doğrula"
+      ],
+      "warning": "P0500'ün kaynak sinyali araç mimarisine göre değişebilir.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P0700",
+      "title": "Şanzıman kontrol sistemi arıza bildirimi",
+      "system": "Şanzıman / aktarma",
+      "meaning": "Motor kontrol modülü, şanzıman kontrol sisteminde arıza bildirimi almış olabilir. Bu kod çoğu uygulamada ayrıntılı arıza kodunun yerine geçmez.",
+      "causes": [
+        "Şanzıman kontrol modülünde kayıtlı başka DTC",
+        "Kablo / haberleşme veya besleme sorunu",
+        "Şanzıman sensörü, valf gövdesi veya kontrol sistemi sorunu"
+      ],
+      "checks": [
+        "Motor ECU yanında TCM/şanzıman modülünü de tarat",
+        "TCM içindeki üreticiye özgü kodları ve donmuş kareyi kaydet",
+        "Yağ seviyesi/şartnamesi ve mekanik kontrolleri araç prosedürüne göre yap"
+      ],
+      "warning": "P0700 tek başına hangi şanzıman parçasının arızalı olduğunu söylemez.",
+      "status": "Genel OBD-II açıklaması; araç özelinde prosedür doğrulanmalı."
+    },
+    {
+      "code": "P2002",
+      "title": "Dizel partikül filtresi verimi eşik altında",
+      "system": "Egzoz / DPF",
+      "meaning": "ECU, DPF sisteminin izleme koşullarında beklenen filtreleme/verim performansını karşılamadığını değerlendirmiş olabilir.",
+      "causes": [
+        "DPF kurum veya kül yükü",
+        "Diferansiyel basınç sensörü ya da hortumlarında sorun",
+        "Egzoz sıcaklık sensörü arızası",
+        "Rejenerasyonun tamamlanmasını engelleyen EGR/termostat/yakıt sistemi sorunu",
+        "Egzoz hattında kaçak veya filtre hasarı"
+      ],
+      "checks": [
+        "ECU donmuş kare verisini ve üreticiye özel DTC'leri kaydet",
+        "DPF diferansiyel basıncı ve hesaplanan kurum/kül yükünü üretici prosedürüyle ölç",
+        "Sensör hortumları ve egzoz sıcaklık sensörlerini kontrol et",
+        "Rejenerasyonu engelleyen kök nedenleri araştır; filtreyi ancak ölçümle değerlendir"
+      ],
+      "warning": "P2002 tek başına DPF'nin tıkalı veya değişmesi gerektiğini kanıtlamaz. Bazı araçlarda izleme mantığı farklıdır.",
+      "status": "Genel OBD-II açıklaması; üretici servis prosedürü ve araç özelindeki eşik değerleri gerekir."
+    },
+    {
+      "code": "P2463",
+      "title": "Dizel partikül filtresi – kurum birikimi",
+      "system": "Motor / emisyon",
+      "meaning": "ECU, DPF içinde hesaplanan kurum yükünün eşik üzerinde olduğunu algılamış olabilir.",
+      "causes": [
+        "DPF rejenerasyonunun tamamlanamaması",
+        "Diferansiyel basınç sensörü/hortum sorunu",
+        "EGR, termostat veya egzoz sıcaklık sensörü arızası",
+        "Yoğun kısa mesafe kullanımı"
+      ],
+      "checks": [
+        "Üretici uyumlu cihazla kurum/kül yükünü ve diferansiyel basıncı oku",
+        "Sensör hortumlarını ve egzoz sıcaklık sensörlerini kontrol et",
+        "Rejenerasyonu engelleyen kök nedenleri gider",
+        "Rejenerasyon/temizlik kararını üretici limitlerine göre ver"
+      ],
+      "warning": "P2463 tek başına zorunlu rejenerasyon yapılacağı veya DPF'nin değişeceği anlamına gelmez.",
+      "status": "Genel OBD-II açıklaması; araç özelinde servis prosedürü ve ECU kodu gerekir."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+USTAREHBER V8 — FORD MODEL NESİLLERİ VE MOTOR ADAYLARI
+Tarih: 02.11.2026
+Ford model sayısı: 24
+Nesil/kasa kaydı: 54
+Motor ailesi aday grubu: 113
+
+Bu sürüm Ford'un binek, SUV/crossover, MPV, pickup ve bazı global model aileleri için
+nesil/yıl ve motor ailesi başlangıç kataloğu ekler. Global/Avrupa motor ailesi,
+Türkiye'de satılmış kesin motor seçeneği anlamına gelmez.
+
+Araç seçicide artık Ford modellerinin tanımlanmış nesil/yıl aralıklarından yıl listesi
+oluşturulur. Yıla göre motor aileleri aday olarak gösterilir. Kod ve şanzıman alanları
+bilinmiyorsa boş bırakılır; motor kodu veya güç uydurulmaz.
+
+Kontrol edilen kaynaklar:
+- Ford resmi UK Owner Manuals sitemap: https://www.ford.co.uk/support/owner-manuals/owner-manuals-sitemap
+- Teknorot 2019 katalog: https://www.teknorot.com/wp-content/uploads/2020/01/2019_teknorot_catalog_part2.pdf
+- Ford Focus nesil/motor alt model kaynağı: https://www.ovb.com.tr/ford-focus-model-alt-modelleri
+- Türkiye Ford binek kasa listesi: https://www.fordparcacim.com/kategori/ford?tp=60
+- Araç uyumluluk PDF: https://casual.com.tr/Data/EditorFiles/15-36_Arac%20Uyumluluk_Kilavuzu.pdf
+
+SINIRLAR
+- Motor grupları adaydır; her yıl/ülke/trim için kesin uygunluk teyidi değildir.
+- Motor kodları, güç, tork, yağ standardı/kapasitesi, bakım aralıkları ve şanzıman eşleşmeleri
+  ayrı teknik araştırma gerektirir.
+- Türkiye pazarı için kesinleştirme VIN/şasi, Ford servis dokümanı ve pazar broşürü ile yapılmalıdır.

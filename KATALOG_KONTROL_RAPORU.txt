@@ -1,0 +1,33 @@
+USTAREHBER V5 DOSYA KONTROLÜ VE V6 KATALOG GÜNCELLEMESİ
+Tarih: 02.11.2026
+
+DOSYA DENETİMİ
+- vehicles.json geçerli JSON olarak açıldı.
+- Marka ve model sayaçları gerçek kayıtlarla karşılaştırıldı.
+- Yinelenen marka kayıtları kontrol edildi.
+- CSV satır sayısı JSON kayıt sayısıyla yeniden eşitlendi.
+- Dosya yapısı incelendi.
+
+ÖNEMLİ UYGULAMA BULGUSU
+Mevcut app.js içinde vehicles.json dosyasına bir yükleme/okuma bağlantısı bulunmuyor.
+Dolayısıyla katalog dosyası projede mevcut olsa da web sayfasındaki araç seçiciyi
+şu anda otomatik olarak beslemiyor. Sonraki geliştirme adımında JSON fetch veya
+uygun bir veri modülü ile seçiciye bağlanması gerekiyor.
+
+V6 KAPSAM GÜNCELLEMESİ
+- Önceki katalog: 45 marka / 340 model adı.
+- Yeni katalog: 59 marka / 417 model adı.
+- Eklenen marka: 14 — Alpine, Aston Martin, Bentley, Chevrolet, Daewoo, Ferrari, Hongqi, Infiniti, Lada, Lamborghini, Omoda, Saab, Smart, Tata
+- Eklenen model adı: 78
+- Omoda, Chery altındaki mükerrer model girişi olmaması için ayrı marka olarak düzenlendi.
+- CSV, JSON ana verisinden yeniden üretildi.
+
+DOĞRULAMA DURUMU
+Yeni eklenen modeller "candidate_model_needs_market_and_generation_check" olarak işaretlendi.
+Bunlar model ana indeksine aday kayıt olarak eklenmiştir; Türkiye'deki resmî satış yılı,
+kasa kodu, motor kodu ve şanzıman doğrulaması tamamlanmış değildir.
+
+KAYNAK SINIRI
+ODMD marka satış verileri marka kapsamı için yararlıdır; tüm model/kasa/motor
+varyantlarının eksiksiz teknik kaynağı değildir. Resmî üretici dokümanları ve
+güvenilir teknik kataloglar üzerinden varyant bazında araştırma gereklidir.

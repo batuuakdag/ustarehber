@@ -1,0 +1,33 @@
+USTAREHBER V11 – ARAÇ/MOTOR ZİNCİRİ
+Tarih: 02.11.2026
+
+YENİ VERİ DOSYASI
+data/vehicle-engine-chains.json
+
+İLK PARTİ
+1) Ford Focus Mk2 1.6 TDCi 109 PS – DV6TED4 – G8DA/G8DB aday kodları.
+2) Renault Clio IV 1.5 dCi – K9K 608/612/628/646 katalog uygulamaları.
+3) Fiat Egea 1.3 Multijet II 95 PS – 199B1.000 / 55266963 sürüm referansları.
+4) Toyota Corolla E170 1.4 D-4D – 1ND-TV.
+5) Volkswagen Golf VII 1.6 TDI – CLHB/CRKA/CLHA/CRKB/CXXB/DDYA/DDYB gibi üretim ve güç sürümüne bağlı kodlar.
+
+ÖNEMLİ
+- Bunlar ilk kaynaklı örnek uygulamalardır; Türkiye'deki her model yılının tüm motor seçeneklerini temsil etmez.
+- Motor kodu listeleri kesin VIN eşlemesi değildir. Aynı motor hacmi/güç farklı kod ve emisyon donanımıyla bulunabilir.
+- Motor kodu ruhsat, motor etiketi, üretici katalogları veya VIN üzerinden kesinleştirilmelidir.
+- Modele özel arıza kartları ayrı kaynak kayıtlarıyla bağlıdır; kodlar teşhis ipucu olup tek başına parça değişim gerekçesi değildir.
+
+KAYNAK REFERANSLARI
+Renault resmi kullanım kılavuzu (Clio IV K9K motor ailesi):
+https://www.user-manual.renault.com/tr/content/x98/section-6-technical-specifications/motor-ozellikleri-12
+Clio IV motor kodu uygulama kataloğu:
+https://www.etpeurope.eu/index.php?Itemid=206&codart=EE9099&lang=en&option=com_catalogo&view=catalogo
+Fiat Egea 1.3 Multijet II teknik kod verisi:
+https://www.ovb.com.tr/fiat-egea-356-13-multijet-ii-95hp-ait-arac-detayi
+Toyota Corolla E170 1.4 D-4D 1ND-TV:
+https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf
+VW Golf VII 1.6 TDI motor kodu uygulama:
+https://www.continental-industry.com/getmedia/f9f4795f-11e7-4c54-a170-75634f11afd0/ptg1013-deenesfritru-applicationguide.pdf
+Ford Focus Mk2 1.6 TDCi uygulama ve arıza kaydı:
+https://ustamvar.com.tr/arac/ford-focus-1-6-tdci-109-manuel-mk2-2005-2011
+https://yildirimpompa.com/pdf/e-katalog.pdf

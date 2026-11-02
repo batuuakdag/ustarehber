@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#082b43">
+  <meta name="description" content="UstaRehber: otomobil bakım, arıza teşhisi ve teknik bilgi rehberi. Araç seç, güvenilir teknik bilgiye ulaş.">
+  <title>UstaRehber | Otomobil Bakım ve Teknik Rehber</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar wrap">
+    <a class="brand" href="#" aria-label="UstaRehber ana sayfa">
+      <span class="brand-mark"><svg viewBox="0 0 220 70" role="img" aria-label="Otomobil çizgisi"><path d="M14 47 L31 31 Q43 18 67 17 L139 17 Q157 18 174 31 L202 43 Q210 48 205 53 L194 53 Q188 42 175 42 Q161 42 155 54 L69 54 Q63 42 49 42 Q35 42 29 54 L16 54 Q8 53 14 47Z"/><path d="M59 19 L76 5 Q84 0 99 1 L140 4 Q153 6 166 20"/></svg></span>
+      <span class="brand-name"><span>Usta</span><b>Rehber</b><small>OTOMOBİL BAKIM, ONARIM VE TEKNİK REHBER</small></span>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <span aria-hidden="true">⌕</span><input id="globalSearch" type="search" placeholder="Arıza, bakım veya parça ara..." aria-label="Sitede ara"><button aria-label="Ara">Ara</button>
+    </form>
+    <button class="icon-btn" aria-label="Bildirimler" title="Bildirimler">♧</button>
+    <a class="login" href="#uyelik"><span class="user-icon">♙</span><span><b>Giriş Yap</b><small>veya Üye Ol</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç">☰</button>
+  </div>
+  <nav class="nav" id="mainNav">
+    <div class="wrap nav-inner">
+      <a class="active" href="#">⌂ <span>Ana Sayfa</span></a>
+      <a href="#arac-sec">▱ <span>Araç Rehberleri</span><i>⌄</i></a>
+      <a href="#bakim">⚒ <span>Bakım Rehberleri</span><i>⌄</i></a>
+      <a href="#tamirat">🔧 <span>Tamirat Rehberleri</span><i>⌄</i></a>
+      <a href="#ariza">⚠ <span>Arıza Kütüphanesi</span><i>⌄</i></a>
+      <a href="#system-faults">⚙ <span>Sistem Arıza Rehberi</span></a>
+      <a href="#model-faults">⚙ <span>Modele Özel Arızalar</span></a>
+      <a href="#sik-ariza-veren-araclar">⚠ <span>Sık Arıza Verenler</span></a>
+      <a href="#teknik">▤ <span>Teknik Bilgiler</span><i>⌄</i></a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="wrap hero-content">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> BİLGİYLE GÜVEN, BAKIMLA GÜÇ</div>
+        <h1>Aracını tanı.<br>Doğru bilgiyle bakımını planla.</h1>
+        <p>Araç modeline özel bakım, arıza belirtileri ve teknik rehberlerle ihtiyacın olan bilgiye daha kolay ulaş.</p>
+        <a class="primary-btn" href="#arac-sec">♧ &nbsp; Aracımı Seç <span>›</span></a>
+      </div>
+      <div class="hero-note"><span class="shield">✓</span><span><b>Kaynak odaklı bilgi</b><small>Belgesi olmayan teknik değer, kesin bilgi olarak sunulmaz.</small></span></div>
+    </div>
+  </section>
+
+  <section class="wrap vehicle-panel" id="arac-sec">
+    <div class="vehicle-intro"><div class="vehicle-icon">▱</div><div><b>Araç Rehberine<br>Hızlı Erişim</b><small>Aracını seç, rehberini bul</small></div></div>
+    <div class="field"><label for="make">Marka</label><select id="make"><option value="">Marka seçin</option></select></div>
+    <div class="field"><label for="model">Model</label><select id="model" disabled><option value="">Önce marka seçin</option></select></div>
+    <div class="field"><label for="year">Model yılı</label><select id="year" disabled><option value="">Önce model seçin</option></select></div>
+    <div class="field"><label for="engine">Motor seçimi</label><select id="engine" disabled><option value="">Önce yıl seçin</option></select></div>
+    <div class="field"><label for="engineCode">Motor kodu (varsa)</label><input id="engineCode" placeholder="Örn. DV4TD" autocomplete="off"></div>
+    <button class="dark-btn" id="vehicleSubmit">Aracıma Özel Rehber <span>›</span></button>
+    <p class="vehicle-feedback" id="vehicleFeedback" aria-live="polite"></p>
+  </section>
+
+  <section class="wrap vehicle-profile" id="vehicleProfile" hidden>
+    <div class="profile-top"><div><span class="profile-kicker">SEÇİLİ ARAÇ</span><h2 id="profileTitle">Araç rehberi</h2><p id="profileSubtitle">Araç bilgileri</p></div><span class="profile-tag">Araç profili</span></div>
+    <div class="profile-tabs"><a href="#profileMaintenance">Bakım</a><a href="#profileRepair">Tamirat</a><a href="#profileFaults">Arıza belirtileri</a><a href="#profileTechnical">Teknik bilgi</a></div>
+    <div class="profile-columns">
+      <div id="profileMaintenance"><b>Bakım kütüphanesi</b><p>Üretici bakım takvimi, sıvılar ve filtreler. Yalnızca araç/motor uyumu doğrulanmış içerikler yayımlanır.</p></div>
+      <div id="profileRepair"><b>Tamir kütüphanesi</b><p>Motor, şanzıman, fren, elektrik, soğutma ve yakıt sistemleri için ayrı rehberler.</p></div>
+      <div id="profileFaults"><b>Arıza ve teşhis</b><p>Belirti, olası neden, kontrol yöntemi ve servis gerektiren durumlar.</p></div>
+      <div id="profileTechnical"><b>Teknik veriler</b><p>Yağ standardı, kapasite, tork ve parça uyumu; belge bulunmadan kesin değer gösterilmez.</p></div>
+    </div>
+    <p class="profile-warning">Araç kataloğu marka ve model ana indeksini içerir. Kasa, yıl, motor ve teknik veriler kaynaklarla doğrulanmadan kesin bilgi olarak sunulmaz.</p>
+  </section>
+
+  <section class="wrap category-grid" id="bakim">
+    <a class="category" href="#rehberler"><span>◉</span><b>Motor Yağı &<br>Filtre</b></a>
+    <a class="category" href="#rehberler"><span>▥</span><b>Hava<br>Filtresi</b></a>
+    <a class="category" href="#rehberler"><span>▤</span><b>Polen<br>Filtresi</b></a>
+    <a class="category" href="#rehberler"><span>◎</span><b>Fren<br>Sistemi</b></a>
+    <a class="category" href="#rehberler"><span>▣</span><b>Akü &<br>Elektrik</b></a>
+    <a class="category" href="#rehberler"><span>◉</span><b>Lastik<br>Kontrolü</b></a>
+    <a class="category" href="#rehberler"><span>♨</span><b>Soğutma<br>Sistemi</b></a>
+    <a class="category" href="#ariza"><span>⚙</span><b>Arıza<br>Teşhisi</b></a>
+  </section>
+
+  <section class="wrap content-layout" id="rehberler">
+    <div class="panel featured-panel">
+      <div class="section-heading"><div><h2>Öne Çıkan Bakım Rehberleri</h2><p>Temel kontroller ve bakım hakkında başlangıç bilgileri</p></div><a href="#teknik">Tüm rehberler <span>→</span></a></div>
+      <div class="guide-grid">
+        <article class="guide-card"><div class="guide-image oil"><span>BAKIM REHBERİ</span></div><div class="guide-body"><h3>Motor Yağı ve Yağ Filtresi</h3><p>Yağ seviyesini ve üretici şartnamesini doğru değerlendirmenin temel adımları.</p><a href="#guide-oil">Rehberi incele <b>›</b></a></div></article>
+        <article class="guide-card"><div class="guide-image brake"><span>GÜVENLİK</span></div><div class="guide-body"><h3>Fren Sistemi Kontrolü</h3><p>Fren sesleri, pedal hissi ve kontrol gerektiren belirtiler.</p><a href="#guide-brake">Rehberi incele <b>›</b></a></div></article>
+        <article class="guide-card"><div class="guide-image filter"><span>BAKIM REHBERİ</span></div><div class="guide-body"><h3>Hava Filtresi</h3><p>Filtrenin görevini, kontrolünü ve doğru parça eşleşmesini öğren.</p><a href="#guide-filter">Rehberi incele <b>›</b></a></div></article>
+      </div>
+    </div>
+    <aside class="panel symptoms" id="ariza">
+      <div class="section-heading"><div><h2>Sık Görülen Belirtiler</h2><p>Belirtiye göre ön değerlendirme</p></div></div>
+      <a href="#symptom" data-symptom="Motor arıza lambası yanıyor"><span>⚙</span> Motor arıza lambası yanıyor <b>›</b></a>
+      <a href="#symptom" data-symptom="Motor harareti yükseliyor"><span>♨</span> Hararet yükseliyor <b>›</b></a>
+      <a href="#symptom" data-symptom="Araç geç çalışıyor"><span>▣</span> Araç geç çalışıyor <b>›</b></a>
+      <a href="#symptom" data-symptom="Fren yaparken ses geliyor"><span>◎</span> Fren yaparken ses geliyor <b>›</b></a>
+      <a href="#symptom" data-symptom="Araçta titreşim hissediliyor"><span>⌁</span> Araçta titreşim hissediliyor <b>›</b></a>
+      <button class="outline-btn" id="allSymptoms">Belirti rehberini aç <span>›</span></button>
+    </aside>
+    <aside class="panel trust" id="teknik">
+      <div class="section-heading"><div><h2>Bilgi Güvenilirliği</h2><p>Şeffaf ve kontrollü içerik yaklaşımı</p></div><span class="info">i</span></div>
+      <p>Teknik içeriklerde kaynak şeffaflığını ve araç uyumunu önemsiyoruz.</p>
+      <div class="trust-row"><span>▤</span><b>Kaynak belge</b><small>İçerik bazında belirtilir</small></div>
+      <div class="trust-row"><span>▱</span><b>Araç / motor uyumu</b><small>Model, yıl ve motor bazında</small></div>
+      <div class="trust-row"><span>◷</span><b>Son kontrol tarihi</b><small>Her içerikte gösterilir</small></div>
+      <div class="trust-row"><span>✓</span><b>Doğrulama durumu</b><small class="status">Yayın öncesi kontrol gerekli</small></div>
+    </aside>
+  </section>
+
+
+
+
+
+
+
+  <section class="wrap vehicle-chain-section" id="vehicle-engine-chain">
+    <div class="section-heading"><div><div class="eyebrow">MARKA → MODEL → KASA → MOTOR → ARIZA</div><h2>Araç ve motor bazlı teknik kütüphane</h2>
+    <p>Kaynaklarla eşleştirilmiş araç zincirinden motorunu seç; ilgili modele özel arıza kayıtlarına ulaş.</p></div></div>
+    <div class="vehicle-chain-warning"><b>Motor kodu uyarısı:</b> Listelenen kodlar uygulama/katalog eşleşmeleridir. Aracın kesin motor kodu ruhsat, motor etiketi veya VIN üzerinden doğrulanmalıdır.</div>
+    <div class="vehicle-chain-selectors">
+      <div><label for="chainMake">Marka</label><select id="chainMake"></select></div>
+      <div><label for="chainModel">Model</label><select id="chainModel"></select></div>
+      <div><label for="chainGeneration">Kasa / nesil</label><select id="chainGeneration"></select></div>
+      <div><label for="chainEngine">Motor seçeneği</label><select id="chainEngine"></select></div>
+    </div>
+    <div id="vehicleChainDetails" class="vehicle-chain-details" aria-live="polite"></div>
+  </section>
+
+  <section class="wrap system-fault-section" id="system-faults">
+    <div class="section-heading"><div><div class="eyebrow">GENEL TEŞHİS KÜTÜPHANESİ · V10</div><h2>Sistemlere göre arıza ve çözüm rehberi</h2>
+    <p>Motor, yakıt-hava, soğutma, şanzıman, elektrik, elektronik, yürüyen aksam ve fren sistemleri için teşhis adımları.</p></div></div>
+    <div class="system-fault-note"><b>Önemli ayrım:</b> Bu kayıtlar genel teknik teşhis rehberidir; her marka/modelde kronik arıza olduğu anlamına gelmez. Kesin işlem için VIN, motor/şanzıman kodu ve üretici prosedürü kontrol edilmelidir.</div>
+    <div class="system-fault-controls">
+      <label for="systemFaultSearch">Arıza, belirti veya sistem ara</label>
+      <input id="systemFaultSearch" type="search" placeholder="Örn. hararet, DPF, akü, vites vuruntusu">
+      <label for="systemFaultCategory">Sistem</label>
+      <select id="systemFaultCategory"><option value="">Tüm sistemler</option></select>
+    </div>
+    <div id="systemFaultResults" class="system-fault-results" aria-live="polite"></div>
+  </section>
+
+  <section class="wrap high-risk-section" id="sik-ariza-veren-araclar">
+    <div class="section-heading"><div><div class="eyebrow">KAYNAK TARAMASI · ÖNCELİKLİ İNCELEME</div><h2>Sık arıza bildirimi olan araçlar</h2>
+    <p>Bloglar, teknik rehberler ve kullanıcı arıza kayıtlarında tekrar eden belirli motor/şanzıman riskleri.</p></div></div>
+    <div class="high-risk-note"><b>Nasıl okunmalı?</b> Bu bölüm kesin “en çok bozulan araçlar” istatistiği değildir. Şikâyet/kayıt sayısı, araç parkı ve kilometreye göre normalize edilmiş arıza oranı anlamına gelmez. Yalnızca dikkat edilmesi gereken motor ve şanzıman kombinasyonlarını gösterir.</div>
+    <div class="high-risk-controls">
+      <label for="highRiskSearch">Marka, model veya motor ara</label>
+      <input id="highRiskSearch" placeholder="Örn. PureTech, Powershift, BMW N47">
+      <label for="highRiskFilter">Risk başlığı</label>
+      <select id="highRiskFilter"><option value="">Tüm kayıtlar</option><option value="Yüksek dikkat">Yüksek dikkat</option><option value="Orta – takip edilmeli">Orta – takip edilmeli</option></select>
+    </div>
+    <div id="highRiskResults" class="high-risk-results" aria-live="polite"></div>
+  </section>
+
+  <section class="wrap model-fault-section" id="model-faults">
+    <div class="section-heading"><div><div class="eyebrow">ARAÇ / MOTOR BAZLI ARAŞTIRMA</div><h2>Modeline özel kronik arızalar</h2>
+    <p>İlk üç araştırma partisi: 19 araç/motor kaydı; 11 yeni marka bu pakette eklendi.</p></div></div>
+    <div class="model-fault-filters">
+      <label for="faultModelFilter">Araç seç</label>
+      <select id="faultModelFilter"><option value="">Tüm araştırmalar</option></select>
+    </div>
+    <div id="modelFaultResults" class="model-fault-results" aria-live="polite"></div>
+    <p class="dtc-disclaimer">Bu içerikler başlangıç araştırmasıdır. Araç/VIN, motor kodu, emisyon standardı ve ECU kalibrasyonu doğrulanmadan kesin onarım talimatı sayılmaz. Kaynaklar her kaydın altında gösterilir.</p>
+  </section>
+
+  <section class="wrap dtc-section" id="ariza-kodlari">
+    <div class="section-heading"><div><div class="eyebrow">USTAREHBER TEŞHİS KÜTÜPHANESİ</div><h2>OBD-II arıza kodu sorgulama</h2>
+    <p>Kodu girerek genel açıklamayı, olası nedenleri ve teşhis sırasını incele.</p></div></div>
+    <div class="dtc-search-row">
+      <label class="sr-only" for="dtcSearch">Arıza kodu veya açıklama</label>
+      <input id="dtcSearch" placeholder="Örn. P0300, P0420 veya tekleme..." autocomplete="off">
+      <button class="dark-btn" id="dtcSearchBtn">Kodu sorgula</button>
+    </div>
+    <p class="dtc-disclaimer">Bu ilk kütüphane genel OBD-II güç aktarma sistemi kodları içindir. Aynı kodun test koşulları, alt arıza türü ve onarım prosedürü marka, model, yıl, motor ve ECU yazılımına göre değişebilir. Kod tek başına parça değiştirme talimatı değildir.</p>
+    <div id="dtcResults" class="dtc-results" aria-live="polite"></div>
+  </section>
+
+  <section class="wrap repair-section" id="tamirat">
+    <div class="repair-heading">
+      <div><div class="eyebrow"><span></span> USTAREHBER TAMİR KÜTÜPHANESİ</div><h2>Arızayı tanı, doğru tamir rehberine ulaş.</h2>
+      <p>Motor, şanzıman, fren, elektrik ve soğutma sistemleri için düzenli ve araç uyumlu teknik içerikler.</p></div>
+      <div class="repair-stamp"><b>TEKNİK</b><span>REHBER</span><small>Kaynak odaklı içerik</small></div>
+    </div>
+    <div class="repair-grid">
+      <article class="repair-card"><div class="repair-symbol">⚙</div><div><h3>Motor ve turbo</h3><p>Yağ yakma, kompresyon, üfleme, turbo basıncı, enjektör ve motor sesleri.</p><button data-repair="motor">Rehberleri görüntüle <b>›</b></button></div></article>
+      <article class="repair-card"><div class="repair-symbol">⛭</div><div><h3>Şanzıman ve debriyaj</h3><p>Vites geçişi, kavrama, debriyaj sesi ve otomatik şanzıman belirtileri.</p><button data-repair="transmission">Rehberleri görüntüle <b>›</b></button></div></article>
+      <article class="repair-card"><div class="repair-symbol">◉</div><div><h3>Fren ve yürüyen aksam</h3><p>Disk, balata, ABS, amortisör, rot, rotil ve süspansiyon kontrolleri.</p><button data-repair="brakes">Rehberleri görüntüle <b>›</b></button></div></article>
+      <article class="repair-card"><div class="repair-symbol">ϟ</div><div><h3>Elektrik ve elektronik</h3><p>Akü, marş, şarj, sensörler, tesisat ve arıza kodları.</p><button data-repair="electrical">Rehberleri görüntüle <b>›</b></button></div></article>
+      <article class="repair-card"><div class="repair-symbol">♨</div><div><h3>Soğutma sistemi</h3><p>Hararet, su eksiltme, radyatör, termostat ve devirdaim belirtileri.</p><button data-repair="cooling">Rehberleri görüntüle <b>›</b></button></div></article>
+      <article class="repair-card"><div class="repair-symbol">⛽</div><div><h3>Yakıt ve egzoz sistemi</h3><p>Yakıt basıncı, filtre, enjektör, EGR, DPF ve egzoz dumanı.</p><button data-repair="fuel">Rehberleri görüntüle <b>›</b></button></div></article>
+    </div>
+    <div class="repair-integrity"><span>✓</span><div><b>Teknik doğrulama ilkesi</b><p>Bu bölüm şu anda rehber yapısını ve konu başlıklarını sunar. Araç özelinde tamir adımları, tork değerleri, parça kodları ve ayarlar; doğru motor kodu ve güvenilir teknik belge eşleştirilmeden kesin talimat olarak yayımlanmaz.</p></div></div>
+  </section>
+
+  <section class="wrap safety-strip">
+    <div class="safety-icon">!</div><div><b>Önemli güvenlik notu</b><p>Bu site genel bilgilendirme amaçlıdır. Fren, direksiyon, hava yastığı, yakıt sistemi ve yüksek voltaj sistemlerinde uzman servis desteği alın. Arıza belirtileri tek başına kesin teşhis değildir.</p></div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner"><div><a class="footer-brand" href="#">Usta<span>Rehber</span></a><p>Otomobil bakım, onarım ve teknik rehber.</p></div><div class="footer-links"><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a><a href="#gizlilik">Gizlilik</a><a href="#kosullar">Kullanım koşulları</a><a href="#duzeltme">İçerik düzeltme bildirimi</a></div><small>© <span id="yearNow"></span> UstaRehber. Tüm hakları saklıdır.</small></div>
+</footer>
+
+<dialog id="infoDialog"><div class="dialog-head"><b id="dialogTitle">UstaRehber</b><button id="dialogClose" aria-label="Kapat">×</button></div><div id="dialogContent" class="dialog-content"></div></dialog>
+<script src="data/vehicles.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

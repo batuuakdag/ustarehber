@@ -1,0 +1,62 @@
+USTAREHBER V9 - MODEL BAZLI ARIZA ARASTIRMA PARTI 3
+===================================================
+Bu partide 11 marka icin ornek binek model/motor kayitlari eklendi:
+- Opel Astra J 1.3 CDTI
+- Peugeot 308 T7 1.6 HDi DV6
+- Citroen C4 II 1.6 HDi/e-HDi/BlueHDi
+- Hyundai i30 GD 1.6 CRDi
+- Kia Ceed JD 1.6 CRDi
+- Honda Civic FB 1.6 i-DTEC
+- Nissan Qashqai J11 1.5 dCi
+- Mazda 3 BK 1.6 MZ-CD
+- Volvo V40 D2 1.6 diesel
+- SEAT Leon 5F 1.6 TDI
+- Dacia Duster I 1.5 dCi
+
+Kapsam: belirtiler, olasi nedenler, test/teshis sirasi, onarim yaklasimi ve kaynak baglantilari.
+Kesin model/motor eslesmesi bulunmayan ariza kodlari kesin bilgi olarak verilmemistir.
+P0401, P2002, P0299 gibi kodlar genel OBD-II kodlari olarak tanimlanir; arac ureticisinin modul kodlari ayrica okunmalidir.
+
+KAYNAKLAR
+Opel:
+- https://golkentotomotiv.com.tr/modeller/opel-astra-j
+- https://otorik.com/araclar/opel/astra/j/kronik-sorunlar/triger-zinciri-uzamasi-ve-egr-1-3-cdti-multijet/
+Peugeot:
+- https://www.acikkaput.com/tr/analiz/peugeot/308-16-hdi-t7
+- https://www.kronikleri.com/motor/psa-dv6-1-6-hdi/
+- https://testigoauto.com/en/cars/peugeot/308-ii/1-6-hdi
+Citroen:
+- https://otorik.com/araclar/citroen/c4/2/kronik-sorunlar/
+- https://otorik.com/araclar/citroen/c4/2/kronik-sorunlar/egr-ve-dpf-fap-katki-sivisi-sorunlari-1-6-hdi/
+- https://otorik.com/araclar/citroen/c4/2/kronik-sorunlar/adblue-depo-ve-pompa-arizasi-bluehdi/
+Hyundai:
+- https://www.acikkaput.com/tr/analiz/hyundai/i30-16-crdi-gd
+Kia:
+- https://aracbenim.com/kia/ceed/2015/16-crdi/
+Honda:
+- https://otorisk.com.tr/honda/civic/fb/1-6-i-dtec-120-manuel
+- https://www.acikkaput.com/tr/analiz/honda/civic-16-i-dtec-fb-fg
+- https://motorwise.io/articles/common-faults/honda/civic-tourer/1-6-i-dtec-2013-2018/
+Nissan:
+- https://www.acikkaput.com/tr/analiz/nissan/qashqai-15-dci-j11
+Mazda:
+- https://www.acikkaput.com/tr/analiz/mazda/mazda3-16-mz-cd-bk
+Volvo:
+- https://otorisk.com.tr/volvo/v40/525/d2-115-at6
+SEAT:
+- https://otorisk.com.tr/seat/leon/5f/1-6-tdi-dsg
+- https://aracbenim.com/seat/leon/2014/
+Dacia:
+- https://testigoauto.com/en/cars/dacia/duster-i/1-5-dci-k9k
+- https://otorisk.com.tr/dacia/duster/1/1-5-dci-110-edc
+- https://parcabizden.com/rehber/dacia-duster-sandero-kronik-arizalar
+
+VERI KALITESI VE SINIRLAR
+- Kaynaklar ikincil teknik derlemeler ve atölye/servis içerikleridir; OEM servis dokümani yerine gecmez.
+- Model ariza kaydi tek motor alt kodunu veya her pazardaki tum versiyonlari kapsamaz.
+- PSA DV6, Renault K9K, Hyundai/Kia D4FB, VW EA189/EA288 gibi motor ailelerinde alt kodlar ve emisyon ekipmani degisir.
+- Honda Civic 1.6 i-DTEC icin P2002 yazilim bulteni yalniz ilgili Euro V 2014-15 araclarda, once diger arizalar elenerek uygulanir.
+- Dacia 1.5 dCi enjeksiyon sistemi Delphi veya Continental/Siemens olabilir; test degerleri birbiri yerine kullanilmaz.
+- DPF, Eolys, AdBlue, DSG/DCT/PowerShift donanimi VIN ve uretim tarihiyle dogrulanmalidir.
+- OBD kodu tek basina parca degistirme karari degildir. Freeze-frame, tam modul taramasi, canli veri ve fiziksel test gerekir.
+- Bu paket 11 markanin tum modellerini tamamlamaz; her markadan secilmis bir ornek model/motor arastirmasidir.

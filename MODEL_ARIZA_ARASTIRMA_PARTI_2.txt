@@ -1,0 +1,28 @@
+USTAREHBER V9 - MODEL BAZLI ARIZA ARASTIRMA PARTI 2
+===================================================
+Bu pakette ilk partideki 3 modele ek olarak 5 model/motor kaydi daha eklendi:
+- Toyota Corolla E170 1.4 D-4D (2013-2019)
+- Volkswagen Golf Mk7 1.6 TDI (2012-2020)
+- BMW 3 Serisi F30 320d N47/B47 (2012-2019)
+- Skoda Octavia III 5E 1.6 TDI 110 DSG DQ200 (2014-2017)
+- Mercedes-Benz A Serisi W176 A 180 CDI/d 1.5 dCi (2012-2018)
+
+Her kayitta bilinen ariza basliklari, belirtiler, olasi nedenler, kontrol sirasi ve onarim yaklasimi bulunur.
+Model/motorla dogrudan kaynaklanmayan DTC numaralari eklenmemistir. P2002 yalnizca genel OBD-II DPF verim kodu olarak aciklanmistir; model-ozel kesin ariza kodu degildir.
+
+KAYNAKLAR
+- Toyota Corolla E170 1.4 D-4D: https://www.acikkaput.com/tr/analiz/toyota/corolla-14-d-4d-e170
+- Volkswagen Golf Mk7 1.6 TDI: https://www.acikkaput.com/tr/analiz/volkswagen/golf-16-tdi-mk7
+- BMW 320d F30: https://www.acikkaput.com/tr/analiz/bmw/3-series-320d-f30-f31-f34
+- BMW F30 EGR / swirl flap: https://otorik.com/araclar/bmw/3-serisi/f30/kronik-sorunlar/egr-sogutucu-ve-swirl-klapeleri-n47-b47/
+- BMW 3 Series common issues: https://www.clickmechanic.com/blog/?p=8132
+- Skoda Octavia 1.6 TDI DSG: https://otorisk.com.tr/skoda/octavia/5e/1-6-tdi-dsg
+- Mercedes A Serisi W176: https://otorik.com/araclar/mercedes-benz/a-serisi/w176/kronik-sorunlar/
+- Mercedes W176 EGR / DPF: https://otorik.com/araclar/mercedes-benz/a-serisi/w176/kronik-sorunlar/egr-ve-dpf-kurumlanmasi-1-5-dci/
+
+VERI KALITESI VE SINIRLAR
+- Kaynaklarin cogu ikincil teknik analiz veya kullaniciya yonelik ariza derlemesidir; OEM servis bulteni degildir.
+- N47/B47, EA288, K9K gibi motor aileleri tek bir motor kodu anlamina gelmez; alt kod VIN ile belirlenmelidir.
+- DQ200 ve 7G-DCT yalniz ilgili sanziman donaniminda gecerli olabilir.
+- DTC kodu tek basina parca degisimi karari degildir; tam modul taramasi, freeze-frame, canli veri ve fiziksel test gerekir.
+- Bu parti, tum markalarin tum modellerini tamamlamaz; sonraki arastirma partileri devam edecektir.

@@ -1,0 +1,381 @@
+{
+  "title": "Sık arıza bildirimi olan binek araçlar",
+  "version": "1.0",
+  "methodology": "Bu liste arıza bildirimi ve teknik kaynaklarda tekrar eden belirli motor/şanzıman risklerini gösteren bir öncelik listesidir. İstatistiksel arıza oranı veya tüm araçlara genellenebilir sıralama değildir.",
+  "records": [
+    {
+      "id": "peugeot-12-puretech",
+      "make": "Peugeot",
+      "models": "208, 2008, 308, 3008, 5008 (motorun bulunduğu ilgili versiyonlar)",
+      "engine": "1.2 PureTech turbo benzinli, yağ içinde çalışan triger kayışlı nesiller",
+      "years": "Özellikle 2014–2022 üretim aralığında bazı motor/versiyonlar",
+      "risk": "Yüksek dikkat",
+      "issue": "Islak triger kayışının aşınması/dağılması",
+      "symptoms": [
+        "Yağ basıncı uyarısı",
+        "Kayış malzemesinin yağ süzgecini tıkaması",
+        "Motor arıza lambası veya vakum/fren desteğiyle ilgili uyarılar"
+      ],
+      "checks": [
+        "VIN ile motor nesli ve kayış tipini kesinleştir.",
+        "Kayış genişliği/yüzey durumunu üretici prosedürüyle kontrol et.",
+        "Yağ basıncı ve yağ süzgecinde kayış kalıntısı kontrolü yap.",
+        "Bakım ve yağ spesifikasyonu geçmişini doğrula."
+      ],
+      "fix": "Üretici kampanya/garanti koşulları ve VIN uygunluğu kontrol edilir. Kayış aşınması doğrulanırsa güncel revizyonlu set, yağ ve filtreler prosedüre göre yenilenir; yağ devresi temizliği ve basınç kontrolü yapılır.",
+      "caution": "Tüm 1.2 PureTech motorları aynı değil; sonraki zincirli nesiller ve farklı üretim tarihleri ayrı değerlendirilmelidir.",
+      "sources": [
+        {
+          "label": "Bilgili Tampon – kronik model rehberi",
+          "url": "https://bilgilitampon.com/modeller/"
+        },
+        {
+          "label": "Araba Rehberim – kronik arızalar",
+          "url": "https://arabarehberim.net/kronik-arizalar"
+        },
+        {
+          "label": "OtoRisk – motor kronik arızaları",
+          "url": "https://otorisk.com.tr/motor"
+        }
+      ],
+      "evidence": "Birden fazla Türkiye odaklı kronik arıza derlemesinde tekrar eden başlık; kesin etkilenen araç kapsamı VIN/üretici kampanyasıyla belirlenir."
+    },
+    {
+      "id": "citroen-12-puretech",
+      "make": "Citroën",
+      "models": "C3, C4, C4 Cactus, C-Elysée, C3 Aircross (ilgili motorlu versiyonlar)",
+      "engine": "1.2 PureTech turbo / atmosferik, ıslak triger kayışlı nesiller",
+      "years": "Özellikle 2014–2022 dönemindeki belirli varyantlar",
+      "risk": "Yüksek dikkat",
+      "issue": "Yağ içinde çalışan triger kayışında bozulma ve yağlama sistemi etkilenmesi",
+      "symptoms": [
+        "Yağ basıncı uyarısı",
+        "Kayış yüzeyinde kabarma/çatlama",
+        "Yağ filtresi veya süzgeçte kayış parçacıkları"
+      ],
+      "checks": [
+        "Motor kodu, üretim tarihi ve kayış tipini VIN ile doğrula.",
+        "Kayış kondisyonunu uygun ölçü aleti ve üretici limitleriyle değerlendir.",
+        "Yağ basıncı ve yağ süzgecini incele.",
+        "Bakım aralıkları ve doğru yağ spesifikasyonunu kontrol et."
+      ],
+      "fix": "Üretici teknik kampanya ve güncel parça revizyonu kontrol edilir. Gerekliyse triger seti ve yağlama sistemindeki kirlenme üretici prosedürüyle giderilir.",
+      "caution": "Model adı tek başına yeterli değil; aynı kasada farklı motor nesilleri bulunabilir.",
+      "sources": [
+        {
+          "label": "Araba Rehberim – kronik arızalar",
+          "url": "https://arabarehberim.net/kronik-arizalar"
+        },
+        {
+          "label": "OtoRisk – motor kronik arızaları",
+          "url": "https://otorisk.com.tr/motor"
+        }
+      ],
+      "evidence": "Türkiye odaklı model/arıza veri tabanlarında tekrar eden PureTech ailesi sorunu; motor kodu ve VIN ile teyit gerekli."
+    },
+    {
+      "id": "opel-12-puretech",
+      "make": "Opel",
+      "models": "Corsa F, Grandland ve ilgili 1.2 Turbo motorlu versiyonlar",
+      "engine": "1.2 Turbo PureTech ailesi, ıslak triger kayışlı nesiller",
+      "years": "Corsa F 1.2 ve Grandland 1.2'nin ilgili üretim/versiyonları",
+      "risk": "Yüksek dikkat",
+      "issue": "Islak triger kayışının aşınması",
+      "symptoms": [
+        "Yağ basıncı uyarısı",
+        "Kayış parçacıklarının yağ devresine karışması",
+        "Motor performansında düşüş"
+      ],
+      "checks": [
+        "VIN ile motorun PSA/Stellantis 1.2 PureTech türevini ve kayış neslini doğrula.",
+        "Kayış kondisyonu, yağ süzgeci ve yağ basıncını kontrol et.",
+        "Bakım kayıtlarını ve kullanılan yağın onayını incele."
+      ],
+      "fix": "VIN bazlı üretici kampanyası ve parça revizyonu kontrol edilir; hasar/aşınma doğrulanırsa güncel prosedürle set ve yağ devresi bakımı yapılır.",
+      "caution": "Opel'in bütün 1.2 motorları aynı değildir; motor nesli ve üretim tarihi belirleyicidir.",
+      "sources": [
+        {
+          "label": "Bilgili Tampon – Opel kronik sorunları",
+          "url": "https://bilgilitampon.com/modeller/"
+        },
+        {
+          "label": "Otoplans – motor sorunu kayıtları",
+          "url": "https://otoplans.net/sorun/motor"
+        }
+      ],
+      "evidence": "Model bazlı kronik sorun veri tabanlarında Corsa F ve Grandland'ın belirli 1.2 turbo versiyonlarında işaretlenmiş."
+    },
+    {
+      "id": "ford-10-ecoboost",
+      "make": "Ford",
+      "models": "Fiesta, Focus, B-Max, EcoSport (ilgili 1.0 EcoBoost versiyonları)",
+      "engine": "1.0 EcoBoost, yağ içinde çalışan triger kayışlı nesiller",
+      "years": "Nesil ve pazara göre değişir; VIN ile üretim tarihi kontrol edilmeli",
+      "risk": "Yüksek dikkat",
+      "issue": "Islak triger kayışının bozulması ve yağ devresinin kirlenmesi",
+      "symptoms": [
+        "Yağ basıncı uyarısı",
+        "Kayış yüzeyinde parçalanma",
+        "Yağ pompası emiş süzgecinde kalıntı"
+      ],
+      "checks": [
+        "Motor kodu ve triger tahrik tasarımını doğrula.",
+        "Kayış kondisyonu ve üretici ölçüm limitlerini kontrol et.",
+        "Yağ süzgeci, yağ basıncı ve bakım geçmişini incele.",
+        "Kayışın değişim geçmişini fatura ile doğrula."
+      ],
+      "fix": "Kayış aşınması doğrulanırsa üretici prosedürüne göre revizyonlu kayış/set, uygun yağ ve filtre kullanılır; yağ devresi temizlenir ve basınç doğrulanır.",
+      "caution": "Her 1.0 EcoBoost aynı kayış mimarisinde değildir; bazı sonraki motorlarda tasarım değişmiştir.",
+      "sources": [
+        {
+          "label": "Araba Rehberim – Fiesta 1.0 EcoBoost kronik arızası",
+          "url": "https://arabarehberim.net/kronik-arizalar"
+        },
+        {
+          "label": "OtoRisk – motor kronik arızaları",
+          "url": "https://otorisk.com.tr/motor"
+        }
+      ],
+      "evidence": "Birden fazla kronik arıza kaynağında tekrarlanan motor ailesi sorunu; kesin kapsam VIN ile belirlenir."
+    },
+    {
+      "id": "ford-focus-powershift",
+      "make": "Ford",
+      "models": "Focus III 1.6 benzinli otomatik (kuru kavramalı DPS6/Powershift donanımlı versiyonlar)",
+      "engine": "1.6 Ti-VCT + kuru çift kavramalı Powershift DPS6",
+      "years": "Özellikle 2011–2014 aralığındaki ilgili versiyonlar",
+      "risk": "Yüksek dikkat",
+      "issue": "Kavrama titremesi ve TCM/mechatronic kontrol arızaları",
+      "symptoms": [
+        "Kalkışta titreme/silkeleme",
+        "Vites geçişinde gecikme",
+        "Şanzıman uyarısı veya güç aktarımında kesinti"
+      ],
+      "checks": [
+        "Şanzıman kodunu ve gerçekten DPS6 kuru kavrama olduğunu doğrula.",
+        "TCM hata belleği ve yazılım seviyesini oku.",
+        "Kavrama aşınması, giriş mili keçeleri ve TCM besleme/tesisatını incele.",
+        "Soğuk ve sıcak sürüşte test yap."
+      ],
+      "fix": "Kavrama, keçeler ve TCM arızaları birbirinden ayrılır; güncel servis prosedürü ve varsa garanti/servis programı VIN üzerinden kontrol edilerek onarım yapılır.",
+      "caution": "Powershift adı altında farklı şanzımanlar vardır; ıslak kavramalı versiyonlara bu teşhis genellenemez.",
+      "sources": [
+        {
+          "label": "Bilgili Tampon – Ford Focus kronik sorunları",
+          "url": "https://bilgilitampon.com/modeller/"
+        },
+        {
+          "label": "AracRehberim – motor ve şanzıman kronik arızaları",
+          "url": "https://www.aracrehberim.com/motor-sanziman-arizalari"
+        }
+      ],
+      "evidence": "Model/şanzıman özelinde kronik sorun listelerinde tekrarlanan kayıt; şanzıman kodu zorunlu."
+    },
+    {
+      "id": "vw-dq200",
+      "make": "Volkswagen Grubu",
+      "models": "Volkswagen Golf, Polo, Passat; SEAT Leon/Ibiza; Škoda Octavia/Fabia (yalnız DQ200 takılı versiyonlar)",
+      "engine": "7 ileri kuru kavramalı DSG DQ200",
+      "years": "Özellikle erken nesiller ve belirli motor/tork kombinasyonları; revizyonlara göre değişir",
+      "risk": "Yüksek dikkat",
+      "issue": "Mekatronik arızası ve kuru kavrama aşınması",
+      "symptoms": [
+        "Kalkışta titreme",
+        "1-2 / 2-1 geçişlerinde sarsıntı",
+        "Vites seçiminin kaybolması veya PRNDS uyarısı"
+      ],
+      "checks": [
+        "Şanzıman kodunun DQ200/0AM/0CW olup olmadığını doğrula.",
+        "TCU taraması, kavrama adaptasyonları ve basınç değerlerini incele.",
+        "Mekatronik akümülatör/basınç ve kavrama aşınmasını ayrı test et.",
+        "Yağ/servis geçmişi ve yazılım sürümünü kontrol et."
+      ],
+      "fix": "Mekatronik ve kavrama ayrı arıza olarak teşhis edilir; üretici prosedürüne göre revizyon, parça değişimi ve adaptasyon yapılır.",
+      "caution": "DSG'nin tüm tipleri DQ200 değildir; ıslak kavramalı DQ250/DQ381/DQ500 ile karıştırma.",
+      "sources": [
+        {
+          "label": "OtoRisk – kronik şanzıman arızaları",
+          "url": "https://otorisk.com.tr/arizalar?sistem=Transmission"
+        },
+        {
+          "label": "AraçRehberim – DSG arızaları",
+          "url": "https://www.aracrehberim.com/motor-sanziman-arizalari"
+        },
+        {
+          "label": "Bilgili Tampon – Golf/Leon/Octavia kronik sorunları",
+          "url": "https://bilgilitampon.com/modeller/"
+        }
+      ],
+      "evidence": "Birden fazla kaynakta model ve şanzıman ailesi bazında tekrar eden sorun; araçtaki DSG kodu kesinleştirilmelidir."
+    },
+    {
+      "id": "bmw-n47-chain",
+      "make": "BMW",
+      "models": "1 Serisi, 3 Serisi, 5 Serisi ve X modellerinin N47 motorlu bazı versiyonları",
+      "engine": "N47 2.0 dizel (alt varyant ve üretim tarihi önemli)",
+      "years": "Özellikle erken/orta üretim N47 dönemleri; VIN ve motor revizyonu ile kontrol edilmeli",
+      "risk": "Yüksek dikkat",
+      "issue": "Zamanlama zinciri, kızak ve gergi aşınması",
+      "symptoms": [
+        "Motor arkasından metalik zincir sesi",
+        "Soğuk çalıştırmada şakırtı",
+        "İlerleyen durumda zamanlama hatası ve motor hasarı"
+      ],
+      "checks": [
+        "Motorun N47 olduğunu ve üretim tarihini VIN ile doğrula.",
+        "Soğuk çalıştırma ve yük altında zincir sesini dinle.",
+        "Zamanlama senkronizasyonunu ve mekanik boşluğu üretici prosedürüyle ölç.",
+        "Yağ bakım geçmişini incele."
+      ],
+      "fix": "Zincir uzaması/kızak/gergi aşınması doğrulanırsa uzman serviste güncel revizyonlu set ve ilgili parçalar yenilenir; yağlama sistemi kontrol edilir.",
+      "caution": "Bütün BMW 2.0 dizeller N47 değildir; N47 ile B47 ve diğer motorlar ayrılmalıdır.",
+      "sources": [
+        {
+          "label": "Kronikleri – en sorunlu motorlar",
+          "url": "https://www.kronikleri.com/"
+        },
+        {
+          "label": "OtoRisk – motor kronik arızaları",
+          "url": "https://otorisk.com.tr/motor"
+        },
+        {
+          "label": "Bilgili Tampon – BMW 3 Serisi kronik sorunları",
+          "url": "https://bilgilitampon.com/modeller/"
+        }
+      ],
+      "evidence": "Birden fazla kaynakta motor ailesi bazında zincir sorunu öne çıkıyor; tüm üretim yıllarına aynı risk uygulanmaz."
+    },
+    {
+      "id": "renault-h5ft-12tce",
+      "make": "Renault",
+      "models": "Kadjar, Captur, Megane, Scenic (ilgili 1.2 TCe motorlu versiyonlar)",
+      "engine": "1.2 TCe H5Ft turbo benzinli",
+      "years": "Özellikle 2012–2016 civarı bazı üretim/kalibrasyon grupları; VIN kontrolü gerekli",
+      "risk": "Yüksek dikkat",
+      "issue": "Aşırı yağ tüketimi ve zamanlama zinciri uzaması",
+      "symptoms": [
+        "Sık yağ tamamlama ihtiyacı",
+        "Soğuk çalıştırmada zincir sesi",
+        "Motor arıza lambası / performans düşüşü"
+      ],
+      "checks": [
+        "Motor kodunun H5Ft olduğunu doğrula.",
+        "Yağ tüketimini kontrollü ölçümle belgeleyerek değerlendir.",
+        "Zincir sesi, eksantrik/krank korelasyonu ve yağ basıncını kontrol et.",
+        "Servis geçmişi ve önceki motor revizyonlarını incele."
+      ],
+      "fix": "Yağ tüketimi ve zamanlama sorunu ayrı ayrı ölçülür; üretici güncel prosedürüne göre piston/segman veya zincir sistemi onarımı değerlendirilir.",
+      "caution": "1.3 TCe ve diğer Renault benzinli motorlarla karıştırma; yalnız H5Ft için geçerli olabilir.",
+      "sources": [
+        {
+          "label": "Otoplans – Renault Kadjar 1.2 TCe",
+          "url": "https://otoplans.net/sorun/motor"
+        },
+        {
+          "label": "Kronikleri – en sorunlu motorlar",
+          "url": "https://www.kronikleri.com/"
+        }
+      ],
+      "evidence": "Motor ailesi bazında tekrarlanan kayıtlar; üretim aralığı ve araç kapsamı VIN ile teyit edilmeli."
+    },
+    {
+      "id": "nissan-h5ft-12digt",
+      "make": "Nissan",
+      "models": "Qashqai J11, Pulsar (ilgili 1.2 DIG-T versiyonları)",
+      "engine": "1.2 DIG-T H5Ft turbo benzinli",
+      "years": "Özellikle erken J11 üretimleri; VIN ve motor kodu ile kontrol edilmeli",
+      "risk": "Yüksek dikkat",
+      "issue": "Yağ tüketimi ve zincir uzaması (Renault H5Ft ortak motor ailesi)",
+      "symptoms": [
+        "Yağ seviyesinin düşmesi",
+        "Soğukta zincir sesi",
+        "Tekleme veya arıza lambası"
+      ],
+      "checks": [
+        "Motor kodunu H5Ft olarak doğrula.",
+        "Yağ tüketimi testi ve bakım geçmişini incele.",
+        "Zincir korelasyonu, gergi ve yağ basıncını kontrol et.",
+        "Katalizör ve bujilerde aşırı yağ tüketimi izlerini değerlendir."
+      ],
+      "fix": "Yağ tüketiminin nedeni ve zamanlama sistemi ayrı teşhis edilir; üretici/uzman prosedürüyle motor içi onarım veya zincir sistemi onarımı yapılır.",
+      "caution": "1.3 DIG-T ve farklı Nissan motorları aynı risk grubunda değildir.",
+      "sources": [
+        {
+          "label": "Otoplans – motor sorunu kayıtları",
+          "url": "https://otoplans.net/sorun/motor"
+        },
+        {
+          "label": "Kronikleri – Renault/Nissan motor aileleri",
+          "url": "https://www.kronikleri.com/"
+        }
+      ],
+      "evidence": "H5Ft motor ailesinin farklı markalardaki uygulamalarına dair ikincil veri; araç özelinde teyit gerekli."
+    },
+    {
+      "id": "fiat-egea-14fire",
+      "make": "Fiat",
+      "models": "Egea Sedan / Hatchback / Cross (1.4 Fire ilgili versiyonlar)",
+      "engine": "1.4 Fire atmosferik benzinli",
+      "years": "Model yılı, LPG montajı ve kullanım şartına göre değişir",
+      "risk": "Orta – takip edilmeli",
+      "issue": "Yağ tüketimi / yağ eksiltme bildirimleri",
+      "symptoms": [
+        "Yağ seviyesinin periyodik düşmesi",
+        "Egzozda mavi duman (ileri durumlarda)",
+        "LPG ve yüksek devir kullanımında tüketim şikâyeti"
+      ],
+      "checks": [
+        "Yağ seviyesini aynı koşullarda düzenli ölç ve tüketimi kaydet.",
+        "Dış yağ kaçaklarını, PCV ve supap keçelerini kontrol et.",
+        "Kompresyon/kaçak testi ve buji durumunu değerlendir.",
+        "LPG ayarı ve çalışma sıcaklığını kontrol et."
+      ],
+      "fix": "Önce dış kaçak ve havalandırma sistemi kontrol edilir; iç yağ tüketimi testle doğrulanırsa segman/supap kaynaklı onarım değerlendirilir.",
+      "caution": "Kullanıcı şikâyet sayısı arıza oranı değildir; her 1.4 Fire motor yağ eksiltir denemez.",
+      "sources": [
+        {
+          "label": "Otoplans – Fiat Egea 1.4 Fire yağ tüketimi bildirimleri",
+          "url": "https://otoplans.net/sorun/motor"
+        },
+        {
+          "label": "OtoRisk – motor kronik arızaları",
+          "url": "https://otorisk.com.tr/motor"
+        }
+      ],
+      "evidence": "Kullanıcı bildirimlerinde öne çıkan konu; risk düzeyi arıza oranı olarak yorumlanmamalı."
+    },
+    {
+      "id": "peugeot-15bluehdi-chain",
+      "make": "Peugeot / Citroën / DS",
+      "models": "Peugeot 208, 308, 3008, 5008; Citroën C4 ve ilgili 1.5 BlueHDi versiyonları",
+      "engine": "1.5 BlueHDi DV5, eksantrik milleri arası zincirli versiyonlar",
+      "years": "Belirli 2017–2023/24 üretim grupları; resmi VIN kapsamı kontrol edilmeli",
+      "risk": "Yüksek dikkat",
+      "issue": "Eksantrik milleri arasındaki zincirde erken aşınma/kopma riski",
+      "symptoms": [
+        "Motor üst kısmından anormal metalik ses",
+        "Motor arıza lambası veya performans düşüşü",
+        "İleri durumda zamanlama kaybı ve motor hasarı"
+      ],
+      "checks": [
+        "VIN ile üretici geri çağırma/servis kampanyası uygunluğunu sorgula.",
+        "Motor kodu ve zincir revizyonunu doğrula.",
+        "Ses ve zamanlama değerlerini üretici prosedürüyle incele.",
+        "Bakım ve yağ spesifikasyonunu kontrol et."
+      ],
+      "fix": "Üretici tarafından tanımlanan kapsam ve güncel revizyonlu zincir prosedürü uygulanır; VIN'e göre kampanya/iyi niyet desteği sorgulanır.",
+      "caution": "Tüm 1.5 dizeller aynı zincir düzenine sahip değildir; 1.6 HDi DV6 ile karıştırılmamalıdır.",
+      "sources": [
+        {
+          "label": "Bilgili Tampon – Peugeot 5008 1.5 BlueHDi kronik sorunu",
+          "url": "https://bilgilitampon.com/modeller/"
+        },
+        {
+          "label": "OtoRisk – 1.5 BlueHDi motor kayıtları",
+          "url": "https://otorisk.com.tr/motor"
+        }
+      ],
+      "evidence": "Model/motor kronik sorun veri tabanlarında öne çıkan konu; üretici kampanyası VIN ile kesinleştirilmelidir."
+    }
+  ]
+}

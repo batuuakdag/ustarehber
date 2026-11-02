@@ -1,0 +1,385 @@
+{
+  "title": "UstaRehber marka-model-kasa-motor zinciri",
+  "version": "2.0",
+  "created": "2026-11-02",
+  "market": "Türkiye",
+  "coverage_note": "İlk ve ikinci kaynaklı parti toplam 10 model ailesi içerir. Bu, Türkiye'deki tüm motor seçeneklerinin eksiksiz listesi değildir.",
+  "verification_policy": [
+    "Motor kodu aday listesi VIN/şasi ve motor etiketiyle doğrulanmadan kesin parça uyumluluğu olarak kullanılmaz.",
+    "Motor aile adı ve motor alt kodu ayrı tutulur.",
+    "Aynı hacim/güç etiketi farklı motor kodları veya emisyon donanımları içerebilir.",
+    "Model-specific fault record is linked only when a matching record exists."
+  ],
+  "records": [
+    {
+      "make": "Ford",
+      "model": "Focus",
+      "generation": "Focus Mk2 / C307",
+      "years": "2004–2011 (pazara ve gövdeye göre)",
+      "body": "Hatchback / Sedan / Wagon",
+      "engines": [
+        {
+          "label": "1.6 TDCi 109 PS",
+          "displacement_cc": 1560,
+          "fuel": "Dizel",
+          "engine_family": "DV6TED4",
+          "engine_codes": [
+            "G8DA",
+            "G8DB"
+          ],
+          "code_status": "Uygulama kataloglarında görülen kodlar; araç üzerindeki kod/VIN ile doğrulanmalı.",
+          "source_ids": [
+            "turn423891search4",
+            "turn423891search62"
+          ]
+        }
+      ],
+      "fault_record_ids": [
+        "ford-focus-mk2-16tdci"
+      ],
+      "sources": [
+        {
+          "title": "Ford Focus 1.6 TDCi Mk2 motor/arıza uygulama kaydı",
+          "url": "https://ustamvar.com.tr/arac/ford-focus-1-6-tdci-109-manuel-mk2-2005-2011"
+        },
+        {
+          "title": "Turbo uygulama kataloğu – Focus 1.6 diesel DV6TED4",
+          "url": "https://yildirimpompa.com/pdf/e-katalog.pdf"
+        }
+      ],
+      "note": "G8DA/G8DB kodları 109 PS Mk2 uygulaması için adaydır. Her 1.6 TDCi aynı turbo, enjektör veya emisyon donanımına sahip değildir."
+    },
+    {
+      "make": "Renault",
+      "model": "Clio",
+      "generation": "Clio IV (BH_)",
+      "years": "2012–2020; faz ve motor seçeneğine göre",
+      "body": "Hatchback / Grandtour",
+      "engines": [
+        {
+          "label": "1.5 dCi 75 PS",
+          "displacement_cc": 1461,
+          "fuel": "Dizel",
+          "engine_family": "K9K",
+          "engine_codes": [
+            "K9K 612"
+          ],
+          "code_status": "Uygulama kataloğunda görülen örnek kod; VIN ile kesinleştir."
+        },
+        {
+          "label": "1.5 dCi 90 PS",
+          "displacement_cc": 1461,
+          "fuel": "Dizel",
+          "engine_family": "K9K",
+          "engine_codes": [
+            "K9K 608",
+            "K9K 628"
+          ],
+          "code_status": "Uygulama kataloğunda görülen örnek kodlar; üretim yılı/pazar farkı olabilir."
+        },
+        {
+          "label": "1.5 dCi 110 PS",
+          "displacement_cc": 1461,
+          "fuel": "Dizel",
+          "engine_family": "K9K",
+          "engine_codes": [
+            "K9K 646"
+          ],
+          "code_status": "Özellikle 2016 sonrası faz 2 katalog uygulaması; VIN ile kesinleştir."
+        }
+      ],
+      "fault_record_ids": [
+        "renault-clio4-15dci"
+      ],
+      "sources": [
+        {
+          "title": "Renault resmi Clio IV faz 2 kullanıcı kılavuzu – K9K motor tipi",
+          "url": "https://www.user-manual.renault.com/tr/content/x98/section-6-technical-specifications/motor-ozellikleri-12"
+        },
+        {
+          "title": "Clio IV K9K uygulama kodları – parça uygulama kataloğu",
+          "url": "https://www.etpeurope.eu/index.php?Itemid=206&codart=EE9099&lang=en&option=com_catalogo&view=catalogo"
+        }
+      ],
+      "note": "Renault kılavuzu motor ailesini K9K olarak belirtir; alt kod ve enjeksiyon sistemi şasi/VIN üzerinden doğrulanmalıdır."
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea",
+      "generation": "Egea Type 356",
+      "years": "2015–2022 (bu kayıtta 1.3 Multijet II)",
+      "body": "Sedan / Hatchback / Station Wagon",
+      "engines": [
+        {
+          "label": "1.3 Multijet II 95 PS",
+          "displacement_cc": 1248,
+          "fuel": "Dizel",
+          "engine_family": "FPT 1.3 Multijet",
+          "engine_codes": [
+            "199B1.000",
+            "55266963"
+          ],
+          "code_status": "Pazar/emisyon sürümüne göre farklı kodlar görülebilir; ruhsat/VIN ve motor etiketi ile doğrula."
+        }
+      ],
+      "fault_record_ids": [
+        "fiat-egea-13mj"
+      ],
+      "sources": [
+        {
+          "title": "Fiat Egea teknik veri bankası – 1.3 Multijet II 95 PS / 199B1000",
+          "url": "https://www.ovb.com.tr/fiat-egea-356-13-multijet-ii-95hp-ait-arac-detayi"
+        },
+        {
+          "title": "Fiat Egea kullanım kılavuzu – motor kodu tablosu",
+          "url": "https://www.scribd.com/document/778373952/Egea-Kullanim-Kilavuzu-2016"
+        }
+      ],
+      "note": "199B1.000 ve 55266963 farklı sürüm referanslarıdır; tek motor kodu gibi birleştirilmemelidir."
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation": "Corolla E170 / E18_",
+      "years": "2013–2019; motor ve pazar kapsamı farklılaşır",
+      "body": "Sedan",
+      "engines": [
+        {
+          "label": "1.4 D-4D 90 PS",
+          "displacement_cc": 1364,
+          "fuel": "Dizel",
+          "engine_family": "1ND",
+          "engine_codes": [
+            "1ND-TV"
+          ],
+          "code_status": "Motor ailesi/kodu parça uygulama kataloğunda listelenir; VIN ile teyit et."
+        }
+      ],
+      "fault_record_ids": [
+        "toyota-corolla-e170-14d4d"
+      ],
+      "sources": [
+        {
+          "title": "Motorservice uygulama kataloğu – Corolla E18 1.4 D-4D 1ND-TV",
+          "url": "https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf"
+        },
+        {
+          "title": "Corolla E170 motor seçenekleri – teknik veri",
+          "url": "https://otorik.com/araclar/toyota/corolla/e170/motor-secenekleri/"
+        }
+      ],
+      "note": "1ND-TV kodu E170/E18 1.4 D-4D uygulamasıyla ilişkilidir; güç ve emisyon sürümü üretim tarihine göre kontrol edilmelidir."
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation": "Golf VII (5G1 / BQ1 / BE1 / BE2)",
+      "years": "2012–2020; facelift ve emisyon sürümüne göre",
+      "body": "Hatchback / Variant",
+      "engines": [
+        {
+          "label": "1.6 TDI 90–115 PS",
+          "displacement_cc": 1598,
+          "fuel": "Dizel",
+          "engine_family": "EA288 (uygulama yılına göre)",
+          "engine_codes": [
+            "CLHB",
+            "CRKA",
+            "CLHA",
+            "CRKB",
+            "CXXB",
+            "DDYA",
+            "DDYB"
+          ],
+          "code_status": "Kodlar farklı güç ve üretim dönemlerine aittir; tek araçta hepsi bulunmaz. VIN ile ayrıştırılmalı."
+        }
+      ],
+      "fault_record_ids": [
+        "vw-golf-mk7-16tdi"
+      ],
+      "sources": [
+        {
+          "title": "Continental uygulama kataloğu – Golf VII 1.6 TDI motor kodları",
+          "url": "https://www.continental-industry.com/getmedia/f9f4795f-11e7-4c54-a170-75634f11afd0/ptg1013-deenesfritru-applicationguide.pdf"
+        },
+        {
+          "title": "Hengst katalog – Golf VII 1.6 TDI kod/güç/üretim aralığı",
+          "url": "https://catalog.hengst.com/en/online-catalog/product/7856310000-01/tw/"
+        }
+      ],
+      "note": "1.6 TDI motor kodları güç ve emisyon revizyonlarına göre değişir. DQ200 DSG yalnız ilgili şanzıman kodlu araçlarda söz konusudur."
+    },
+    {
+      "make": "Fiat",
+      "model": "Linea",
+      "generation": "Linea Type 323",
+      "years": "2007–2015",
+      "body": "Sedan",
+      "engines": [
+        {
+          "label": "1.3 Multijet 90 PS",
+          "displacement_cc": 1248,
+          "fuel": "Dizel",
+          "engine_family": "FPT 1.3 Multijet",
+          "engine_codes": [
+            "199A3.000"
+          ],
+          "code_status": "Fiat resmi eLum kılavuzunda Linea 1.3 Multijet için 199A3000 motor tipi kodu yer alır; araç VIN'iyle doğrula."
+        }
+      ],
+      "fault_record_ids": [
+        "fiat-linea-13mj"
+      ],
+      "sources": [
+        {
+          "title": "Fiat resmi eLum Linea kılavuzu – 199A3000",
+          "url": "https://aftersales.fiat.com/eLumData/EN/00/110_LINEA/00_110_LINEA_603.81.185_EN_02_04.07_L_LG/00_110_LINEA_603.81.185_EN_02_04.07_L_LG.pdf"
+        }
+      ],
+      "note": "Resmi Fiat kılavuzu motor tipi kodunu doğrular. Üretim yılı ve pazar bazında güç/emisyon sürümü kontrol edilmelidir."
+    },
+    {
+      "make": "Opel",
+      "model": "Astra",
+      "generation": "Astra J",
+      "years": "2009–2015",
+      "body": "Hatchback / Sedan / Sports Tourer / GTC",
+      "engines": [
+        {
+          "label": "1.3 CDTI 95 PS",
+          "displacement_cc": 1248,
+          "fuel": "Dizel",
+          "engine_family": "Fiat 1.3 Multijet türevi",
+          "engine_codes": [
+            "A13DTE"
+          ],
+          "code_status": "Astra J için 95 PS uygulama kodu kaynaklarda A13DTE olarak listelenir; ruhsat/VIN ile teyit et."
+        },
+        {
+          "label": "1.3 CDTI 90 PS",
+          "displacement_cc": 1248,
+          "fuel": "Dizel",
+          "engine_family": "Fiat 1.3 Multijet türevi",
+          "engine_codes": [
+            "Z13DTH"
+          ],
+          "code_status": "Farklı üretim/güç sürümü; aynı araçta A13DTE ile karıştırılmamalı."
+        }
+      ],
+      "fault_record_ids": [
+        "opel-astra-j-13cdti"
+      ],
+      "sources": [
+        {
+          "title": "Astra J motor kodları ve uygulamalar",
+          "url": "https://golkentotomotiv.com.tr/modeller/opel-astra-j"
+        },
+        {
+          "title": "1.3 CDTI motor kodları",
+          "url": "https://otorisk.com.tr/motor/1-3-cdti"
+        }
+      ],
+      "note": "A13DTE ve Z13DTH farklı güç/üretim uygulamalarıdır. EGR/DPF ve zincir kontrolleri donanım ve bakım geçmişine göre yapılır."
+    },
+    {
+      "make": "Renault",
+      "model": "Megane",
+      "generation": "Megane III",
+      "years": "2009–2016",
+      "body": "Hatchback / Sedan / Sport Tourer",
+      "engines": [
+        {
+          "label": "1.5 dCi 110 hp + 6 ileri EDC DC4",
+          "displacement_cc": 1461,
+          "fuel": "Dizel",
+          "engine_family": "Renault K9K",
+          "engine_codes": [
+            "K9K (alt kod VIN ile)"
+          ],
+          "transmission": "EDC DC4 kuru çift kavrama",
+          "code_status": "Bu zincir belirli 110 hp EDC uygulamasına aittir; K9K alt kodu ve şanzıman etiketi VIN ile doğrulanmalı."
+        }
+      ],
+      "fault_record_ids": [
+        "renault-megane3-15dci-edc"
+      ],
+      "sources": [
+        {
+          "title": "Megane III 1.5 dCi 110 EDC teknik uygulama",
+          "url": "https://otorisk.com.tr/renault/megane/3/1-5-dci-110-edc"
+        },
+        {
+          "title": "1.5 dCi K9K teknik arıza başlıkları",
+          "url": "https://ipacen.com/known-issues/renault-1-5-dci-k9k"
+        }
+      ],
+      "note": "EDC kuru kavrama arızaları yalnız EDC donanımlı araçlarda değerlendirilir; manuel Megane III'lere genellenmez."
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C Serisi",
+      "generation": "W204",
+      "years": "2007–2014",
+      "body": "Sedan / Estate",
+      "engines": [
+        {
+          "label": "C 220 CDI 2.1",
+          "displacement_cc": 2143,
+          "fuel": "Dizel",
+          "engine_family": "OM651",
+          "engine_codes": [
+            "OM651 (alt versiyon VIN ile)"
+          ],
+          "code_status": "OM651 ailesi; enjektör tipi ve zincir revizyonu üretim tarihine göre ayrılmalıdır."
+        }
+      ],
+      "fault_record_ids": [
+        "mercedes-w204-c220-om651"
+      ],
+      "sources": [
+        {
+          "title": "W204 OM651 enjektör/zincir arıza profili",
+          "url": "https://australiancar.reviews/recalls-faults-mercedes-benz-w204-c-class-sedan-2007-14/"
+        },
+        {
+          "title": "W204 OM651 uygulama ve kronik sorunlar",
+          "url": "https://otorik.com/araclar/mercedes-benz/c-serisi/w204/kronik-sorunlar/enjektor-ve-zincir-sorunlari-om651-2-1-dizel/"
+        }
+      ],
+      "note": "Erken piezo enjektör ve sonraki solenoid enjektörlü varyantlar ayrılmalıdır. Kampanya/servis geçmişi VIN ile sorgulanmalıdır."
+    },
+    {
+      "make": "Nissan",
+      "model": "Qashqai",
+      "generation": "Qashqai J10",
+      "years": "2006–2014",
+      "body": "SUV",
+      "engines": [
+        {
+          "label": "1.5 dCi 106/110 hp",
+          "displacement_cc": 1461,
+          "fuel": "Dizel",
+          "engine_family": "Renault-Nissan K9K",
+          "engine_codes": [
+            "K9K (alt kod VIN ile)"
+          ],
+          "code_status": "K9K ailesi; alt motor kodu ve yakıt sistemi nesli şasi/VIN üzerinden doğrulanmalı."
+        }
+      ],
+      "fault_record_ids": [
+        "nissan-qashqai-j10-15dci"
+      ],
+      "sources": [
+        {
+          "title": "Nissan Qashqai J10 1.5 dCi K9K uygulama ve arıza başlıkları",
+          "url": "https://vin-service-planner.com/en/nissan-qashqai-j10/1-5-dci-k9k/"
+        },
+        {
+          "title": "K9K motor ailesi arıza başlıkları",
+          "url": "https://ipacen.com/known-issues/renault-1-5-dci-k9k"
+        }
+      ],
+      "note": "Erken üretim alt yatak uyarısı bütün K9K motorlarına genellenemez; üretim yılı ve motor alt kodu önemlidir."
+    }
+  ]
+}

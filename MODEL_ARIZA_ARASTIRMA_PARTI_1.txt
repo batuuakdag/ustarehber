@@ -1,0 +1,24 @@
+USTAREHBER V9 - MODEL BAZLI ARIZA ARASTIRMA PARTI 1
+===================================================
+Eklenen model/motor gruplari:
+1) Ford Focus Mk2 1.6 TDCi (2004-2011)
+2) Renault Clio IV 1.5 dCi (2012-2019)
+3) Fiat Egea 1.3 MultiJet (2015-2022 kaynak kapsamı)
+
+Her model icin kronik ariza basliklari, belirtiler, kontrol sirasi ve onarim yaklasimi eklendi.
+Kesin DTC numarasi kaynakta model/motorla iliskilendirilmediyse kod uydurulmayip bos birakildi.
+Ford Focus Mk2 1.6 TDCi icin Haynes kaynaginda EGR ile birlikte P0489, P2141, P042E; dusuk turbo basinci/emiş hatti kacagi ile P0299 kodlari anilmaktadir.
+Bu kodlar dahi arac VIN'i, ECU ve motor varyantiyle dogrulanmalidir.
+
+KAYNAKLAR
+- Haynes, Ford Focus Mk2 common problems: https://au.haynes.com/blogs/tips-tutorials/ford-focus-mk2-common-problems-2005-2011
+- Acik Kaput, Renault Clio 1.5 dCi: https://www.acikkaput.com/tr/analiz/renault/clio-15-dci-clio-iv
+- Otorik, Renault Clio IV EGR/DPF: https://otorik.com/araclar/renault/clio/4/kronik-sorunlar/egr-ve-dpf-kurumlanmasi-1-5-dci/
+- Otorik, Fiat Egea 1.3 MultiJet: https://otorik.com/araclar/fiat/egea/2015/kronik-sorunlar/triger-zinciri-egr-ve-dpf-1-3-multijet/
+- OtoRisk, Fiat Egea 1.3 MultiJet: https://otorisk.com.tr/fiat/egea/356/1-3-multijet-95-manuel
+
+VERI KALITESI
+- Bu kaynaklarin bir bolumu ikincil/derleme niteliklidir; resmi servis dokumani yerine gecmez.
+- Kronik ariza sikligi ve onarim adimlari arac yasi, pazar, motor alt kodu, emisyon sistemi ve bakim gecmisine gore degisebilir.
+- Ureticiye ozel DTC ve servis bultenleri icin VIN/engine-code bazli ek dogrulama gerekir.
+- Bu ilk parti yalnizca 3 model/motor ornegidir; 59 markadaki tum binek modellerin tamamlandigi anlamina gelmez.

@@ -1,0 +1,8 @@
+USTAREHBER V7 — MARKA / MODEL SİSTEMİ
+- 59 marka ve 417 model ana katalogdan dinamik yüklenir.
+- Marka seçilince yalnızca o markanın modelleri listelenir.
+- Yıl/motor verisi olmayan modeller için sahte seçenek gösterilmez.
+- 11 prototip araç/yıl/motor kombinasyonu doğrulama bekliyor olarak korunur.
+- Girilen motor kodu doğrulanmış sayılmaz.
+- data/vehicles.js, JSON verisinin tarayıcı kopyasıdır; file:// açılışında fetch/CORS gerektirmez.
+SINIRLAR: Kasa/yıl/motor seçenekleri tüm modeller için tamamlanmamıştır. Teknik veriler doğrulanmış değildir.

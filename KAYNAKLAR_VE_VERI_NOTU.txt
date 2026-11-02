@@ -1,0 +1,44 @@
+USTAREHBER ARAÇ KATALOĞU — KAYNAK VE KAPSAM NOTU
+Sürüm: 0.1.0
+Tarih: 02.11.2026
+
+KULLANILAN KAYNAKLAR
+1) ODMD — https://www.odmd.org.tr/
+   2025 marka pazar kapsamı için başlangıç kaynağı. Marka satış verisi,
+   model-yıl-motor kodu kataloğu değildir.
+
+2) 2025 Türkiye araç satışları (ODMD raporlarından derleme):
+   https://www.otomobilkarsilastirma.com/arac-satislari/2025
+   Marka sıralaması ve pazar kapsamı kontrolünde kullanıldı.
+
+3) 2024 Türkiye otomobil marka ve model parkı tablosu:
+   https://katalog.marmara.edu.tr/veriler/yordambt/cokluortam/2B/676bba093093a.pdf
+   Türkiye araç parkında yaygın markalar ve bazı yaygın modeller için
+   kapsam kontrolünde kullanıldı.
+
+4) Üretici siteleri/kılavuz portalları:
+   https://www.ford.com.tr/
+   https://www.renault.com.tr/
+   https://www.toyota.com.tr/
+   Bunlar sonraki aşamada model yılı ve teknik doküman doğrulaması için
+   başvuru başlangıç noktalarıdır; bu veri paketindeki tüm varyantlar
+   üretici dokümanıyla doğrulanmış değildir.
+
+ÖNEMLİ
+Bu sürüm, marka-model ana indeksidir. Kasa nesli, model yılı, motor hacmi,
+yakıt, güç, motor kodu, şanzıman ve teknik değerler toplu olarak doğrulanmış
+değildir. CSV'deki boş alanlar bilinçli olarak boş bırakılmıştır.
+Bu alanları tahminle doldurmayın. VIN/şasi numarası, üretici katalogları,
+resmî kullanım/servis dokümanları ve güvenilir teknik veri kaynaklarıyla
+araştırma yapıldıktan sonra her varyant ayrı kayıt olarak eklenmelidir.
+
+
+V0.2.0 EK KAPSAM KAYNAKLARI
+5) 2025 Türkiye otomobil satışlarında marka listesi (ODMD verilerinden derleme):
+   https://www.arabahabercisi.com/otomobil-satis-sonuclari-2025-odmd-2026-otomobil-0-km-0-km-araba-2026/
+6) ODMD 2025 marka satış tablosu (PDF):
+   https://yesilhaber.net/wp-content/uploads/2025/09/ODMD-2-Eylul-2025-.pdf
+
+Bu kaynaklar marka kapsamını kontrol etmeye yardımcı olur; tüm model, kasa,
+yıl ve motor seçeneklerini kanıtlamaz. V0.2.0 ile eklenen aday model adlarının
+Türkiye'deki satış/ithalat geçmişi ayrıca kontrol edilmelidir.

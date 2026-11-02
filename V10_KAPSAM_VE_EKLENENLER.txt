@@ -1,0 +1,27 @@
+USTAREHBER V10 – KAPSAM VE SINIRLAR
+Tarih: 02.11.2026
+
+EKLENEN
+- 14 genel sistem arıza teşhis kartı.
+- 8 sistem kategorisi.
+- Arama ve sistem filtresi.
+- Belirti, olası neden, teşhis adımı, onarım yaklaşımı, güvenlik uyarısı ve maliyet alanı.
+- Maliyet alanı şeması: parça ve işçilik alt/üst sınırları. Güncel doğrulanmış teklif bulunmadığından tutarlar boş bırakılmıştır.
+
+KATALOG DURUMU
+- 59 marka / 429 model adı mevcut ana indeks.
+- Model adı, bütün kasa nesilleri ve motor seçeneklerinin tamamlandığı anlamına gelmez.
+- Ford için 24 model ailesi, 54 nesil ve 113 aday motor grubu daha ayrıntılıdır.
+- Diğer markalarda kasa/motor eşleşmeleri aşamalı araştırma gerektirir.
+
+VERİ KALİTESİ
+- Genel sistem rehberleri kronik arıza istatistiği değildir.
+- Model-özel arızalar için motor kodu, üretim aralığı ve VIN doğrulaması gerekir.
+- OBD kodu tek başına parça değişim kararı değildir.
+- Maliyetler, şehir/servis/parça kalitesi ve VIN'e göre değişir. Doğrulanmamış TL fiyatı eklenmemiştir.
+
+ARAŞTIRMA YÖNTEMİ
+- Üretici servis portalları, servis prosedürleri, teknik bültenler ve VIN tabanlı kampanya sorguları önceliklidir.
+- Honda MaRIS teknik bilgi portalı servis prosedürü, teknik bülten, geri çağırma, bakım programı ve işçilik sürelerinin VIN/model üzerinden kontrol edilebildiğini açıklar:
+  https://www.techinfo.honda-eu.com/tr/automobile/standartlastirilmis-navigasyon
+- Bağımsız şikâyet/derleme siteleri yalnızca araştırma sinyali olarak kullanılmalı; arıza oranı olarak sunulmamalıdır.

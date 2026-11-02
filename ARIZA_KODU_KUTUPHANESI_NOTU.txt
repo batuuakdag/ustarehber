@@ -1,0 +1,21 @@
+USTAREHBER V9 - ARIZA KODU KUTUPHANESI BASLANGIC NOTU
+====================================================
+Bu surumde 17 adet genel OBD-II guc aktarma sistemi kodu icin arama arayuzu eklenmistir.
+Kodlar: P0101, P0113, P0128, P0171, P0172, P0201, P0299, P0300, P0301,
+P0401, P0420, P0442, P0455, P0087, P0500, P0700, P0135.
+
+
+ONEMLI SINIRLAR
+- Bunlar genel OBD-II kod aciklamalaridir; her marka/model/yil/motor icin ozel ariza veritabani degildir.
+- Ariza kodu tek basina arizali parcayi veya kesin onarimi belirlemez.
+- Ureticiye ozel P1xxx kodlari, U-codes, B-codes, C-codes ve modul alt kodlari bu baslangic paketinde yoktur.
+- Kontrol adimlari genel teshis yaklasimidir; elektrik pin degerleri, torklar, sokum-takim adimlari ve adaptasyonlar icin araca ozel servis dokumani gerekir.
+- Canli veri, freeze-frame ve modullerin tam taramasi ile dogrulama gereklidir.
+- Fren, direksiyon, hava yastigi, yakit yuksek basincli hatlari ve EV yuksek voltaj sistemlerinde egitimli servis gerekir.
+
+KAYNAK YAKLASIMI
+- SAE J2012 / ISO 15031-6: standart OBD ariza kodu tanimlama cercevesi.
+- MEB Motorlu Araclar Teknolojisi "Otomotivde Ariza Teshisi" modulu: ariza teshisinde kod, canli parametre, tesisat, sensor ve akturator kontrollerinin birlikte ele alinmasi.
+- Uretici servis dokumanlari ve TSB'ler: sonraki asamada arac/motor bazinda eklenecek birincil kaynaklar.
+
+Bu ilk modul, tum modellerin kronik arizalarini veya tum DTC kodlarini kapsadigi iddiasinda degildir.

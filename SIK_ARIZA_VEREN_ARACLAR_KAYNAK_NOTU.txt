@@ -1,0 +1,35 @@
+USTAREHBER V9 - SIK ARIZA BILDIRIMI OLAN BINEK ARACLAR
+========================================================
+Bu modulde blog, kronik ariza rehberi ve kullanici ariza kayitlarinda tekrar eden 11 belirli motor/sanziman kombinasyonu oncelikli inceleme listesine eklendi:
+1) Peugeot 1.2 PureTech wet-belt motorlu ilgili modeller
+2) Citroen 1.2 PureTech wet-belt motorlu ilgili modeller
+3) Opel Corsa F / Grandland ilgili 1.2 Turbo wet-belt versiyonlari
+4) Ford 1.0 EcoBoost wet-belt motorlu ilgili modeller
+5) Ford Focus III kuru kavramali DPS6 Powershift
+6) VW Grubu DQ200 7 ileri kuru kavramali DSG
+7) BMW N47 2.0 dizel zamanlama zinciri
+8) Renault 1.2 TCe H5Ft
+9) Nissan 1.2 DIG-T H5Ft
+10) Fiat Egea 1.4 Fire yag tuketimi bildirimleri
+11) Peugeot/Citroen/DS 1.5 BlueHDi DV5 zincir konusu
+
+YONTEM VE SINIRLAR
+- Bu bir istatistiksel "en cok bozulan otomobiller" siralamasi degildir.
+- Kaynaklardaki sikayet/olay sayilari arac parkina, kilometreye, yas dagilimina ve maruz kalma suresine gore normalize edilmemistir.
+- Kullanici bildirim sayisi ariza olasiligi veya ariza orani demek degildir.
+- Liste model adina degil, motor/sanziman kombinasyonuna gore okunmalidir.
+- Ayni model yilinda motor revizyonu, sanziman kodu ve parca degisebilir.
+- Kesin kapsama VIN, motor kodu, sanziman kodu ve uretici kampanya sorgusuyla karar verilmelidir.
+- Onarim yaklasimlari genel teshis basamaklaridir; OEM servis proseduru yerine gecmez.
+- Kaynaklarin bazilari kullanici bildirimleri ve ikincil derlemelerdir; bu nedenle kayitlar "oncelikli inceleme" etiketiyle yayinlanir, kesin hukum olarak sunulmaz.
+
+KAYNAKLAR
+- OtoRisk motor indeksi: https://otorisk.com.tr/motor
+- OtoRisk kronik sanziman kayitlari: https://otorisk.com.tr/arizalar?sistem=Transmission
+- Bilgili Tampon model rehberi: https://bilgilitampon.com/modeller/
+- Otoplans motor sorunu bildirimleri: https://otoplans.net/sorun/motor
+- Araba Rehberim kronik ariza listesi: https://arabarehberim.net/kronik-arizalar
+- AracRehberim motor/sanziman rehberi: https://www.aracrehberim.com/motor-sanziman-arizalari
+- Kronikleri motor ariza veri tabani: https://www.kronikleri.com/
+
+Bu modül 11 model/motor kombinasyonu içerir. Listedeki markaların veya modellerin tüm motorları bu kapsamda değildir.

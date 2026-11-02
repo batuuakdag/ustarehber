@@ -1,0 +1,1564 @@
+{
+  "title": "UstaRehber model/motor arıza araştırmaları",
+  "version": "0.4",
+  "scope": "Üçüncü araştırma partisi eklendi: Opel, Peugeot, Citroën, Hyundai, Kia, Honda, Nissan, Mazda, Volvo, SEAT ve Dacia için örnek model/motor kayıtları. Bu marka kataloglarının tamamı değildir. Dördüncü araştırma partisi: Fiat Linea, Opel Astra J, Renault Megane III EDC, Mercedes-Benz W204 OM651 ve Nissan Qashqai J10 örnekleri eklendi.",
+  "records": [
+    {
+      "id": "ford-focus-mk2-16tdci",
+      "make": "Ford",
+      "model": "Focus",
+      "generation": "Focus Mk2 (2004–2011)",
+      "engine": "1.6 TDCi (DV6 ailesi; kesin motor kodu araçtan doğrulanmalı)",
+      "years": "2004–2011",
+      "faults": [
+        {
+          "name": "EGR valfi / EGR kontrol arızası",
+          "symptoms": [
+            "Düzensiz çalışma veya stop etme",
+            "Çekiş kaybı ve acil mod",
+            "Motor arıza lambası"
+          ],
+          "codes": [
+            {
+              "code": "P0489",
+              "note": "Haynes kaynağında bu model/motor bağlamında EGR arızasıyla birlikte anılıyor."
+            },
+            {
+              "code": "P2141",
+              "note": "Haynes kaynağında aynı EGR arıza örneğinde birlikte anılıyor."
+            },
+            {
+              "code": "P042E",
+              "note": "Haynes kaynağında aynı EGR arıza örneğinde birlikte anılıyor."
+            }
+          ],
+          "checks": [
+            "Önce ECU'daki tüm kodları ve donmuş kareyi kaydet.",
+            "EGR komutu/konum geri bildirimini ve kablo-soketi kontrol et.",
+            "EGR valfi ile kanalların kurum ve mekanik sıkışma durumunu üretici prosedürüne göre incele.",
+            "Temizlik/değişim sonrası gerekiyorsa adaptasyon ve yol testi uygula."
+          ],
+          "fix": "Arıza elektriksel mi mekanik mi ayrıştırılır. Soket/tesisat onarılır; valf kurumluysa üretici prosedürüne göre temizlenir, mekanik/elektrik arızalıysa uygun parça değiştirilir.",
+          "caution": "Kodların varlığı tek başına valfin kesin bozuk olduğunu kanıtlamaz; motor ECU kalibrasyonu ve araç VIN'iyle doğrula."
+        },
+        {
+          "name": "Turbo basıncı düşük / emiş hattı kaçağı",
+          "symptoms": [
+            "Çekiş düşüklüğü",
+            "Acil mod",
+            "Siyah duman ve turbo basıncının düşük kalması"
+          ],
+          "codes": [
+            {
+              "code": "P0299",
+              "note": "Haynes kaynağında Focus 1.6 TDCi'de düşük turbo basıncı ve emiş hattı kaçağıyla ilişkilendiriliyor."
+            }
+          ],
+          "checks": [
+            "Hedef/gerçek turbo basıncını canlı veride karşılaştır.",
+            "Turbo çıkışı, intercooler ve emiş hortumlarını çatlak/gevşek kelepçe için kontrol et.",
+            "Basınç/duman testi yap; vakum ve aktüatör kontrolünü motor varyantına göre uygula.",
+            "MAP sensörü verisini ve egzoz kısıtlamasını da değerlendir."
+          ],
+          "fix": "Kaçak tespit edilirse hortum/kelepçe veya intercooler onarılır. Aktüatör, turbo veya sensör ancak testle arızalı olduğu doğrulanırsa değiştirilir.",
+          "caution": "P0299 doğrudan turbo değişimi anlamına gelmez."
+        },
+        {
+          "name": "DPF doluluğu / rejenerasyon sorunu",
+          "symptoms": [
+            "DPF veya motor uyarısı",
+            "Performans düşüşü",
+            "Yağ seviyesinde artış/mazot kokusu görülebilmesi"
+          ],
+          "codes": [],
+          "checks": [
+            "DPF diferansiyel basınç, egzoz sıcaklık sensörleri ve hesaplanan kurum/kül yükünü tarama cihazıyla oku.",
+            "Rejenerasyon geçmişini ve sürüş profilini kontrol et.",
+            "Yağ seviyesinin yükselmesi veya yakıtla seyrelme belirtisini değerlendir.",
+            "Filtre temizliği/değişimi kararını üretici limitlerine göre ver."
+          ],
+          "fix": "Önce sensör, hortum, termostat ve rejenerasyonu engelleyen nedenler giderilir. DPF rejenerasyonu yalnızca uygun koşullarda ve servis prosedürüyle yapılır; kül doluluğunda profesyonel temizlik/değişim değerlendirilir.",
+          "caution": "Kaynakta bu arıza için tek bir evrensel DTC belirtilmediğinden kod listesi eklenmedi."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Haynes – Ford Focus Mk2 common problems (1.6 TDCi)",
+          "url": "https://au.haynes.com/blogs/tips-tutorials/ford-focus-mk2-common-problems-2005-2011"
+        }
+      ],
+      "evidence": "Model/motor seviyesinde ikincil teknik yayın; VIN ve üretici servis dokümanıyla teyit gerekli."
+    },
+    {
+      "id": "renault-clio4-15dci",
+      "make": "Renault",
+      "model": "Clio",
+      "generation": "Clio IV",
+      "engine": "1.5 dCi (K9K ailesi; alt motor kodu/kalibrasyon VIN ile doğrulanmalı)",
+      "years": "2012–2019",
+      "faults": [
+        {
+          "name": "DPF doluluğu / rejenerasyon tamamlanmaması",
+          "symptoms": [
+            "DPF uyarısı",
+            "Çekiş kaybı veya acil mod",
+            "Sık rejenerasyon ve artan yakıt tüketimi"
+          ],
+          "codes": [],
+          "checks": [
+            "ECU'da kayıtlı DTC'leri, donmuş kareyi ve rejenerasyon geçmişini oku.",
+            "Diferansiyel basınç sensörü ile hortumlarını ve egzoz sıcaklık sensörlerini kontrol et.",
+            "Kurum/kül yükünü üretici verisiyle değerlendir; motorun çalışma sıcaklığına ulaştığını doğrula.",
+            "Kök neden giderilmeden zorunlu rejenerasyon uygulama."
+          ],
+          "fix": "Sensör/hortum/termostat gibi rejenerasyonu engelleyen nedenler onarılır. Filtre yükü uygunsa üretici prosedürüyle rejenerasyon; kül birikiminde uygun profesyonel temizlik veya değişim değerlendirilir.",
+          "caution": "Her Clio IV 1.5 dCi aynı DPF donanımına sahip değildir; pazar ve motor varyantı doğrulanmalıdır."
+        },
+        {
+          "name": "EGR ve emme hattı kurumlanması",
+          "symptoms": [
+            "Düşük devirde isteksizlik",
+            "Rölanti dalgalanması",
+            "Duman ve arıza lambası"
+          ],
+          "codes": [],
+          "checks": [
+            "ECU kodlarını ve EGR komut/geri bildirim değerlerini oku.",
+            "EGR valfi, emme hattı ve ilgili basınç/hava ölçüm sensörlerini incele.",
+            "Kurumlanma ile elektriksel arızayı birbirinden ayır."
+          ],
+          "fix": "Kurumlanma doğrulanırsa üretici prosedürüne uygun temizlik; mekanik veya elektriksel arıza doğrulanırsa onarım/değişim yapılır. DPF ile ilişkili kök nedenler birlikte ele alınır.",
+          "caution": "Kaynaklar bu model/motor için kesin DTC numarası vermediğinden kod uydurulmadı."
+        },
+        {
+          "name": "Enjektör geri dönüş / püskürtme sapması",
+          "symptoms": [
+            "Soğukta zor çalışma",
+            "Düzensiz rölanti ve titreşim",
+            "Duman veya yakıt tüketimi artışı"
+          ],
+          "codes": [],
+          "checks": [
+            "Rail basıncı hedef/gerçek değerlerini marşta ve rölantide karşılaştır.",
+            "Enjektör düzeltme değerlerini üretici limitleriyle değerlendir.",
+            "Enjektör geri dönüş (leak-off) testini uygun ekipmanla yap."
+          ],
+          "fix": "Test sonucu sapma gösteren enjektör ve yakıt sistemi bileşenleri uzman dizel serviste kontrol edilir; kodlama/kalibrasyon gerekiyorsa motor ECU prosedürüne göre uygulanır.",
+          "caution": "Common-rail yüksek basınç borularını motor çalışırken gevşetme."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Renault Clio 1.5 dCi (2012–2019)",
+          "url": "https://www.acikkaput.com/tr/analiz/renault/clio-15-dci-clio-iv"
+        },
+        {
+          "label": "Otorik – Clio IV EGR ve DPF kurumlanması",
+          "url": "https://otorik.com/araclar/renault/clio/4/kronik-sorunlar/egr-ve-dpf-kurumlanmasi-1-5-dci/"
+        }
+      ],
+      "evidence": "Model/motor seviyesinde ikincil kaynaklar; üretici DTC ve servis prosedürü doğrulaması bekliyor."
+    },
+    {
+      "id": "fiat-egea-13mj",
+      "make": "Fiat",
+      "model": "Egea",
+      "generation": "Egea (2015–2022 kapsamlı kaynak kaydı)",
+      "engine": "1.3 MultiJet (motor kodu ve emisyon donanımı VIN ile doğrulanmalı)",
+      "years": "2015–2022",
+      "faults": [
+        {
+          "name": "DPF / EGR kurumlanması",
+          "symptoms": [
+            "DPF uyarısı",
+            "Çekiş kaybı",
+            "Rölanti düzensizliği veya acil mod"
+          ],
+          "codes": [],
+          "checks": [
+            "Arıza kodlarını ve donmuş kareyi oku; DPF basınç ve egzoz sıcaklık verilerini incele.",
+            "EGR komutu/geri bildirimini, emme hattını ve diferansiyel basınç sensörü hortumlarını kontrol et.",
+            "Rejenerasyon geçmişi ve kısa mesafe kullanımını değerlendir."
+          ],
+          "fix": "Sensör/hortum/EGR kaynaklı sorun giderilir. Filtre yükü ve kül miktarı üretici sınırlarına göre değerlendirilir; uygun durumda rejenerasyon, aksi halde profesyonel temizlik/değişim yapılır.",
+          "caution": "Kaynaklar kesin DTC numarası vermediğinden kod eklenmedi; donanıma göre farklılık olabilir."
+        },
+        {
+          "name": "Triger zinciri uzaması / zamanlama sesi",
+          "symptoms": [
+            "Soğuk ilk çalıştırmada zincir şakırtısı",
+            "Motor arıza lambası veya zamanlama uyumsuzluğu şüphesi",
+            "Performans düzensizliği"
+          ],
+          "codes": [],
+          "checks": [
+            "Soğuk ilk çalıştırma sesini ve bakım geçmişini incele.",
+            "Eksantrik/krank senkronizasyon değerlerini ve varsa korelasyon DTC'lerini tarama cihazıyla kontrol et.",
+            "Mekanik zamanlamayı üretici kilitleme aparatları ve prosedürüyle doğrula."
+          ],
+          "fix": "Zincir uzaması veya gergi/kılavuz aşınması ölçümle doğrulanırsa zincir seti ve ilgili bileşenler üretici prosedürüne göre yenilenir; yağlama sistemi ve yağ şartnamesi kontrol edilir.",
+          "caution": "Zincir sesi tek başına zincir değişimi kararı değildir; yağ basıncı ve yardımcı ekipman sesleri ayırt edilmelidir."
+        },
+        {
+          "name": "Turbo basınç / yağlama hattı hassasiyeti",
+          "symptoms": [
+            "Çekiş düşmesi",
+            "Turbo ıslığı veya anormal ses",
+            "Yağ kaçağı / duman"
+          ],
+          "codes": [],
+          "checks": [
+            "İstenen-gerçek turbo basıncını ve MAP verisini karşılaştır.",
+            "Emiş/intercooler hattında kaçak testi yap.",
+            "Yağ besleme ve dönüş hattını, yağ kalitesini ve bakım geçmişini kontrol et."
+          ],
+          "fix": "Kaçak veya yağ besleme kısıtlaması giderilir. Turbo mekanik hasarı ölçümle doğrulanmadan turbo değişimine gidilmez.",
+          "caution": "Turbo arızasının kök nedeni çözülmeden yalnızca turbo değiştirmek tekrarlayan arızaya yol açabilir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Otorik – Fiat Egea 1.3 MultiJet triger zinciri, EGR ve DPF",
+          "url": "https://otorik.com/araclar/fiat/egea/2015/kronik-sorunlar/triger-zinciri-egr-ve-dpf-1-3-multijet/"
+        },
+        {
+          "label": "OtoRisk – Egea 1.3 MultiJet 95 Manuel sorun kayıtları",
+          "url": "https://otorisk.com.tr/fiat/egea/356/1-3-multijet-95-manuel"
+        }
+      ],
+      "evidence": "Model/motor seviyesinde ikincil kaynaklar; VIN, motor kodu ve üretici servis prosedürü teyidi gerekli."
+    },
+    {
+      "id": "toyota-corolla-e170-14d4d",
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation": "Corolla E170",
+      "engine": "1.4 D-4D (motor alt kodu VIN ile doğrulanmalı)",
+      "years": "2013–2019",
+      "faults": [
+        {
+          "name": "DPF doluluğu ve rejenerasyon sorunları",
+          "symptoms": [
+            "Sık rejenerasyon veya fanın uzun çalışması",
+            "Yakıt tüketiminde artış",
+            "Çekiş düşüşü ve uyarı lambası"
+          ],
+          "codes": [],
+          "checks": [
+            "Önce ECU'daki arıza kodlarını ve donmuş kare verisini kaydet.",
+            "DPF diferansiyel basınç sensörü ve hortumlarını kontrol et.",
+            "Egzoz sıcaklık sensörleri, motor çalışma sıcaklığı ve rejenerasyon geçmişini incele.",
+            "Kurum/kül yükünü üretici limitleriyle karşılaştır."
+          ],
+          "fix": "Sensör veya hortum arızası varsa giderilir. Filtre yükü uygunsa üretici prosedürüne göre rejenerasyon; kül birikiminde profesyonel temizlik/değişim değerlendirilir.",
+          "caution": "DPF her 1.4 D-4D pazar/versiyonunda aynı olmayabilir; donanım VIN ile doğrulanmalı."
+        },
+        {
+          "name": "EGR valfi ve emme hattı kurumlanması",
+          "symptoms": [
+            "Rölanti dalgalanması",
+            "Düşük devirde çekiş kaybı",
+            "Duman ve motor arıza lambası"
+          ],
+          "codes": [],
+          "checks": [
+            "EGR komutu ve geri bildirimini canlı veride karşılaştır.",
+            "EGR valfi ve emme hattını kurum açısından incele.",
+            "MAF/MAP verisi ve emme kaçağını kontrol et."
+          ],
+          "fix": "Kurumlanma doğrulanırsa üretici prosedürüne uygun temizlik; mekanik/elektrik arızası varsa ilgili parça onarılır veya değiştirilir.",
+          "caution": "Kod ve canlı veri olmadan doğrudan EGR değişimi önerilmez."
+        },
+        {
+          "name": "Enjektör/SCV kaynaklı zor çalışma ve düzensiz rölanti",
+          "symptoms": [
+            "Soğukta zor çalışma",
+            "Rölantide dalgalanma veya tekleme",
+            "Ani güç kesilmesi"
+          ],
+          "codes": [],
+          "checks": [
+            "Marş sırasında rail basıncı hedef/gerçek değerini karşılaştır.",
+            "Enjektör düzeltme değerlerini üretici limitlerine göre incele.",
+            "Yakıt basınç kontrol valfi ve geri dönüş testini uygun ekipmanla yap."
+          ],
+          "fix": "Basınç ve enjektör testleriyle arızalı bileşen belirlenir; pompa kontrol valfi/enjektör onarımı uzman dizel serviste yapılır.",
+          "caution": "Common-rail yüksek basınç hattına motor çalışırken müdahale edilmez."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Toyota Corolla 1.4 D-4D E170",
+          "url": "https://www.acikkaput.com/tr/analiz/toyota/corolla-14-d-4d-e170"
+        }
+      ],
+      "evidence": "Model/motor özelinde ikincil analiz; üretici servis dokümanı ve VIN ile doğrulama gerekli."
+    },
+    {
+      "id": "vw-golf-mk7-16tdi",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation": "Golf Mk7",
+      "engine": "1.6 TDI (EA288; motor kodu ve DSG donanımı ayrıca doğrulanmalı)",
+      "years": "2012–2020",
+      "faults": [
+        {
+          "name": "DPF doluluğu ve rejenerasyon sorunları",
+          "symptoms": [
+            "DPF/motor uyarısı",
+            "Fan çalışmasının uzaması ve tüketim artışı",
+            "Çekiş düşmesi veya koruma modu"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel OBD-II DPF verim kodudur; bu araçta tek başına filtre tıkalı demek değildir."
+            }
+          ],
+          "checks": [
+            "VCDS/uyumlu cihazla DPF kurum-kül yükü ve diferansiyel basıncı oku.",
+            "Basınç sensörü hortumları ve egzoz sıcaklık sensörlerini kontrol et.",
+            "Rejenerasyonu engelleyen termostat, sensör veya EGR sorunlarını araştır."
+          ],
+          "fix": "Kök neden giderildikten sonra filtre yüküne göre üretici prosedürlü rejenerasyon veya profesyonel temizlik/değişim değerlendirilir.",
+          "caution": "P2002 kodu katalizör/filtre verim izleme sorunudur; ölçüm yapılmadan DPF değiştirilmez."
+        },
+        {
+          "name": "DSG DQ200 kavrama ve mekatronik sorunları (yalnız ilgili versiyonlarda)",
+          "symptoms": [
+            "Kalkışta titreme veya silkeleme",
+            "Düşük hızda kararsız vites geçişi",
+            "Vites göstergesinde uyarı veya koruma modu"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman modülünü ayrı tarat; hata kodları ve adaptasyon değerlerini kaydet.",
+            "Kavrama aşınma/adaptasyon ölçümlerini üretici cihazıyla değerlendir.",
+            "Mekatronik hidrolik basınç ve elektrik beslemesini test et."
+          ],
+          "fix": "Kavrama ve mekatronik arızası ayrı ayrı doğrulanır; yazılım/adaptasyon veya mekanik onarım yalnız üretici prosedürüyle yapılır.",
+          "caution": "Her Golf 1.6 TDI DSG değildir; şanzıman kodu ve üretim tarihi doğrulanmalı."
+        },
+        {
+          "name": "EGR/emme kurumlanması ve yakıt sistemi hassasiyeti",
+          "symptoms": [
+            "Düzensiz çalışma",
+            "Çekiş düşüşü",
+            "Duman veya arıza lambası"
+          ],
+          "codes": [],
+          "checks": [
+            "EGR komut/geri bildirimini ve MAF/MAP canlı verisini incele.",
+            "Enjektör düzeltme değerleri ve rail basıncını kontrol et.",
+            "Emme hattı kaçak ve kurumlanmasını kontrol et."
+          ],
+          "fix": "Ölçüm sonucu arızalı valf, sensör, enjektör veya kaçak onarılır; parçalar belirtiye bakarak rastgele değiştirilmez.",
+          "caution": "EA189/EA288, emisyon sistemi ve ECU yazılımı arasında farklılıklar vardır."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Volkswagen Golf 1.6 TDI Mk7",
+          "url": "https://www.acikkaput.com/tr/analiz/volkswagen/golf-16-tdi-mk7"
+        },
+        {
+          "label": "OtoTaksitle – Genel OBD-II kodları ve teşhis yaklaşımı",
+          "url": "https://ototaksitle.com/arac-rehberi/ariza-kodlari/"
+        }
+      ],
+      "evidence": "Golf Mk7 model/motor sorunları için ikincil analiz; DTC tanımı genel OBD-II referansıdır. VIN ve ECU ile teyit gerekli."
+    },
+    {
+      "id": "bmw-3-f30-320d",
+      "make": "BMW",
+      "model": "3 Serisi",
+      "generation": "F30/F31/F34",
+      "engine": "320d N47 veya B47 (motor ailesi üretim tarihi/VIN ile ayrılmalı)",
+      "years": "2012–2019",
+      "faults": [
+        {
+          "name": "N47 zamanlama zinciri aşınması",
+          "symptoms": [
+            "Motorun arka tarafından soğukta metalik şakırtı",
+            "Rölantide sürtünme/ıslık benzeri ses",
+            "İlerleyen durumda zamanlama uyumsuzluğu veya motor hasarı riski"
+          ],
+          "codes": [],
+          "checks": [
+            "Motorun N47 mi B47 mi olduğunu VIN/etiketten doğrula.",
+            "Soğuk ilk çalıştırma sesini ve bakım geçmişini incele.",
+            "Üretici prosedürüne göre zincir uzaması ve zamanlama kontrolü yap."
+          ],
+          "fix": "Zincir uzaması, kılavuz veya gergi aşınması doğrulanırsa set ve ilişkili parçalar uzman BMW servisinde değiştirilir; yağlama sistemi ve yağ şartnamesi de kontrol edilir.",
+          "caution": "N47 ve B47 risk profilleri aynı değildir; ses tek başına kesin teşhis değildir."
+        },
+        {
+          "name": "EGR soğutucu/valf ve emme swirl klapeleri",
+          "symptoms": [
+            "Motor arıza lambası ve çekiş kaybı",
+            "Soğutma sıvısı eksilmesi veya beyaz duman",
+            "Emme hattında kurumlanma"
+          ],
+          "codes": [],
+          "checks": [
+            "VIN ile açık geri çağırma/servis kampanyası sorgula.",
+            "Soğutma sıvısı kaybı ve EGR soğutucusu sızıntısını kontrol et.",
+            "EGR valfi ve emme manifoldu klapelerini incele."
+          ],
+          "fix": "Kampanya kapsamındaysa yetkili servis işlemi; aksi durumda sızıntı/valf/klape arızası doğrulanarak üretici prosedürüyle onarım yapılır.",
+          "caution": "EGR soğutucu sızıntısı güvenlik riski doğurabilir; şüphede aracı kullanmaya devam etme."
+        },
+        {
+          "name": "DPF doluluğu ve kısa mesafe kullanım etkisi",
+          "symptoms": [
+            "Sık rejenerasyon",
+            "Tüketim artışı ve fanın uzun çalışması",
+            "Çekiş düşüşü"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel OBD-II filtre verim kodu; BMW'nin üreticiye özel DDE hata belleği ayrıca okunmalıdır."
+            }
+          ],
+          "checks": [
+            "ISTA veya uyumlu cihazla DPF kurum/kül ve diferansiyel basınç verisini oku.",
+            "EGR, termostat ve egzoz sıcaklık sensörlerinin rejenerasyona etkisini kontrol et.",
+            "Kısa mesafe kullanım ve rejenerasyon geçmişini değerlendir."
+          ],
+          "fix": "Rejenerasyon engelini gider; filtre yüküne göre üretici prosedürüyle rejenerasyon, profesyonel temizlik veya değişim seçilir.",
+          "caution": "N47/B47 ve emisyon donanımı pazara/yıla göre farklıdır."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – BMW 320d F30",
+          "url": "https://www.acikkaput.com/tr/analiz/bmw/3-series-320d-f30-f31-f34"
+        },
+        {
+          "label": "Otorik – BMW F30 EGR soğutucu ve swirl klapeleri",
+          "url": "https://otorik.com/araclar/bmw/3-serisi/f30/kronik-sorunlar/egr-sogutucu-ve-swirl-klapeleri-n47-b47/"
+        },
+        {
+          "label": "ClickMechanic – BMW 3 Series common problems",
+          "url": "https://www.clickmechanic.com/blog/?p=8132"
+        }
+      ],
+      "evidence": "Birden fazla ikincil teknik kaynak; N47/B47 ayrımı ve VIN geri çağırma kontrolü kritik."
+    },
+    {
+      "id": "skoda-octavia-5e-16tdi-dsg",
+      "make": "Skoda",
+      "model": "Octavia",
+      "generation": "Octavia III (5E)",
+      "engine": "1.6 TDI 110 hp + 7 ileri DSG DQ200 (bu konfigürasyon için)",
+      "years": "2014–2017",
+      "faults": [
+        {
+          "name": "DQ200 kuru kavrama aşınması ve silkeleme",
+          "symptoms": [
+            "Kalkışta titreme",
+            "Düşük hızda sarsıntılı vites geçişi",
+            "Geri viteste veya rampada titreme"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kontrol modülünü tam tarat.",
+            "Kavrama adaptasyon ve aşınma değerlerini üretici cihazıyla oku.",
+            "Mekatronik arızası ile kavrama aşınmasını ayır."
+          ],
+          "fix": "Ölçümle kavrama aşınması doğrulanırsa kavrama seti ve gerekli ayarlar; mekatronik arızası doğrulanırsa ilgili hidrolik/elektronik onarım uygulanır.",
+          "caution": "Bu kayıt yalnızca 7 ileri DQ200 kuru kavramalı versiyon içindir; her Octavia şanzımanına genellenmez."
+        },
+        {
+          "name": "1.6 TDI EGR ve DPF sorunları",
+          "symptoms": [
+            "DPF uyarısı veya rejenerasyonun sıklaşması",
+            "Çekiş düşüşü",
+            "Düzensiz çalışma"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel OBD-II DPF verim kodu; araçtaki üretici DTC'si ayrıca okunmalı."
+            }
+          ],
+          "checks": [
+            "DPF kurum/kül yükü ve diferansiyel basıncı ölç.",
+            "EGR komut/geri bildirimini ve basınç hortumlarını kontrol et.",
+            "Rejenerasyon geçmişi ve sensörleri değerlendir."
+          ],
+          "fix": "Kök neden giderilir; filtre yüküne göre üretici prosedürüyle rejenerasyon/temizlik/değişim değerlendirilir.",
+          "caution": "EA189 ve EA288 varyantları ile emisyon donanımı farklı olabilir."
+        },
+        {
+          "name": "Enjektör ve yakıt sistemi performans sapması",
+          "symptoms": [
+            "Soğukta zor çalışma",
+            "Düzensiz rölanti",
+            "Yük altında güç kaybı"
+          ],
+          "codes": [],
+          "checks": [
+            "Enjektör düzeltme ve rail basınç değerlerini incele.",
+            "Yakıt filtresi ve besleme basıncını kontrol et.",
+            "Gerekirse enjektör geri dönüş/denge testi yap."
+          ],
+          "fix": "Testlerle doğrulanan enjektör veya besleme bileşeni onarılır; kodlama gerekiyorsa üretici prosedürü izlenir.",
+          "caution": "Yalnızca kilometreye bakarak enjektör değişimi kararı verilmez."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OtoRisk – Skoda Octavia 1.6 TDI 110 DSG 2014–2017",
+          "url": "https://otorisk.com.tr/skoda/octavia/5e/1-6-tdi-dsg"
+        }
+      ],
+      "evidence": "Konfigürasyon bazlı ikincil arıza kaydı; araç şanzıman kodu ve motor alt kodu doğrulanmalı."
+    },
+    {
+      "id": "mercedes-a-w176-180cdi",
+      "make": "Mercedes-Benz",
+      "model": "A Serisi",
+      "generation": "W176",
+      "engine": "A 180 CDI / A 180 d 1.5 dCi (Renault K9K ailesi; VIN ile doğrulanmalı)",
+      "years": "2012–2018",
+      "faults": [
+        {
+          "name": "EGR ve DPF kurumlanması",
+          "symptoms": [
+            "Motor arıza lambası",
+            "Çekiş kaybı veya acil mod",
+            "DPF uyarısı"
+          ],
+          "codes": [],
+          "checks": [
+            "Araçta DPF donanımı ve motor kodunu VIN ile doğrula.",
+            "EGR valfi komut/geri bildirimini incele.",
+            "DPF diferansiyel basınç, sıcaklık sensörleri ve rejenerasyon geçmişini kontrol et."
+          ],
+          "fix": "EGR kurumlanması veya arızası doğrulanırsa temizlik/değişim; DPF yükü uygunsa üretici prosedürlü rejenerasyon, aksi durumda profesyonel temizlik/değişim değerlendirilir.",
+          "caution": "Bu kayıt W176'nın belirtilen 1.5 dCi dizel versiyonları içindir; benzinli A Serisi motorlara uygulanmaz."
+        },
+        {
+          "name": "7G-DCT şanzıman davranışı (donanıma göre)",
+          "symptoms": [
+            "Düşük hızda sarsıntı",
+            "Kalkışta gecikme veya titreme",
+            "Vites geçişinde uyarı"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kodunu ve yağ/servis geçmişini doğrula.",
+            "TCU modülünü üretici uyumlu cihazla tarat.",
+            "Kavrama adaptasyonları, sıcaklık ve hata kayıtlarını incele."
+          ],
+          "fix": "Kavrama, aktüatör veya yazılım sorunu testle ayrıştırılır; onarım ve adaptasyon üretici prosedürüne göre yapılır.",
+          "caution": "A 180 CDI varyantlarında şanzıman tipi pazara ve yıla göre değişebilir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Otorik – Mercedes A Serisi W176 kronik sorunlar",
+          "url": "https://otorik.com/araclar/mercedes-benz/a-serisi/w176/kronik-sorunlar/"
+        },
+        {
+          "label": "Otorik – W176 1.5 dCi EGR ve DPF",
+          "url": "https://otorik.com/araclar/mercedes-benz/a-serisi/w176/kronik-sorunlar/egr-ve-dpf-kurumlanmasi-1-5-dci/"
+        }
+      ],
+      "evidence": "Motor ve kasa özelinde ikincil kaynak; şanzıman ve emisyon donanımı VIN ile doğrulanmalı."
+    },
+    {
+      "id": "opel-astra-j-13cdti",
+      "make": "Opel",
+      "model": "Astra",
+      "generation": "Astra J",
+      "engine": "1.3 CDTI / Fiat-MultiJet ailesi (alt kod VIN ile doğrulanmalı)",
+      "years": "2009–2015",
+      "faults": [
+        {
+          "name": "Zamanlama zinciri uzaması",
+          "symptoms": [
+            "Soğuk ilk çalıştırmada zincir şakırtısı",
+            "Rölantide düzensizlik",
+            "Zamanlama uyumsuzluğu şüphesi"
+          ],
+          "codes": [
+            {
+              "code": "P0011 / P0012",
+              "note": "Zamanlama performans kodları genel OBD-II örnekleridir; bu motorda kesin arıza teşhisi için ECU verisi ve mekanik kontrol gerekir."
+            }
+          ],
+          "checks": [
+            "Soğuk çalıştırma sesini ve yağ bakım geçmişini incele.",
+            "Eksantrik/krank senkronizasyon değerlerini oku.",
+            "Zincir uzaması ve gergi basıncını üretici prosedürüyle doğrula."
+          ],
+          "fix": "Zincir, gergi ve kızak aşınması ölçümle doğrulanırsa set değiştirilir; yağlama sistemi ve doğru yağ spesifikasyonu kontrol edilir.",
+          "caution": "Her Astra J motorunda zincir bulunmaz; bu kayıt 1.3 CDTI motor ailesi içindir."
+        },
+        {
+          "name": "EGR ve DPF kurumlanması",
+          "symptoms": [
+            "Çekiş kaybı ve acil mod",
+            "Siyah duman / düzensiz rölanti",
+            "DPF uyarısı veya yağ seviyesinde artış"
+          ],
+          "codes": [
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu."
+            },
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu; tek başına filtre değişimi kararı değildir."
+            },
+            {
+              "code": "P2463",
+              "note": "DPF kurum birikimi kodu; araç üretici açıklamasıyla teyit edilmeli."
+            }
+          ],
+          "checks": [
+            "EGR komut ve geri bildirimini incele.",
+            "DPF diferansiyel basınç, kurum yükü ve rejenerasyon geçmişini oku.",
+            "Sensör hortumları, termostat ve egzoz sıcaklık sensörlerini kontrol et."
+          ],
+          "fix": "Kök neden sensör/EGR/termostat ise önce o giderilir; filtre yükü uygunsa üretici prosedürlü rejenerasyon veya profesyonel temizlik uygulanır.",
+          "caution": "Kod açıklamaları genel OBD-II düzeyindedir; Opel'e özel DTC ve ECU varyantı ayrıca taranmalı."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Opel Astra J kronik arızalar",
+          "url": "https://golkentotomotiv.com.tr/modeller/opel-astra-j"
+        },
+        {
+          "label": "Otorik – Astra J 1.3 CDTI zincir ve EGR",
+          "url": "https://otorik.com/araclar/opel/astra/j/kronik-sorunlar/triger-zinciri-uzamasi-ve-egr-1-3-cdti-multijet/"
+        }
+      ],
+      "evidence": "İkincil servis/arıza derlemeleri; üretici servis prosedürü ve VIN doğrulaması gerekli."
+    },
+    {
+      "id": "peugeot-308-t7-dv6",
+      "make": "Peugeot",
+      "model": "308",
+      "generation": "308 T7",
+      "engine": "1.6 HDi DV6 (motor alt kodu ve FAP donanımı VIN ile doğrulanmalı)",
+      "years": "2007–2013",
+      "faults": [
+        {
+          "name": "Turbo yağ besleme hattı ve süzgeç tıkanması",
+          "symptoms": [
+            "Turbo ıslığı / uğultusu",
+            "Çekiş kaybı ve mavi duman",
+            "Turbo değişiminden sonra tekrar arıza"
+          ],
+          "codes": [
+            {
+              "code": "P0299",
+              "note": "Düşük turbo basıncı kodu; kök nedeni belirlemez."
+            }
+          ],
+          "checks": [
+            "Enjektör diplerinde kurum ve blow-by belirtisi ara.",
+            "Turbo yağ besleme banjo süzgeci ve karter emiş süzgecini kontrol et.",
+            "Yağ basıncı, yağ kalitesi ve turbo yağ dönüş hattını incele.",
+            "Emiş/intercooler hattında yağ ve kaçak kontrolü yap."
+          ],
+          "fix": "Yağ devresindeki kurum/kısıt temizlenmeden yalnız turbo değiştirilmemeli; kök neden giderilir, yağ ve filtre yenilenir, turbo üretici prosedürüne göre değerlendirilir.",
+          "caution": "DV6 motorun alt varyantları ve turbo donanımı farklıdır; motor kodu doğrulanmalı."
+        },
+        {
+          "name": "Enjektör bakır pul kaçağı ve kurum birikimi",
+          "symptoms": [
+            "Enjektör çevresinde siyah katranımsı kurum",
+            "Puflama/egzoz kokusu",
+            "Düzensiz çalışma"
+          ],
+          "codes": [],
+          "checks": [
+            "Enjektör diplerini ve silindir kapağı çevresini kontrol et.",
+            "Kaçak doğrulanırsa enjektör yuvası ve yüzeyini üretici prosedürüyle değerlendir.",
+            "Enjektör bağlantı elemanlarını doğru tork ve yenileme şartlarıyla uygula."
+          ],
+          "fix": "Sızdırmazlık yüzeyi uygun şekilde temizlenir/onarılır, bakır pul ve gerekli bağlantı elemanları yenilenir; yağ kontaminasyonu kontrol edilir.",
+          "caution": "Enjektör yuvasına zarar verecek taşlama/temizlik yöntemlerinden kaçınılmalı."
+        },
+        {
+          "name": "FAP/DPF doluluğu ve rejenerasyon",
+          "symptoms": [
+            "Partikül filtresi uyarısı",
+            "Güç kaybı",
+            "Sık rejenerasyon ve artan tüketim"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel filtre verim kodu; basınç ve kurum/kül ölçümü gerekir."
+            }
+          ],
+          "checks": [
+            "DPF basınç sensörü ve hortumlarını kontrol et.",
+            "Kurum/kül yükü ve son rejenerasyon mesafesini oku.",
+            "Eolys katkı sistemi bulunan versiyonlarda sıvı seviyesini ve sayaç durumunu kontrol et."
+          ],
+          "fix": "Sensör/katkı sistemi arızaları onarılır; filtre yükü uygunsa üretici prosedürüyle rejenerasyon, kül birikiminde profesyonel temizlik/değişim yapılır.",
+          "caution": "FAP katkı sistemi her DV6 versiyonunda aynı değildir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Peugeot 308 1.6 HDi T7",
+          "url": "https://www.acikkaput.com/tr/analiz/peugeot/308-16-hdi-t7"
+        },
+        {
+          "label": "Kronikleri – PSA DV6 motor sorunları",
+          "url": "https://www.kronikleri.com/motor/psa-dv6-1-6-hdi/"
+        },
+        {
+          "label": "Testigo – Peugeot 308 1.6 HDi",
+          "url": "https://testigoauto.com/en/cars/peugeot/308-ii/1-6-hdi"
+        }
+      ],
+      "evidence": "DV6 motor ailesi için çoklu ikincil kaynak; her 308 yılı ve motor alt koduna otomatik genellenemez."
+    },
+    {
+      "id": "citroen-c4-ii-16hdi",
+      "make": "Citroën",
+      "model": "C4",
+      "generation": "C4 II",
+      "engine": "1.6 HDi / e-HDi / BlueHDi (DV6; alt kod VIN ile doğrulanmalı)",
+      "years": "2010–2018",
+      "faults": [
+        {
+          "name": "EGR kurumlanması ve FAP katkı sıvısı (Eolys)",
+          "symptoms": [
+            "DPF/FAP uyarısı",
+            "Çekiş kaybı ve motor arıza lambası",
+            "Rejenerasyonun tamamlanmaması"
+          ],
+          "codes": [],
+          "checks": [
+            "Motor ve FAP sisteminin VIN'e göre donanımını doğrula.",
+            "Eolys katkı seviyesini ve sayaç verisini uygun teşhis cihazıyla oku.",
+            "EGR komutu, diferansiyel basınç ve egzoz sıcaklık sensörlerini kontrol et."
+          ],
+          "fix": "Uygun tip Eolys sıvısı üretici prosedürüyle tamamlanır ve sayaç sıfırlanır; EGR/DPF kök nedeni giderilir, filtre yüküne göre rejenerasyon veya temizlik yapılır.",
+          "caution": "Eolys tipi ve dolum miktarı araç üretim tarihine göre değişir; rastgele katkı kullanılmaz."
+        },
+        {
+          "name": "BlueHDi AdBlue depo/pompa/ısıtıcı arızası",
+          "symptoms": [
+            "AdBlue sistem arızası uyarısı",
+            "Marşa kalan mesafe geri sayımı",
+            "Motor arıza lambası"
+          ],
+          "codes": [],
+          "checks": [
+            "SCR/AdBlue modülünü üretici uyumlu cihazla tarat.",
+            "Depo pompa/ısıtıcı, seviye ve kalite sensör verilerini incele.",
+            "Hatlarda kristalleşme ve elektrik beslemesini kontrol et; VIN ile kampanya sorgula."
+          ],
+          "fix": "Elektrik ve sıvı hattı testleri sonrası arızalı depo/pompa modülü onarılır veya değiştirilir; sistem dolumu ve sıfırlama üretici prosedürüyle yapılır.",
+          "caution": "Bu arıza yalnız BlueHDi SCR donanımlı versiyonlara aittir; HDi/e-HDi ile karıştırılmamalı."
+        },
+        {
+          "name": "4 ileri otomatik şanzımanda solenoid/basınç problemi (donanıma bağlı)",
+          "symptoms": [
+            "Sert vites geçişi",
+            "Spor/Kar göstergelerinin yanıp sönmesi",
+            "Tek viteste kalma"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kodunu ve yağ şartnamesini doğrula.",
+            "TCU arıza belleğini oku ve basınç/solenoid komutlarını incele.",
+            "Yağ seviyesi, sıcaklık ve hidrolik basınç testlerini uygula."
+          ],
+          "fix": "Solenoid veya hidrolik blok arızası ölçümle doğrulanır; doğru yağ, adaptasyon ve gerekirse revizyon uygulanır.",
+          "caution": "Bu kayıt yalnız ilgili 4 ileri otomatik şanzımanlı versiyonlar içindir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Otorik – Citroën C4 II kronik sorunları",
+          "url": "https://otorik.com/araclar/citroen/c4/2/kronik-sorunlar/"
+        },
+        {
+          "label": "Otorik – C4 II 1.6 HDi EGR/FAP katkı",
+          "url": "https://otorik.com/araclar/citroen/c4/2/kronik-sorunlar/egr-ve-dpf-fap-katki-sivisi-sorunlari-1-6-hdi/"
+        },
+        {
+          "label": "Otorik – C4 II BlueHDi AdBlue",
+          "url": "https://otorik.com/araclar/citroen/c4/2/kronik-sorunlar/adblue-depo-ve-pompa-arizasi-bluehdi/"
+        }
+      ],
+      "evidence": "İkincil teknik derlemeler; donanım, katkı sıvısı ve şanzıman VIN ile doğrulanmalı."
+    },
+    {
+      "id": "hyundai-i30-gd-16crdi",
+      "make": "Hyundai",
+      "model": "i30",
+      "generation": "i30 GD",
+      "engine": "1.6 CRDi D4FB (motor kodu/şanzıman VIN ile doğrulanmalı)",
+      "years": "2012–2017",
+      "faults": [
+        {
+          "name": "DPF doluluğu ve rejenerasyon tamamlanamaması",
+          "symptoms": [
+            "DPF uyarısı",
+            "Çekiş kaybı ve fanın uzun çalışması",
+            "Yakıt tüketimi artışı"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu; gerçek kurum/kül ve basınç ölçümü gerekir."
+            }
+          ],
+          "checks": [
+            "DPF kurum/kül yükünü ve son rejenerasyon verisini oku.",
+            "Diferansiyel basınç sensörü/hortumları ve egzoz sıcaklık sensörlerini kontrol et.",
+            "Termostat ve EGR'nin rejenerasyonu engelleyip engellemediğini değerlendir."
+          ],
+          "fix": "Kök neden giderildikten sonra üretici prosedürüne uygun rejenerasyon; kül doluluğunda profesyonel temizlik/değişim değerlendirilir.",
+          "caution": "DPF donanımı emisyon standardı ve pazarla değişebilir."
+        },
+        {
+          "name": "EGR ve emme manifoldu kurumlanması",
+          "symptoms": [
+            "Düşük devirde isteksizlik",
+            "Rölanti dalgalanması",
+            "Duman veya motor arıza lambası"
+          ],
+          "codes": [
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu; Hyundai üretici kodları ayrıca okunmalı."
+            }
+          ],
+          "checks": [
+            "EGR komut/geri bildirimini ve MAF/MAP canlı verisini karşılaştır.",
+            "EGR ve emme kanallarını kurum açısından incele.",
+            "Vakum/elektrik kontrol devresini test et."
+          ],
+          "fix": "Kurumlanma doğrulanırsa üretici prosedürüyle temizlik; valf veya tesisat arızası varsa onarım yapılır.",
+          "caution": "EGR iptali onarım olarak önerilmez."
+        },
+        {
+          "name": "Debriyaj ve çift kütle volan titreşimi (manuel versiyonlarda)",
+          "symptoms": [
+            "Kalkışta titreme",
+            "Rölantide vuruntu veya pedal titreşimi",
+            "Yük altında kavrama sesi"
+          ],
+          "codes": [],
+          "checks": [
+            "Volan boşluğu ve sesini, debriyaj kaydırmasını kontrol et.",
+            "Motor/şanzıman takozlarını ayırıcı testlerle incele.",
+            "Şanzıman sökülmeden önce hidrolik kumanda ve debriyaj ayarını kontrol et."
+          ],
+          "fix": "DMF ve debriyaj aşınması doğrulanırsa set birlikte değerlendirilir; takoz ve kumanda sistemi de kontrol edilir.",
+          "caution": "Bu başlık manuel şanzıman içindir; DCT'ye genellenmez."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Hyundai i30 1.6 CRDi GD",
+          "url": "https://www.acikkaput.com/tr/analiz/hyundai/i30-16-crdi-gd"
+        }
+      ],
+      "evidence": "Model/motor analizi; alt kod ve şanzıman türü doğrulanmalı."
+    },
+    {
+      "id": "kia-ceed-jd-16crdi",
+      "make": "Kia",
+      "model": "Ceed",
+      "generation": "Ceed JD / II",
+      "engine": "1.6 CRDi D4FB (alt kod ve şanzıman VIN ile doğrulanmalı)",
+      "years": "2012–2018",
+      "faults": [
+        {
+          "name": "EGR ve emme yolu kurumlanması",
+          "symptoms": [
+            "Düşük devirde güç kaybı",
+            "Düzensiz rölanti",
+            "Motor arıza lambası"
+          ],
+          "codes": [
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu; Kia ECU açıklamasıyla teyit gerekir."
+            }
+          ],
+          "checks": [
+            "EGR komut ve konum geri bildirimini oku.",
+            "MAF/MAP canlı verisini ve emme kaçağını kontrol et.",
+            "EGR ve emme manifoldunda kurumlanmayı incele."
+          ],
+          "fix": "Kurumlanma varsa uygun temizlik; valf/aktüatör veya tesisat arızası doğrulanırsa onarım/değişim yapılır.",
+          "caution": "Motor varyantına göre EGR sistemi farklı olabilir."
+        },
+        {
+          "name": "DPF doluluğu / kısa mesafe rejenerasyon sorunu",
+          "symptoms": [
+            "DPF lambası",
+            "Çekiş kaybı",
+            "Sık rejenerasyon ve tüketim artışı"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu; filtre değişimi kararı değildir."
+            }
+          ],
+          "checks": [
+            "DPF basınç ve kurum/kül verilerini oku.",
+            "Sensör hortumları ve egzoz sıcaklık sensörlerini test et.",
+            "Rejenerasyonu engelleyen termostat/EGR sorunlarını kontrol et."
+          ],
+          "fix": "Önce kök neden giderilir; filtre yüküne göre servis rejenerasyonu veya profesyonel temizlik değerlendirilir.",
+          "caution": "DPF varlığı ve sistemi üretim pazarı/Euro standardına göre doğrulanmalı."
+        },
+        {
+          "name": "7 ileri DCT kavrama titremesi (yalnız DCT versiyonları)",
+          "symptoms": [
+            "Kalkışta titreme",
+            "Düşük hızda sarsıntı",
+            "Vites geçişinde gecikme"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kodunu doğrula ve TCU taraması yap.",
+            "Kavrama sıcaklık/aşınma ve adaptasyon verilerini oku.",
+            "Aktüatör ve yazılım güncellemesi durumunu kontrol et."
+          ],
+          "fix": "Kavrama aşınması veya kontrol ünitesi arızası ölçümle ayrıştırılır; üretici prosedürüne göre adaptasyon veya parça onarımı yapılır.",
+          "caution": "Manuel ve DCT şanzımanlı araçlar ayrılmalıdır."
+        }
+      ],
+      "sources": [
+        {
+          "label": "AraçBenim – Kia Ceed 1.6 CRDi 2012–2018",
+          "url": "https://aracbenim.com/kia/ceed/2015/16-crdi/"
+        }
+      ],
+      "evidence": "Kullanıcı/teknik kaynak derlemesi; motor/şanzıman alt varyantı doğrulanmalı."
+    },
+    {
+      "id": "honda-civic-fb-16idtec",
+      "make": "Honda",
+      "model": "Civic",
+      "generation": "Civic FB",
+      "engine": "1.6 i-DTEC 120 hp (motor kodu VIN ile doğrulanmalı)",
+      "years": "2013–2016",
+      "faults": [
+        {
+          "name": "DPF doluluğu ve rejenerasyon sorunu",
+          "symptoms": [
+            "DPF/motor arıza lambası",
+            "Çekiş düşüşü",
+            "Sık rejenerasyon ve fanın uzun çalışması"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Honda 1.6 dizel için yayımlanmış teknik bültende bazı Euro V 2014–2015 araçlarda yazılım kaynaklı P2002 kaydı bildirilmiştir; her P2002 bu nedenden kaynaklanmaz."
+            }
+          ],
+          "checks": [
+            "Honda uyumlu cihazla ECM hata belleği ve donmuş kareyi oku.",
+            "DPF diferansiyel basınç ve egzoz sıcaklık verilerini kontrol et.",
+            "VIN/üretim tarihi için teknik bülten ve yazılım güncellemesi uygunluğunu sorgula.",
+            "Filtre yükü ve diğer mekanik/sensör nedenlerini ele."
+          ],
+          "fix": "Önce mekanik/elektrik arızaları dışlanır. Bülten kapsamındaki araçta güncel ECM yazılımı uygulanabilir; gerçek filtre doluluğunda üretici prosedürü izlenir.",
+          "caution": "P2002 için yazılım güncellemesi yalnız ilgili bülten kapsamı ve test sonucu uygunsa yapılır."
+        },
+        {
+          "name": "EGR kurumlanması ve performans dalgalanması",
+          "symptoms": [
+            "Düşük devirde isteksizlik",
+            "Rölantide dalgalanma",
+            "Motor arıza lambası"
+          ],
+          "codes": [
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu; Honda üretici alt kodları ayrıca okunmalı."
+            }
+          ],
+          "checks": [
+            "EGR komut/geri bildirimini ve hava akış verisini karşılaştır.",
+            "EGR kanalı, soğutucu ve tesisatı incele.",
+            "DPF rejenerasyon ve egzoz karşı basınç verilerini değerlendir."
+          ],
+          "fix": "Kurumlanma veya elektriksel arıza doğrulanırsa ilgili parça üretici prosedürüyle temizlenir/onarılır.",
+          "caution": "Honda Civic 1.6 i-DTEC varyantı ve üretim yılına göre servis bültenleri değişir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OtoRisk – Civic 1.6 i-DTEC 2013–2016",
+          "url": "https://otorisk.com.tr/honda/civic/fb/1-6-i-dtec-120-manuel"
+        },
+        {
+          "label": "Açık Kaput – Civic 1.6 i-DTEC",
+          "url": "https://www.acikkaput.com/tr/analiz/honda/civic-16-i-dtec-fb-fg"
+        },
+        {
+          "label": "Motorwise – Honda Civic Tourer 1.6 i-DTEC workshop bulletins",
+          "url": "https://motorwise.io/articles/common-faults/honda/civic-tourer/1-6-i-dtec-2013-2018/"
+        }
+      ],
+      "evidence": "Model/motor derlemesi ve atıf yapılan atölye bültenleri; bülten kapsamı VIN ve üretim tarihiyle kontrol edilmeli."
+    },
+    {
+      "id": "nissan-qashqai-j11-15dci",
+      "make": "Nissan",
+      "model": "Qashqai",
+      "generation": "Qashqai J11",
+      "engine": "1.5 dCi K9K (enjeksiyon sistemi ve alt motor kodu VIN ile doğrulanmalı)",
+      "years": "2013–2021",
+      "faults": [
+        {
+          "name": "DPF doluluğu ve rejenerasyon tamamlanamaması",
+          "symptoms": [
+            "DPF/motor uyarısı",
+            "Çekiş kaybı",
+            "Fan uzun çalışması ve tüketim artışı"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu; Nissan üretici DTC'si ayrıca okunmalı."
+            }
+          ],
+          "checks": [
+            "DPF kurum/kül yükü ve diferansiyel basıncı ölç.",
+            "Basınç sensörü hortumları ve egzoz sıcaklık sensörlerini kontrol et.",
+            "Termostat, EGR ve sürüş koşullarının rejenerasyona etkisini incele."
+          ],
+          "fix": "Rejenerasyonun tamamlanmasını engelleyen kök neden onarılır; filtre yüküne göre üretici prosedürüyle rejenerasyon veya profesyonel temizlik yapılır.",
+          "caution": "DPF donanımı pazar/emisyon standardına göre farklı olabilir."
+        },
+        {
+          "name": "Turbo yağlama hassasiyeti ve basınç kontrolü",
+          "symptoms": [
+            "Turbo ıslığı",
+            "Güç kaybı",
+            "Mavi duman veya yağ tüketimi"
+          ],
+          "codes": [
+            {
+              "code": "P0299",
+              "note": "Genel düşük turbo basıncı kodu; hortum/aktüatör/sensör/turbo ayrımı yapılmalı."
+            }
+          ],
+          "checks": [
+            "Hedef/gerçek turbo basıncını yük altında kaydet.",
+            "Yağ bakım geçmişi ve doğru yağ spesifikasyonunu kontrol et.",
+            "Turbo yağ besleme/dönüş hattı, intercooler ve vakum/aktüatör sistemini incele."
+          ],
+          "fix": "Yağlama kısıtı veya basınç kaçağı giderilir; turbo mekanik hasarı ölçümle doğrulanmadan turbo değiştirilmez.",
+          "caution": "K9K motor alt varyantları ve turbo kontrolü üretim yılına göre değişir."
+        },
+        {
+          "name": "Enjektör ve yakıt basıncı düzensizliği",
+          "symptoms": [
+            "Soğukta zor çalışma",
+            "Hızlanmada tekleme veya stop etme",
+            "Duman ve düzensiz rölanti"
+          ],
+          "codes": [],
+          "checks": [
+            "Enjeksiyon sisteminin Delphi mi Continental/Siemens mi olduğunu pompa/etiket/VIN ile belirle.",
+            "Düşük basınç hattında hava ve kaçak kontrolü yap.",
+            "Rail basıncı, enjektör geri dönüş ve regülatör değerlerini test et."
+          ],
+          "fix": "Sistemin tipine uygun testle arızalı pompa kontrol valfi/enjektör/hat belirlenir; enjektör kodlaması gerekiyorsa ECU'ya yazılır.",
+          "caution": "Delphi ve Continental sistemlerinin test değerleri/parçaları birbirinin yerine kullanılamaz."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Nissan Qashqai 1.5 dCi J11",
+          "url": "https://www.acikkaput.com/tr/analiz/nissan/qashqai-15-dci-j11"
+        }
+      ],
+      "evidence": "Model/motor özelinde ikincil analiz; enjeksiyon sistemi ve DPF donanımı VIN ile doğrulanmalı."
+    },
+    {
+      "id": "mazda3-bk-16mzcd",
+      "make": "Mazda",
+      "model": "3",
+      "generation": "Mazda 3 BK",
+      "engine": "1.6 MZ-CD diesel (DV6 family; Mazda engine code/VIN to verify)",
+      "years": "2003–2009",
+      "faults": [
+        {
+          "name": "DPF doluluğu ve rejenerasyon yarıda kalması",
+          "symptoms": [
+            "DPF uyarısı",
+            "Çekiş düşüşü",
+            "Fan uzun çalışması ve yakıt tüketimi artışı"
+          ],
+          "codes": [
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu; Mazda üretici hata belleği ayrıca taranmalı."
+            }
+          ],
+          "checks": [
+            "DPF diferansiyel basınç ve sıcaklık sensörlerini kontrol et.",
+            "Kurum/kül yükü ve rejenerasyon geçmişini oku.",
+            "Yağ seviyesinin yükselmesi/yakıt seyrelmesi ihtimalini incele."
+          ],
+          "fix": "Sensör veya rejenerasyon engeli giderilir; filtre yükü üretici sınırlarına göre rejenerasyon veya profesyonel temizlik/değişimle ele alınır.",
+          "caution": "Mazda 3 1.6 MZ-CD'nin DPF donanımı ülke ve üretim yılına göre değişebilir."
+        },
+        {
+          "name": "Turbo yağlama, EGR ve emme kurumlanması",
+          "symptoms": [
+            "Turbo ıslığı ve güç kaybı",
+            "Duman",
+            "Düşük devirde isteksizlik"
+          ],
+          "codes": [
+            {
+              "code": "P0299",
+              "note": "Genel düşük turbo basıncı kodu."
+            },
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu."
+            }
+          ],
+          "checks": [
+            "Turbo yağ besleme hattı ve bakım geçmişini kontrol et.",
+            "EGR ve emme hattında kurumlanmayı incele.",
+            "MAF/MAP verisi ve basınç hattını test et."
+          ],
+          "fix": "Yağlama ve emiş kaçakları giderilir; EGR/emme temizliği yalnız birikim doğrulanırsa yapılır; turbo arızası testle kanıtlanır.",
+          "caution": "DV6 kökenli parçalar aynı görünse bile motor kalibrasyonu ve Mazda parça numarası doğrulanmalı."
+        },
+        {
+          "name": "Enjektör sızdırmazlığı ve çift kütle volan",
+          "symptoms": [
+            "Enjektör çevresinde kurum",
+            "Soğukta zor çalışma",
+            "Rölantide titreşim / kalkışta vuruntu"
+          ],
+          "codes": [],
+          "checks": [
+            "Enjektör diplerinde gaz kaçağı ve geri dönüş değerlerini kontrol et.",
+            "Kompresyon ve yakıt basıncı verilerini değerlendir.",
+            "DMF ses/boşluk ve debriyaj kaydırmasını kontrol et."
+          ],
+          "fix": "Enjektör sızdırmazlığı ve kodlama gereklilikleri giderilir; DMF/debriyaj aşınması ölçümle doğrulanırsa set değerlendirilir.",
+          "caution": "Her titreşim DMF değildir; motor takozları da kontrol edilmelidir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Açık Kaput – Mazda 3 1.6 MZ-CD BK",
+          "url": "https://www.acikkaput.com/tr/analiz/mazda/mazda3-16-mz-cd-bk"
+        }
+      ],
+      "evidence": "Model/motor özelinde ikincil analiz; Mazda versiyonu ve DPF donanımı teyit edilmeli."
+    },
+    {
+      "id": "volvo-v40-d2-16dv6",
+      "make": "Volvo",
+      "model": "V40",
+      "generation": "V40 (2013–2015 D2 1.6)",
+      "engine": "D2 1.6 diesel (DV6 family; exact engine and gearbox by VIN)",
+      "years": "2013–2015",
+      "faults": [
+        {
+          "name": "DV6 turbo yağlama ve DPF sorunu",
+          "symptoms": [
+            "Turbo ıslığı / çekiş kaybı",
+            "Mavi duman veya yağ tüketimi",
+            "DPF uyarısı ve rejenerasyon sıklaşması"
+          ],
+          "codes": [
+            {
+              "code": "P0299",
+              "note": "Genel düşük turbo basıncı kodu."
+            },
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu."
+            }
+          ],
+          "checks": [
+            "Turbo yağ besleme hattı, yağ kalitesi ve servis aralıklarını kontrol et.",
+            "DPF basınç/sıcaklık verilerini ve rejenerasyon geçmişini oku.",
+            "Enjektör diplerinde kurum ve emme hattında yağ/kaçak kontrolü yap."
+          ],
+          "fix": "Yağlama devresi ve emisyon sistemindeki kök neden giderilir; turbo/DPF yalnız ölçümle arızalı olduğu doğrulanırsa onarılır/değiştirilir.",
+          "caution": "DV6 motor ailesi ve PowerShift donanımı Volvo VIN ile doğrulanmalı."
+        },
+        {
+          "name": "PowerShift çift kavramalı şanzıman arızası (donanımlı versiyonlarda)",
+          "symptoms": [
+            "Düşük hızda sarsıntı",
+            "Vites geçişinde gecikme",
+            "Şanzıman uyarısı"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kodunu doğrula; MPS6/başka varyant ayrımı yap.",
+            "TCM taraması ve yağ kaçak kontrolü yap.",
+            "Kavrama, mekatronik ve yağ basıncı testlerini üretici prosedürüyle uygula."
+          ],
+          "fix": "Arıza kavrama, mekatronik veya yağlama kaynaklı olarak ayrıştırılır; doğru şanzıman için üretici prosedürü izlenir.",
+          "caution": "Her V40 D2 aynı PowerShift şanzımanı kullanmaz."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OtoRisk – Volvo V40 D2 1.6 Powershift",
+          "url": "https://otorisk.com.tr/volvo/v40/525/d2-115-at6"
+        }
+      ],
+      "evidence": "Konfigürasyon bazlı ikincil kaynak; şanzıman kodu ve motor varyantı VIN ile doğrulanmalı."
+    },
+    {
+      "id": "seat-leon-5f-16tdi",
+      "make": "SEAT",
+      "model": "Leon",
+      "generation": "Leon 5F / III",
+      "engine": "1.6 TDI EA189/EA288; 7 ileri DSG DQ200 yalnız ilgili versiyonlarda",
+      "years": "2013–2020",
+      "faults": [
+        {
+          "name": "DQ200 kuru kavrama titremesi ve mekatronik",
+          "symptoms": [
+            "Kalkışta silkeleme",
+            "Düşük hızda sarsıntı",
+            "Vites göstergesi/şanzıman uyarısı"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kodunu doğrula ve TCU modülünü tara.",
+            "Kavrama adaptasyon/aşınma değerlerini oku.",
+            "Mekatronik basınç ve elektrik beslemesini kontrol et."
+          ],
+          "fix": "Kavrama aşınması ile mekatronik arızası ayrıştırılır; uygun onarım ve adaptasyon üretici prosedürüyle yapılır.",
+          "caution": "DQ200 yalnız ilgili 7 ileri kuru kavramalı versiyonlarda bulunur."
+        },
+        {
+          "name": "1.6 TDI EGR ve DPF tıkanması",
+          "symptoms": [
+            "Çekiş kaybı",
+            "DPF uyarısı ve sık rejenerasyon",
+            "Acil çalışma modu"
+          ],
+          "codes": [
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu."
+            },
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu."
+            }
+          ],
+          "checks": [
+            "EA189/EA288 motor ailesini VIN ile belirle.",
+            "DPF kurum/kül yükü ve diferansiyel basıncı ölç.",
+            "EGR komutu, EGR soğutucu ve emme manifoldu verilerini incele."
+          ],
+          "fix": "Kök neden giderilir; DPF yüküne göre üretici rejenerasyonu/temizlik, EGR için doğrulanmış onarım uygulanır.",
+          "caution": "EA189 ve EA288 motorlarının yazılım, emisyon ve parça prosedürleri aynı değildir."
+        },
+        {
+          "name": "Kapı kilit aktüatörü arızası",
+          "symptoms": [
+            "Kapının uzaktan kumandayla açılmaması",
+            "Merkezi kilidin aralıklı çalışması",
+            "Kapı açık uyarısının yanlış görünmesi"
+          ],
+          "codes": [],
+          "checks": [
+            "Kapı modülü ve kilit aktüatörünü tarat.",
+            "Kablo körüğü, soket ve beslemeyi kontrol et.",
+            "Mekanik kilit hareketini incele."
+          ],
+          "fix": "Tesisat veya kilit modülü arızası doğrulanırsa onarılır/değiştirilir; değişim sonrası kodlama/adaptasyon gerekebilir.",
+          "caution": "Elektriksel besleme ve kablo arızası dışlanmadan aktüatör değiştirilmemeli."
+        }
+      ],
+      "sources": [
+        {
+          "label": "OtoRisk – SEAT Leon 1.6 TDI 105 DSG",
+          "url": "https://otorisk.com.tr/seat/leon/5f/1-6-tdi-dsg"
+        },
+        {
+          "label": "AraçBenim – 2014 SEAT Leon kronik sorunları",
+          "url": "https://aracbenim.com/seat/leon/2014/"
+        }
+      ],
+      "evidence": "VAG motor/şanzıman konfigürasyonuna özel ikincil kaynaklar; VIN, motor ve şanzıman kodu doğrulanmalı."
+    },
+    {
+      "id": "dacia-duster-i-15dci",
+      "make": "Dacia",
+      "model": "Duster",
+      "generation": "Duster I",
+      "engine": "1.5 dCi K9K (Delphi veya Continental/Siemens enjeksiyon; VIN/pompa ile doğrulanmalı)",
+      "years": "2010–2017",
+      "faults": [
+        {
+          "name": "Enjektör/yakıt basıncı ve Delphi enjeksiyon sistemi",
+          "symptoms": [
+            "Zor çalışma veya stop etme",
+            "Hızlanmada tekleme",
+            "Yakıt hattında hava kabarcığı veya metal talaşı şüphesi"
+          ],
+          "codes": [
+            {
+              "code": "P0087",
+              "note": "Genel yakıt rayı basıncı düşük kodu; pompa/enjektörün tek başına arızalı olduğunu kanıtlamaz."
+            }
+          ],
+          "checks": [
+            "Enjeksiyon sisteminin Delphi mi Continental/Siemens mi olduğunu belirle.",
+            "Düşük basınç hattında hava ve kaçak kontrolü yap.",
+            "Yakıt filtresini metal talaşı açısından incele; rail basıncı ve enjektör geri dönüşünü ölç.",
+            "Pompa IMV ve sensör devresini uygun prosedürle test et."
+          ],
+          "fix": "Sisteme uygun testle kök neden belirlenir; kirlenme varsa üretici dizel sistemi temizleme/değiştirme prosedürü izlenir, enjektör kodlaması gerekiyorsa ECU'ya girilir.",
+          "caution": "Metal talaşı tüm common-rail sistemini kirletebilir; yüksek basınç hattı çalışırken açılmaz."
+        },
+        {
+          "name": "EGR kurumlanması ve DPF (donanımlı versiyonlarda)",
+          "symptoms": [
+            "Çekiş kaybı",
+            "Motor arıza lambası",
+            "DPF uyarısı veya düzensiz çalışma"
+          ],
+          "codes": [
+            {
+              "code": "P0401",
+              "note": "Genel EGR akışı yetersiz kodu."
+            },
+            {
+              "code": "P2002",
+              "note": "Genel DPF verim kodu; DPF'li versiyonlarda."
+            }
+          ],
+          "checks": [
+            "VIN ile Euro standardı ve DPF donanımını doğrula.",
+            "EGR valfi ve emme yolunu incele.",
+            "DPF varsa basınç/sıcaklık sensörleri ve kurum yükünü ölç."
+          ],
+          "fix": "EGR temizliği/onarımı testle doğrulanır; DPF bulunan versiyonda rejenerasyon veya temizlik üretici sınırlarına göre uygulanır.",
+          "caution": "Türkiye'deki bazı Euro 5 1.5 dCi versiyonları DPF'siz olabilir; her Duster'a DPF prosedürü uygulanmaz."
+        },
+        {
+          "name": "Triger kayışı ve yardımcı tahrik sistemi",
+          "symptoms": [
+            "Kayış bölgesinden ses",
+            "Bakım geçmişinin belirsiz olması",
+            "İleri aşamada zamanlama kaybı riski"
+          ],
+          "codes": [],
+          "checks": [
+            "VIN'e göre üretici değişim takvimini kontrol et.",
+            "Kayış, gergi, avare rulman ve su pompası geçmişini incele.",
+            "Yağ/soğutma sıvısı sızıntısının kayışa bulaşmadığını kontrol et."
+          ],
+          "fix": "Üreticinin süre/km limitine göre kayış seti ve gerekli yardımcı parçalar birlikte yenilenir.",
+          "caution": "Bu motor zincir değil kayış tahriklidir; aralık motor kodu ve üretim yılına göre belirlenir."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Testigo – Dacia Duster I 1.5 dCi K9K",
+          "url": "https://testigoauto.com/en/cars/dacia/duster-i/1-5-dci-k9k"
+        },
+        {
+          "label": "OtoRisk – Dacia Duster 1.5 dCi 110 EDC",
+          "url": "https://otorisk.com.tr/dacia/duster/1/1-5-dci-110-edc"
+        },
+        {
+          "label": "Parçabizden – Duster/Sandero kronik arızalar",
+          "url": "https://parcabizden.com/rehber/dacia-duster-sandero-kronik-arizalar"
+        }
+      ],
+      "evidence": "Motor ailesi ve enjeksiyon sistemine özel ikincil kaynaklar; DPF/şanzıman donanımı VIN ile doğrulanmalı."
+    },
+    {
+      "id": "fiat-linea-13mj",
+      "make": "Fiat",
+      "model": "Linea",
+      "generation": "Linea Type 323 (2007–2015)",
+      "engine": "1.3 Multijet 199A3.000 (specific version; verify VIN)",
+      "years": "2007–2015",
+      "faults": [
+        {
+          "name": "1.3 Multijet zincir, EGR ve DPF kaynaklı sorunlar",
+          "symptoms": [
+            "Soğuk ilk çalıştırmada zincir şakırtısı",
+            "DPF uyarısı veya sık rejenerasyon",
+            "Çekiş düşmesi; yağ seviyesinin yükselmesi veya yağda mazot kokusu"
+          ],
+          "codes": [],
+          "checks": [
+            "Motor kodunu ve DPF donanımını VIN ile doğrula.",
+            "Soğuk çalıştırmada zincir/gergi sesini dinle; yağ seviyesi ve yağda yakıt kokusunu kontrol et.",
+            "DPF diferansiyel basınç, kurum yükü, rejenerasyon geçmişi ve EGR komut/gerçek değerini oku."
+          ],
+          "fix": "Önce yağ seyreltmesine neden olan rejenerasyon/enjektör/termostat sorunlarını ve EGR akışını teşhis et. Zincir uzaması doğrulanırsa uygun zincir-gergi-kızak setini üretici prosedürüyle yenile; DPF/EGR temizliği veya parça değişimini ölçüm sonucuna göre yap.",
+          "caution": "1.3 Multijet'in bütün sürümleri aynı motor kodu ve emisyon donanımında değildir. Ses veya DPF lambası tek başına zincir ya da DPF değişim kararı değildir.",
+          "sources": [
+            {
+              "title": "Fiat Linea resmi eLum kullanım kılavuzu – 1.3 Multijet motor kodu 199A3000",
+              "url": "https://aftersales.fiat.com/eLumData/EN/00/110_LINEA/00_110_LINEA_603.81.185_EN_02_04.07_L_LG/00_110_LINEA_603.81.185_EN_02_04.07_L_LG.pdf"
+            },
+            {
+              "title": "1.3 CDTI/Multijet zincir, DPF ve EGR teknik sorun özeti",
+              "url": "https://testigoauto.com/en/cars/opel/astra-j/1-3-1-7-2-0-cdti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renault-megane3-15dci-edc",
+      "make": "Renault",
+      "model": "Megane",
+      "generation": "Megane III",
+      "engine": "1.5 dCi K9K 110 hp; 6 ileri EDC DC4 kuru kavrama (bu kayıttaki konfigürasyon)",
+      "years": "2011–2016 (EDC örnek uygulama)",
+      "faults": [
+        {
+          "name": "EDC DC4 kuru kavrama / aktüatör arızası",
+          "symptoms": [
+            "Kalkışta titreme veya silkelenme",
+            "D-R geçişinde gecikme veya vites uyarısı",
+            "Isınınca artan kavrama kaçırması"
+          ],
+          "codes": [],
+          "checks": [
+            "Şanzıman kontrol ünitesinden hata kodlarını ve adaptasyon değerlerini oku.",
+            "Kavrama aşınma ve kayma değerlerini üretici cihazıyla kontrol et.",
+            "Aktüatör, kablo tesisatı, akü voltajı ve yazılım seviyesini kontrol et."
+          ],
+          "fix": "Önce elektrik beslemesi, yazılım ve adaptasyon şartlarını doğrula; kavrama veya aktüatör arızası ölçümle kanıtlanırsa DC4 prosedürüne göre onar ve kalibrasyon yap.",
+          "caution": "EDC DC4 ile manuel şanzıman aynı arıza/onarım prosedürünü paylaşmaz. Bu kayıt yalnız belirtilen EDC konfigürasyonuna ilişkindir.",
+          "sources": [
+            {
+              "title": "Megane III 1.5 dCi 110 EDC – şanzıman ve arıza uygulaması",
+              "url": "https://otorisk.com.tr/renault/megane/3/1-5-dci-110-edc"
+            }
+          ]
+        },
+        {
+          "name": "1.5 dCi K9K yakıt/enjektör ve turbo yağlama kontrolü",
+          "symptoms": [
+            "Uzun marş veya zor çalışma",
+            "Rölantide düzensizlik, duman veya çekiş kaybı",
+            "Turbo sesinde değişiklik veya yağ tüketimi"
+          ],
+          "codes": [],
+          "checks": [
+            "Enjektör geri dönüş ve rail basıncını marş/rölantide ölç.",
+            "Yakıt filtresi, düşük basınç beslemesi ve hava girişini kontrol et.",
+            "Turbo yağ besleme/dönüş hattı, yağ standardı ve bakım aralığını incele."
+          ],
+          "fix": "Enjektör, yakıt besleme veya turbo yağlama arızasını testle ayır; arızalı parçayı onar/değiştir ve yağlama hattını temizleyip doğru yağla servis et.",
+          "caution": "K9K alt kodları ve yakıt sistemi nesilleri farklıdır; bu kontrol listesi tek bir enjektör markası veya tüm K9K motorları için genellenemez.",
+          "sources": [
+            {
+              "title": "1.5 dCi K9K motor sorunları ve teşhis başlıkları",
+              "url": "https://ipacen.com/known-issues/renault-1-5-dci-k9k"
+            },
+            {
+              "title": "Megane III 1.5 dCi 110 EDC uygulama kaydı",
+              "url": "https://otorisk.com.tr/renault/megane/3/1-5-dci-110-edc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercedes-w204-c220-om651",
+      "make": "Mercedes-Benz",
+      "model": "C Serisi",
+      "generation": "W204",
+      "engine": "C 220 CDI OM651 2.1 dizel (erken/geç üretim donanımı ayrılmalı)",
+      "years": "2009–2014",
+      "faults": [
+        {
+          "name": "OM651 erken üretim enjektör ve zamanlama zinciri kontrolü",
+          "symptoms": [
+            "Soğuk çalıştırmada zincir sesi",
+            "Zor çalışma, tekleme veya düzensiz rölanti",
+            "Siyah duman ve motor arıza lambası"
+          ],
+          "codes": [],
+          "checks": [
+            "Soğuk motor çalıştırmasını dinle; zincir sesi ve yağ basıncı gecikmesini kontrol et.",
+            "Enjektör düzeltme/geri dönüş testini yap; enjektör kampanya ve değişim geçmişini VIN ile sorgula.",
+            "Zincir korelasyon verilerini ve mekanik zamanlamayı üretici prosedürüyle doğrula."
+          ],
+          "fix": "Enjektör arızası testle doğrulanırsa araçtaki enjektör nesline uygun güncel revizyonu uygula. Zincir/gergi arızası doğrulanırsa arka taraftan erişim gerektiren OM651 prosedürüyle onar.",
+          "caution": "Erken piezo enjektör uygulamaları ile sonraki solenoid enjektörler ayrılmalıdır. Kampanya uygunluğu VIN ile kontrol edilir; tüm W204 araçları etkilenmiş değildir.",
+          "sources": [
+            {
+              "title": "Mercedes W204 OM651 enjektör ve zincir sorunları",
+              "url": "https://australiancar.reviews/recalls-faults-mercedes-benz-w204-c-class-sedan-2007-14/"
+            },
+            {
+              "title": "W204 OM651 model/arıza kaydı",
+              "url": "https://otorik.com/araclar/mercedes-benz/c-serisi/w204/kronik-sorunlar/enjektor-ve-zincir-sorunlari-om651-2-1-dizel/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nissan-qashqai-j10-15dci",
+      "make": "Nissan",
+      "model": "Qashqai",
+      "generation": "Qashqai J10",
+      "engine": "1.5 dCi K9K 106/110 hp (alt kod ve enjeksiyon donanımı VIN ile doğrulanmalı)",
+      "years": "2006–2014",
+      "faults": [
+        {
+          "name": "Erken K9K alt yatak, yağlama ve DPF kontrolü",
+          "symptoms": [
+            "Sıcakken motor altından vuruntu",
+            "Yağ basıncı uyarısı",
+            "DPF uyarısı veya rejenerasyonun tamamlanmaması"
+          ],
+          "codes": [],
+          "checks": [
+            "Soğuk ve sıcak motorda yağ basıncını üretici değerleriyle ölç.",
+            "Yağ seviyesi, yağ standardı ve değişim geçmişini incele.",
+            "Alt yatak sesi varsa motoru çalıştırmaya devam etme; karter açılarak yatak/krank hasarı uzman tarafından kontrol edilmeli.",
+            "DPF bulunan versiyonda diferansiyel basınç ve rejenerasyon durumunu oku."
+          ],
+          "fix": "Alt yatak hasarı şüphesinde aracı kullanma; yağ basıncı ve mekanik hasarı ölçerek krank/yatak onarımını planla. DPF sorunu varsa önce rejenerasyonun tamamlanmasını engelleyen nedenleri gider.",
+          "caution": "Erken K9K üretimlerinde alt yatak riski kaynaklarda bildirilir; bütün K9K motorlarına genellenemez. Motor alt kodu ve üretim tarihi kritik önemdedir.",
+          "sources": [
+            {
+              "title": "Nissan Qashqai J10 1.5 dCi K9K motor sorunları",
+              "url": "https://vin-service-planner.com/en/nissan-qashqai-j10/1-5-dci-k9k/"
+            },
+            {
+              "title": "1.5 dCi K9K motor ailesi arıza başlıkları",
+              "url": "https://ipacen.com/known-issues/renault-1-5-dci-k9k"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
